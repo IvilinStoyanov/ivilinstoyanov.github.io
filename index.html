@@ -20,7 +20,7 @@
 </head>
 
 <body>
-    <section id="navbar-section">
+    <section class="d-flex flex-column justify-content-between" id="navbar-section">
         <div id="top-div" style="font-family:'Roboto Condensed', sans-serif;">
             <nav class="navbar navbar-light navbar-expand-md">
                 <div class="container-fluid"><a class="navbar-brand" href="index.html"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color:rgba(255,193,7,0.52);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -48,39 +48,39 @@
         <h1 class="text-center" id="head-title" style="font-family:'Roboto Condensed', sans-serif;">CHOOSE YOUR&nbsp;</h1>
         <h1 class="text-center" id="head-subtitle">THEME &nbsp;</h1>
         <h1 class="text-center text-warning" id="head-subtitle-text">NOW</h1>
-        <h4 class="text-center" id="head-subtitle" style="margin-top:100px;font-size:26px;margin-bottom:40px;">CATEGORIES</h4>
         <h1 class="text-center text-warning jello animated" id="head-subtitle-final"></h1>
         </div>
         <div id="div-header-container">
             <div class="container">
                 <div class="col-8 offset-2">
+                    <p class="category-p">Categories</p>
                     <p>Choose from hundred of templates for free</p>
                 </div>
                 <div class="row">
                     <div class="col with-borders">
-                        <p class="p-top"><i class="la la-paint-brush"></i>&nbsp;</p>
+                        <p class="p-top"><i class="la la-paint-brush" id="category-icon"></i>&nbsp;</p>
                         <p class="p-top">Fasion</p>
                     </div>
                     <div class="col with-borders">
-                        <p class="p-top"><i class="icon ion-ios-book-outline"></i>&nbsp;</p>
+                        <p class="p-top"><i class="icon ion-ios-book-outline" id="category-icon"></i>&nbsp;</p>
                         <p class="p-top">Education<br></p>
                     </div>
                     <div class="col with-borders">
-                        <p class="p-top"><i class="fa fa-balance-scale"></i>&nbsp;</p>
+                        <p class="p-top"><i class="fa fa-balance-scale" id="category-icon"></i>&nbsp;</p>
                         <p class="p-top">Business<br></p>
                     </div>
                     <div class="col with-borders">
-                        <p class="p-top"><i class="fa fa-shopping-basket"></i>&nbsp;</p>
+                        <p class="p-top"><i class="fa fa-shopping-basket" id="category-icon"></i>&nbsp;</p>
                         <p class="p-top">Food<br></p>
                     </div>
                     <div class="col">
-                        <p class="p-top"><i class="fa fa-picture-o"></i>&nbsp;</p>
+                        <p class="p-top"><i class="fa fa-picture-o" id="category-icon"></i>&nbsp;</p>
                         <p class="p-top">Art<br></p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="col">
-                        <p style="margin-bottom:0px;">Browse more</p><button class="btn btn-link btn-block arrow-button" type="button"><i class="icon ion-ios-arrow-down"></i></button></div>
+                <div class="row with-margin">
+                    <div class="col" style="margin-top:0px;">
+                        <p class="p-more" style="margin-bottom:0px;">Browse more</p><button class="btn btn-link btn-block arrow-button" type="button"><i class="icon ion-ios-arrow-down"></i></button></div>
                 </div>
             </div>
         </div>
