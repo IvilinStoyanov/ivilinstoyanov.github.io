@@ -9,87 +9,83 @@
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat+Alternates:400,500,600,700">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700">
-    <link rel="stylesheet" href="assets/css/arrow-down.css">
-    <link rel="stylesheet" href="assets/css/best-carousel-slide.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/css/swiper.min.css">
+    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
     <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
-    <section class="d-flex flex-column justify-content-between" id="navbar-section">
-        <div id="top-div" style="font-family:'Roboto Condensed', sans-serif;">
+    <section class="d-flex flex-column justify-content-between" id="head">
+        <div id="hero-top">
             <nav class="navbar navbar-light navbar-expand-md">
-                <div class="container-fluid"><a class="navbar-brand" href="index.html"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color:rgba(255,193,7,0.52);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div
-                        class="collapse navbar-collapse" id="navcol-1">
+                <div class="container-fluid"><a class="navbar-brand" href="#"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                    <div class="collapse navbar-collapse"
+                        id="navcol-1">
                         <ul class="nav navbar-nav mx-auto">
-                            <li class="dropdown"><a class="dropdown-toggle nav-link text-warning dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="nav-template">Templates</a>
-                                <div class="dropdown-menu" role="menu" id="drop-menu"><a class="dropdown-item" role="presentation" href="#" id="drop-menu-item">First Item</a>
-                                    <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" id="drop-menu-item">Second Item</a>
-                                    <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" id="drop-menu-item">Third Item</a>
-                                    <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="#" id="drop-menu-item">Menu Item</a></div>
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="navbar-dropdown">Templates</a>
+                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
                             </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contact Us</a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contacts</a></li>
                         </ul>
-                        <ul class="nav navbar-nav pulse animated">
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#"><i class="fa fa-facebook-square" id="navbar-social-icons"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#"><i class="fa fa-pinterest" id="navbar-social-icons"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#"><i class="fa fa-youtube-play" id="navbar-social-icons"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link active" href="#"><i class="fa fa-google-plus-circle" id="navbar-social-icons"></i></a></li>
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-facebook-square" id="navbar-icons"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-google-plus-square" id="navbar-icons"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-youtube-play" id="navbar-icons"></i></a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-pinterest" id="navbar-icons"></i></a></li>
                         </ul>
+                    </div>
                 </div>
+            </nav>
+            <h2 class="text-center" id="title-head">CHOOSE YOUR</h2>
+            <h2 class="text-center" id="title">TEMPLATE</h2>
+            <h2 class="text-center" id="subtitle" style="color:rgb(241,209,41);">NOW</h2>
         </div>
-        </nav>
-        <h1 class="text-center" id="head-title" style="font-family:'Roboto Condensed', sans-serif;">CHOOSE YOUR&nbsp;</h1>
-        <h1 class="text-center" id="head-subtitle">THEME &nbsp;</h1>
-        <h1 class="text-center text-warning" id="head-subtitle-text">NOW</h1>
-        <h1 class="text-center text-warning jello animated" id="head-subtitle-final"></h1>
-        </div>
-        <div id="div-header-container">
+        <div id="hero-bot">
             <div class="container">
-                <div class="col-8 offset-2">
-                    <p class="category-p">Categories</p>
-                    <p>Choose from hundred of templates for free</p>
+                <div class="row">
+                    <div class="col-8 offset-2">
+                        <p>Select your favorite category by clicking on the image, hundred of free templates</p>
+                    </div>
+                </div>
+                <div class="row top-row-category">
+                    <div class="col with-border">
+                        <p class="p-category">&nbsp;<i class="la la-paint-brush"></i></p>
+                        <p class="p-category">Art</p>
+                    </div>
+                    <div class="col with-border">
+                        <p class="p-category">&nbsp;<i class="la la-birthday-cake"></i></p>
+                        <p class="p-category">Food</p>
+                    </div>
+                    <div class="col with-border">
+                        <p class="p-category">&nbsp;<i class="fa fa-balance-scale"></i></p>
+                        <p class="p-category">Business</p>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col with-borders">
-                        <p class="p-top"><i class="la la-paint-brush" id="category-icon"></i>&nbsp;</p>
-                        <p class="p-top">Fasion</p>
+                    <div class="col with-border">
+                        <p class="p-category">&nbsp;<i class="material-icons">directions_bike</i></p>
+                        <p class="p-category">Sport</p>
                     </div>
-                    <div class="col with-borders">
-                        <p class="p-top"><i class="icon ion-ios-book-outline" id="category-icon"></i>&nbsp;</p>
-                        <p class="p-top">Education<br></p>
+                    <div class="col with-border">
+                        <p class="p-category">&nbsp;<i class="icon ion-ios-game-controller-b-outline"></i></p>
+                        <p class="p-category">Gaming</p>
                     </div>
-                    <div class="col with-borders">
-                        <p class="p-top"><i class="fa fa-balance-scale" id="category-icon"></i>&nbsp;</p>
-                        <p class="p-top">Business<br></p>
-                    </div>
-                    <div class="col with-borders">
-                        <p class="p-top"><i class="fa fa-shopping-basket" id="category-icon"></i>&nbsp;</p>
-                        <p class="p-top">Food<br></p>
-                    </div>
-                    <div class="col">
-                        <p class="p-top"><i class="fa fa-picture-o" id="category-icon"></i>&nbsp;</p>
-                        <p class="p-top">Art<br></p>
+                    <div class="col with-border">
+                        <p class="p-category">&nbsp;<i class="fa fa-cut"></i></p>
+                        <p class="p-category">Fashion</p>
                     </div>
                 </div>
-                <div class="row with-margin">
-                    <div class="col" style="margin-top:0px;">
-                        <p class="p-more" style="margin-bottom:0px;">Browse more</p><button class="btn btn-link btn-block arrow-button" type="button"><i class="icon ion-ios-arrow-down"></i></button></div>
+                <div class="row">
+                    <div class="col"><button class="btn btn-link btn-block arrow-button" type="button"><i class="icon ion-ios-arrow-down"></i></button></div>
                 </div>
             </div>
         </div>
     </section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.3.1/js/swiper.jquery.min.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
-    <script src="assets/js/Simple-Slider.js"></script>
 </body>
 
 </html>
