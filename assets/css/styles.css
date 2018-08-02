@@ -12,10 +12,10 @@
 .navbar-light .navbar-brand {
   background-image:url("../../assets/img/brand-logo.png");
   background-position:center;
-  background-size:90%;
+  background-size:80%;
   background-repeat:no-repeat;
   width:150px;
-  height:50px;
+  height:40px;
 }
 
 #title {
@@ -24,51 +24,15 @@
 
 #subtitle {
   font-weight:400;
-  margin-bottom:220px;
-}
-
-#hero-bot {
-  color:#fff;
-}
-
-.p-category {
-  font-size:25px;
-  margin-bottom:0px;
-  font-weight:100;
-}
-
-.p-category:hover {
-  font-size:25px;
-  margin-bottom:0px;
-  font-weight:100;
-  color:#f1d129;
-}
-
-.btn.btn-link.btn-block.arrow-button {
-  color:rgb(241,209,41);
-  font-size:32px;
-}
-
-#hero-bot .container {
-  max-width:850px;
-  text-align:center;
-}
-
-.col.with-border:not(:last-child) {
-  border-right:1px solid rgba(255,255,255,0.57);
-}
-
-.row.top-row-category {
-  margin-bottom:10px;
 }
 
 .navbar-light .navbar-nav .nav-link {
-  color:#000000;
+  color:#ffffff;
   font-size:18px;
 }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color:#f1d13a;
+  color:#f1d129;
 }
 
 #navbar-dropdown {
@@ -76,7 +40,7 @@
 }
 
 #navbar-dropdown:hover {
-  color:#000000;
+  color:#ffffff;
 }
 
 #navbar-icons {
@@ -84,11 +48,25 @@
 }
 
 #title-head {
-  padding-top:126px;
   font-weight:100;
 }
 
+#head-content {
+  height:500px;
+}
+
+.btn.btn-link.btn-block.arrow-button {
+  color:rgba(241,209,41,0.83);
+  font-size:35px;
+  padding:0;
+}
+
 #navbar {
-  background-color:#ffffff;
+  background-color:rgba(52,58,64,0.96);
+}
+
+#button-head {
+  width:100px;
+  font-size:20px;
 }
 

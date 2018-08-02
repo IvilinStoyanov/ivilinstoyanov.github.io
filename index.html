@@ -7,11 +7,9 @@
     <title>WebTemplatesIS</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
-    <link rel="stylesheet" href="assets/fonts/line-awesome.min.css">
-    <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/css/lightbox.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
     <link rel="stylesheet" href="assets/css/Lightbox-Gallery.css">
     <link rel="stylesheet" href="assets/css/styles.css">
@@ -19,7 +17,7 @@
 
 <body>
     <section class="d-flex flex-column justify-content-between" id="head">
-        <div id="hero-top">
+        <div>
             <nav class="navbar navbar-light navbar-expand-md" id="navbar">
                 <div class="container-fluid"><a class="navbar-brand" href="#"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                     <div class="collapse navbar-collapse"
@@ -28,7 +26,7 @@
                             <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="navbar-dropdown">Templates</a>
                                 <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
                             </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">About</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"></a></li>
                             <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contacts</a></li>
                         </ul>
                         <ul class="nav navbar-nav">
@@ -40,73 +38,35 @@
                     </div>
                 </div>
             </nav>
-            <h2 class="text-center" id="title-head">CHOOSE YOUR</h2>
-            <h2 class="text-center" id="title">TEMPLATE</h2>
-            <h2 class="text-center" id="subtitle" style="color:rgb(241,209,41);">NOW</h2>
         </div>
-        <div id="hero-bot">
-            <div class="container">
-                <div class="row">
-                    <div class="col-8 offset-2">
-                        <p>Select your favorite category by clicking on the image, hundred of free templates</p>
-                    </div>
-                </div>
-                <div class="row top-row-category">
-                    <div class="col with-border">
-                        <p class="p-category">&nbsp;<i class="la la-paint-brush"></i></p>
-                        <p class="p-category">Art</p>
-                    </div>
-                    <div class="col with-border">
-                        <p class="p-category">&nbsp;<i class="la la-birthday-cake"></i></p>
-                        <p class="p-category">Food</p>
-                    </div>
-                    <div class="col with-border">
-                        <p class="p-category">&nbsp;<i class="fa fa-balance-scale"></i></p>
-                        <p class="p-category">Business</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col with-border">
-                        <p class="p-category">&nbsp;<i class="material-icons">directions_bike</i></p>
-                        <p class="p-category">Sport</p>
-                    </div>
-                    <div class="col with-border">
-                        <p class="p-category">&nbsp;<i class="icon ion-ios-game-controller-b-outline"></i></p>
-                        <p class="p-category">Gaming</p>
-                    </div>
-                    <div class="col with-border">
-                        <p class="p-category">&nbsp;<i class="fa fa-cut"></i></p>
-                        <p class="p-category">Fashion</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col"><button class="btn btn-link btn-block arrow-button" type="button"><i class="icon ion-ios-arrow-down"></i></button></div>
-                </div>
-            </div>
-        </div>
+        <div class="d-flex flex-column justify-content-center" data-aos="fade" data-aos-duration="800" id="head-content">
+            <h1 class="text-center" data-aos="fade" data-aos-delay="400" id="title-head">CHOOSE YOUR</h1>
+            <h1 class="text-center" data-aos="fade" data-aos-delay="500" id="title">TEMPLATE</h1>
+            <h1 class="text-center" data-aos="fade" data-aos-delay="600" id="subtitle" style="color:rgb(241,209,41);">NOW</h1>
+            <h1 class="text-center" id="subtitle" style="color:rgb(241,209,41);"></h1><a class="btn btn-outline-warning justify-content-center align-self-center" role="button" href="#gallery" data-bs-hover-animate="swing" id="button-head">Start</a></div>
     </section>
-    <div class="photo-gallery">
-        <div class="container">
+    <div data-aos="zoom-in" data-aos-duration="500" data-aos-delay="350" id="gallery" class="photo-gallery">
+        <div class="container-fluid" id="gallery-content">
             <div class="intro">
-                <h2 class="text-center">Lightbox Gallery</h2>
-                <p class="text-center">Nunc luctus in metus eget fringilla. Aliquam sed justo ligula. Vestibulum nibh erat, pellentesque ut laoreet vitae. </p>
+                <h2 class="text-center">Templates Category</h2>
+                <p class="text-center">Choose from hundred of templetes. All kind of categories to suit your favorite style. Build your dream website for free. Easy download</p>
             </div>
             <div class="row photos">
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/building.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/loft.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/building.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/building.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/loft.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/loft.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
-                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="assets/img/desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/desk.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/categories/theme-category-restorants.jpg" id="img"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="building.jpg"><img class="img-fluid" src="assets/img/categories/theme-category-shop.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a id="test" data-lightbox="photos"><img class="img-fluid" src="assets/img/categories/theme-category-restorants.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="building.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/categories/theme-category-industry.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="loft.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/categories/theme-category-health.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/categories/theme-category-art.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/categories/theme-category-health.jpg"></a></div>
+                <div class="col-sm-6 col-md-4 col-lg-3 item"><a href="desk.jpg" data-lightbox="photos"><img class="img-fluid" src="assets/img/categories/theme-category-art.jpg"></a></div>
             </div>
         </div>
     </div>
-    <section id="gallery"></section>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/bootstrap/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.8.2/js/lightbox.min.js"></script>
+    <script src="assets/js/bs-animation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
 </body>
 

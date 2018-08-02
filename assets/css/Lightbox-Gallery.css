@@ -1,6 +1,6 @@
 .photo-gallery {
   color:#313437;
-  background-color:#fff;
+  background-color:#f4f4f4;
 }
 
 .photo-gallery p {
@@ -37,6 +37,6 @@
 }
 
 .photo-gallery .item {
-  padding-bottom:30px;
+  padding:0;
 }
 
