@@ -42,14 +42,14 @@
 }
 
 #div-img {
-  position:relative;
-  bottom:45%;
+  /*position:relative;*/
+  /*bottom:45%;*/
   text-align:center;
 }
 
 #image-paragraph {
   color:white;
-  font-size:40px;
+  font-size:30px;
   background-color:rgba(198,133,34,0.62);
 }
 
