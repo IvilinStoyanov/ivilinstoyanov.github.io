@@ -38,18 +38,12 @@
 
 .photo-gallery .item {
   padding:15px;
-  /*border:1px solid rgba(241,173,41,0.59);*/
-}
-
-#div-img {
-  /*position:relative;*/
-  /*bottom:45%;*/
-  text-align:center;
 }
 
 #image-paragraph {
   color:white;
-  font-size:30px;
-  background-color:rgba(198,133,34,0.62);
+  font-size:22px;
+  background-color:rgba(221,174,96,0.68);
+  text-align:center;
 }
 

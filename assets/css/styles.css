@@ -70,3 +70,28 @@
   font-size:20px;
 }
 
+#gallery-content {
+  font-family:'Roboto Condensed', sans-serif;
+}
+
+#offer {
+  width:100%;
+  background-color:#edb26e;
+  color:white;
+}
+
+#p-top {
+  text-align:center;
+  font-size:25px;
+  margin-bottom:0;
+}
+
+#p-bot {
+  text-align:center;
+  font-size:20px;
+}
+
+#offer-container {
+  max-width:700px;
+}
+
