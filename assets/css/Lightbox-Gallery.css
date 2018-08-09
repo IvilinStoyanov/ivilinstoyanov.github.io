@@ -43,7 +43,19 @@
 #image-paragraph {
   color:white;
   font-size:22px;
-  background-color:rgba(221,174,96,0.68);
+  background-color:rgba(132,125,114,0.51);
   text-align:center;
+}
+
+#image-paragraph:hover {
+  color:white;
+  font-size:22px;
+  background-color:rgba(126,115,95,0.64);
+  text-align:center;
+}
+
+#gallery-content a:hover {
+  text-decoration:underline;
+  color:#ffffff;
 }
 

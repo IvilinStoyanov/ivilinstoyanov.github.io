@@ -72,12 +72,14 @@
 
 #gallery-content {
   font-family:'Roboto Condensed', sans-serif;
+  background-color:rgba(190,185,221,0.61);
 }
 
 #offer {
   width:100%;
-  background-color:#edb26e;
+  background-color:rgba(42,62,115,0.53);
   color:white;
+  font-family:'Roboto Condensed', sans-serif;
 }
 
 #p-top {
@@ -92,6 +94,14 @@
 }
 
 #offer-container {
-  max-width:700px;
+  max-width:500px;
+}
+
+.col-6.with-border {
+  border-top:1px solid rgba(255,255,255,0.52);
+}
+
+.footer-clean {
+  background-color:rgba(202,203,222,0.21);
 }
 
