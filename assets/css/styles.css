@@ -77,7 +77,7 @@
 
 #offer {
   width:100%;
-  background-color:rgba(42,62,115,0.53);
+  background-color:rgba(107,122,160,0.6);
   color:white;
   font-family:'Roboto Condensed', sans-serif;
 }
@@ -91,6 +91,7 @@
 #p-bot {
   text-align:center;
   font-size:20px;
+  font-weight:100;
 }
 
 #offer-container {
@@ -99,9 +100,21 @@
 
 .col-6.with-border {
   border-top:1px solid rgba(255,255,255,0.52);
+  padding-top:15px;
 }
 
 .footer-clean {
   background-color:rgba(202,203,222,0.21);
+}
+
+#offer-container .p-title {
+  text-align:center;
+  font-size:25px;
+  font-family:'Roboto Condensed', sans-serif;
+  text-transform:capitalize;
+  color:rgb(255,255,255);
+  font-weight:400;
+  margin-bottom:40px;
+  margin-top:10px;
 }
 
