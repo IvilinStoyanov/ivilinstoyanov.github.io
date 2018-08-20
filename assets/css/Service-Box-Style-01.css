@@ -140,7 +140,24 @@
   }
 }
 
-#offer-row-top {
-  margin-bottom:2px;
+#service-colum {
+  padding:10px;
+}
+
+#offer .h3, h3 {
+  padding-top:30px;
+}
+
+#offer-heading {
+  text-align:center;
+  border-bottom:1px solid rgba(255,255,255,0.58);
+  border-top:1px solid rgba(255,255,255,0.58);
+  max-width:700px;
+  margin:0 auto;
+}
+
+.row.offer-head-row {
+  padding-top:15px;
+  padding-bottom:15px;
 }
 
