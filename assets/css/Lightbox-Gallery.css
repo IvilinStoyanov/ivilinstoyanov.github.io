@@ -37,8 +37,15 @@
 }
 
 .photo-gallery .item {
-  padding-right:5px;
-  padding-left:5px;
+  padding-right:30px;
+  padding-left:30px;
+}
+
+@media (min-width: 576px) {
+  .photo-gallery .item {
+    padding-right:5px;
+    padding-left:5px;
+  }
 }
 
 #image-paragraph {
