@@ -138,10 +138,6 @@
 
 #offer-heading {
   text-align:center;
-  border-bottom:1px solid rgba(241,187,64,0.8);
-  border-top:1px solid rgba(214,108,154,0.8);
-  border-left:1px solid rgba(241,187,64,0.8);
-  border-right:1px solid rgba(214,108,154,0.8);
   max-width:600px;
   margin:0 auto;
   border-radius:8px;
@@ -152,10 +148,6 @@
 @media (min-width: 576px) {
   #offer-heading {
     text-align:center;
-    border-bottom:1px solid rgba(241,187,64,0.8);
-    border-top:1px solid rgba(214,108,154,0.8);
-    border-left:1px solid rgba(241,187,64,0.8);
-    border-right:1px solid rgba(214,108,154,0.8);
     max-width:600px;
     margin:0 auto;
     border-radius:8px;
