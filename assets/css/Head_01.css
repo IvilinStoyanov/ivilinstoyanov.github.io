@@ -1,0 +1,77 @@
+#head {
+  width:100%;
+  background-color:#6793a6;
+  color:#ffffff;
+  background-image:url("../../assets/img/img-background.png");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  font-family:'Roboto Condensed', sans-serif;
+}
+
+.navbar-light .navbar-brand {
+  background-image:url("../../assets/img/brand-logo.png");
+  background-position:center;
+  background-size:80%;
+  background-repeat:no-repeat;
+  width:150px;
+  height:40px;
+}
+
+#title {
+  /*font-weight:300;*/
+  /*text-shadow:.5px .5px rgba(0,0,0,0.45);*/
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:#ffffff;
+  font-size:18px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color:#f1d129;
+}
+
+#navbar-dropdown {
+  color:#f1d129;
+}
+
+#navbar-dropdown:hover {
+  color:#ffffff;
+}
+
+#navbar-icons {
+  font-size:25px;
+}
+
+#title-head {
+  /*font-weight:100;*/
+  /*text-shadow:.5px .5px rgba(0,0,0,0.45);*/
+  margin-top:-40px;
+}
+
+#head-content {
+  height:735px;
+  margin-right:0px;
+}
+
+#navbar {
+  background-color:rgba(6,5,3,0.72);
+}
+
+#button-head {
+  width:100px;
+  font-size:22px;
+  text-shadow:.5px .5px rgba(0,0,0,0.45);
+  background-color:rgba(50,40,40,0.34);
+}
+
+#subtitle {
+  text-shadow:.5px .5px rgba(0,0,0,0.45);
+  color:rgb(241,209,41);
+}
+
+#button-head:hover {
+  color:white;
+}
+

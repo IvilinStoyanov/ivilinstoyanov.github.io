@@ -84,3 +84,24 @@
   opacity:0.6;
 }
 
+#offer .h3, h3 {
+  padding-top:25px;
+}
+
+.footer-clean {
+  background-color:rgba(202,203,222,0.21);
+}
+
+.row {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:0;
+  margin-left:0;
+}
+
+body {
+  overflow-x:hidden;
+}
+

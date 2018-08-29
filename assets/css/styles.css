@@ -1,129 +1,130 @@
-#head {
-  width:100%;
-  background-color:#6793a6;
-  color:#ffffff;
-  background-image:url("../../assets/img/head-bg-img.jpg");
+.gallery-block {
+  height:250px;
+  background-image:url("../../assets/img/categories/theme-category-restorants.jpg");
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
-  font-family:'Roboto Condensed', sans-serif;
+  border-radius:8px;
+  position:relative;
+  transition:.5s ease;
 }
 
-.navbar-light .navbar-brand {
-  background-image:url("../../assets/img/brand-logo.png");
-  background-position:center;
-  background-size:80%;
-  background-repeat:no-repeat;
-  width:150px;
-  height:40px;
+#gallery .row {
+  max-width:1200px;
+  margin:auto;
 }
 
-#title {
-  font-weight:300;
+#gallery {
+  text-align:center;
+  background-color:rgba(179,175,175,0.21);
 }
 
-#subtitle {
-  font-weight:400;
-}
-
-.navbar-light .navbar-nav .nav-link {
-  color:#ffffff;
+.gallery-paragraph {
   font-size:18px;
+  padding-top:5px;
+  font-weight:600;
+  color:rgba(69,68,68,0.78);
 }
 
-.navbar-light .navbar-nav .nav-link:hover {
-  color:#f1d129;
+#offer-heading {
+  font-size:24px;
+  text-align:left;
+  font-weight:500;
+  max-width:450px;
+  color:rgba(0,0,0,0.71);
 }
 
-#navbar-dropdown {
-  color:#f1d129;
+.gallery-block:hover {
+  opacity:0.6;
 }
 
-#navbar-dropdown:hover {
-  color:#ffffff;
+.gallery-block-hidden {
+  height:250px;
+  opacity:0;
+  position:relative;
+  border-radius:8px;
+  transition:.5s ease;
 }
 
-#navbar-icons {
-  font-size:25px;
+#gallery .gallery-block-hidden:hover {
+  background-color:rgba(7,7,7,0.3);
+  height:250px;
+  opacity:1;
 }
 
-#title-head {
-  font-weight:100;
+#gallery-button-middle {
+  background-color:rgb(255,255,255);
+  color:rgba(0,0,0,0.9);
+  font-size:18px;
+  font-weight:bold;
 }
 
-#head-content {
-  height:500px;
+#gallery .middle-button {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
 }
 
-.btn.btn-link.btn-block.arrow-button {
-  color:rgba(241,209,41,0.83);
-  font-size:35px;
-  padding:0;
-}
-
-#navbar {
-  background-color:rgba(52,58,64,0.96);
-}
-
-#button-head {
-  width:100px;
-  font-size:20px;
-}
-
-#gallery-content {
-  font-family:'Roboto Condensed', sans-serif;
-  background-color:rgba(190,185,221,0.61);
-}
-
-#offer {
+#content {
   width:100%;
-  background-color:rgba(51,100,157,0.37);
-  color:white;
-  font-family:'Roboto Condensed', sans-serif;
 }
 
-#p-top {
-  text-align:center;
-  font-size:25px;
-  margin-bottom:0;
+#content-paragraph {
+  font-size:18px;
+  text-align:left;
+  font-weight:300;
+  max-width:600px;
+  color:rgba(0,0,0,0.71);
+  padding-top:10px;
 }
 
-#p-bot {
-  text-align:center;
-  font-size:20px;
+#content-items {
+  font-size:16px;
+  text-align:left;
   font-weight:100;
+  text-transform:uppercase;
+  color:rgba(0,0,0,0.71);
 }
 
-#offer-container {
-  max-width:500px;
+#content-icon {
+  padding:12px;
+  border:1px solid rgba(20,42,238,0.5);
+  border-radius:50%;
+  color:#878ec8;
+  font-size:24px;
+  margin-right:10px;
 }
 
-.col-6.with-border {
-  border-top:1px solid rgba(255,255,255,0.52);
-  padding-top:15px;
+#vertical-line {
+  width:1px;
+  height:200px;
+  background-color:rgba(10,16,132,0.31);
+  margin-left:28px;
 }
 
-.footer-clean {
-  background-color:rgba(202,203,222,0.21);
+#content-img {
+  background-image:url("../../assets/img/website-templates.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:1300px;
+  width:120%;
+  background-position:center;
+  position:absolute;
+  z-index:-1;
+  left:20%;
+  top:-30%;
+  transform:scale(0.9) rotateX(52deg) rotateY(0) rotateZ(315deg);
+  box-shadow:-1px 1px 0 0 rgba(154,184,210,0.76), -2px 2px 0 0 rgba(154,184,210,0.76), -3px 3px 0 0 rgba(154,184,210,0.76), -4px 4px 0 0 rgba(154,184,210,0.76), -7vw 10vw 80vw 0 rgba(154,184,210,0.76);
 }
 
-#offer-container .p-title {
-  text-align:center;
-  font-size:25px;
-  font-family:'Roboto Condensed', sans-serif;
-  text-transform:capitalize;
-  color:rgb(255,255,255);
-  font-weight:400;
-  margin-bottom:40px;
-  margin-top:10px;
-}
-
-.row {
-  display:-ms-flexbox;
-  display:flex;
-  -ms-flex-wrap:wrap;
-  flex-wrap:wrap;
-  margin-right:0;
-  margin-left:0;
+@media (max-width: 770px) {
+  #content-img {
+    background-image:none;
+    height:0;
+    width:0;
+    position:absolute;
+  }
 }
 
