@@ -18,22 +18,9 @@
   height:40px;
 }
 
-#title {
-  /*font-weight:300;*/
-  /*text-shadow:.5px .5px rgba(0,0,0,0.45);*/
-}
-
 .navbar-light .navbar-nav .nav-link {
   color:#ffffff;
   font-size:18px;
-}
-
-.navbar-light .navbar-nav .nav-link:hover {
-  color:#f1d129;
-}
-
-#navbar-dropdown {
-  color:#f1d129;
 }
 
 #navbar-dropdown:hover {
@@ -41,12 +28,11 @@
 }
 
 #navbar-icons {
-  font-size:25px;
+  font-size:24px;
+  color:rgba(34,35,35,0.6);
 }
 
 #title-head {
-  /*font-weight:100;*/
-  /*text-shadow:.5px .5px rgba(0,0,0,0.45);*/
   margin-top:-40px;
 }
 

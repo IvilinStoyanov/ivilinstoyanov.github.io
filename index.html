@@ -4,51 +4,59 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>I.S_WebTemplates</title>
+    <title>Web Templates I.S</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
     <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700">
+    <link rel="stylesheet" href="assets/css/Contact-Form-Clean.css">
     <link rel="stylesheet" href="assets/css/Footer_Clean.css">
-    <link rel="stylesheet" href="assets/css/Gallery_Section_01.css">
-    <link rel="stylesheet" href="assets/css/Head_01.css">
+    <link rel="stylesheet" href="assets/css/Head.css">
+    <link rel="stylesheet" href="assets/css/HeroSection.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
+    <link rel="stylesheet" href="assets/css/NavbarCleanWhite.css">
     <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/TemplateCategory.css">
 </head>
 
 <body>
-    <section class="d-flex flex-column justify-content-between" id="head">
-        <div>
-            <nav class="navbar navbar-light navbar-expand-md" id="navbar">
-                <div class="container-fluid"><a class="navbar-brand" href="#"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1" style="background-color:rgba(241,209,45,0.81);"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                    <div
-                        class="collapse navbar-collapse" id="navcol-1">
-                        <ul class="nav navbar-nav mx-auto">
-                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#" id="navbar-dropdown">Templates</a>
-                                <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="#">First Item</a><a class="dropdown-item" role="presentation" href="#">Second Item</a><a class="dropdown-item" role="presentation" href="#">Third Item</a></div>
-                            </li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#">Contacts</a></li>
-                        </ul>
-                        <ul class="nav navbar-nav">
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-facebook-square" id="navbar-icons"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-google-plus-square" id="navbar-icons"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-youtube-play" id="navbar-icons"></i></a></li>
-                            <li class="nav-item" role="presentation"><a class="nav-link" href="#"><i class="fa fa-pinterest" id="navbar-icons"></i></a></li>
-                        </ul>
+    <div>
+        <nav class="navbar navbar-light navbar-expand-md sticky-top navigation-clean-button">
+            <div class="container-fluid"><a class="navbar-brand" href="../index.html"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse"
+                    id="navcol-1">
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fa fa-wpexplorer"></i>&nbsp;Explore</a>
+                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="categories/food.html">Food</a>
+                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="categories/car.html">Cars</a>
+                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="education.html">Education</a>
+                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="art.html">Art</a>
+                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="fashion.html">Fashion</a>
+                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="sport.html">Sport</a></div>
+                        </li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html"><i class="icon ion-ios-contact-outline"></i>&nbsp;Contact&nbsp;</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav ml-auto"></ul>
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i class="fa fa-facebook-square" id="navbar-icons"></i></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i class="fa fa-google-plus-square" id="navbar-icons"></i></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i class="fa fa-youtube-play" id="navbar-icons"></i></a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html"><i class="fa fa-pinterest" id="navbar-icons"></i></a></li>
+                    </ul>
+                    <ul class="nav navbar-nav"></ul>
                 </div>
-        </div>
+            </div>
         </nav>
-        </div>
+    </div>
+    <section class="d-flex flex-column justify-content-between" id="head">
         <div class="d-flex flex-column justify-content-center" data-aos="fade" data-aos-duration="800" id="head-content">
             <h1 class="text-center" data-aos="fade" data-aos-delay="400" id="title-head">CHOOSE YOUR</h1>
             <h1 class="text-center" data-aos="fade" data-aos-delay="500" id="title">TEMPLATE</h1>
             <h1 class="text-center" data-aos="fade" data-aos-delay="600" id="subtitle">NOW</h1>
-            <h1 class="text-center" id="subtitle" style="color:rgb(241,209,41);"></h1><a class="btn btn-outline-warning justify-content-center align-self-center" role="button" href="#gallery" data-bs-hover-animate="swing" id="button-head">Start</a></div>
+            <h1 class="text-center" id="subtitle" style="color:rgb(241,209,41);"></h1><a class="btn btn-outline-warning justify-content-center align-self-center" role="button" href="#choose" data-bs-hover-animate="swing" id="button-head">Start</a></div>
     </section>
     <section id="gallery" style="font-family:'Roboto Condensed', sans-serif;">
         <div class="row">
@@ -64,7 +72,7 @@
                 <div id="content-top-row"><img id="content-img"></div>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="choose">
             <div class="col">
                 <h1 id="offer-heading"><br>Choose your template and just download it for free.<br></h1>
                 <p id="content-paragraph">Unique style, fully-responsvie design and clean code to modify it in no time.<br></p>
@@ -74,7 +82,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="gallery-block">
                     <div class="gallery-block-hidden">
-                        <div class="middle-button"><a class="btn btn-primary" role="button" href="templates/food.html" id="gallery-button-middle">View all templates</a></div>
+                        <div class="middle-button"><a class="btn btn-primary" role="button" href="categories/food.html" id="gallery-button-middle">View all templates</a></div>
                     </div>
                 </div>
                 <p class="gallery-paragraph">Food</p>
@@ -82,7 +90,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="gallery-block" style="background-image:url(&quot;assets/img/categories/theme-category-car.jpg&quot;);">
                     <div class="gallery-block-hidden">
-                        <div class="middle-button"><a class="btn btn-primary" role="button" href="#" id="gallery-button-middle">View all templates</a></div>
+                        <div class="middle-button"><a class="btn btn-primary" role="button" href="categories/car.html" id="gallery-button-middle">View all templates</a></div>
                     </div>
                 </div>
                 <p class="gallery-paragraph">Cars</p>
@@ -90,7 +98,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="gallery-block" style="background-image:url(&quot;assets/img/categories/theme-category-education.jpg&quot;);">
                     <div class="gallery-block-hidden">
-                        <div class="middle-button"><a class="btn btn-primary" role="button" href="#" id="gallery-button-middle">View all templates</a></div>
+                        <div class="middle-button"><a class="btn btn-primary" role="button" href="templates/education.html" id="gallery-button-middle">View all templates</a></div>
                     </div>
                 </div>
                 <p class="gallery-paragraph">Education</p>
@@ -98,7 +106,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="gallery-block" style="background-image:url(&quot;assets/img/categories/theme-category-art.jpg&quot;);">
                     <div class="gallery-block-hidden">
-                        <div class="middle-button"><a class="btn btn-primary" role="button" href="#" id="gallery-button-middle">View all templates</a></div>
+                        <div class="middle-button"><a class="btn btn-primary" role="button" href="templates/art.html" id="gallery-button-middle">View all templates</a></div>
                     </div>
                 </div>
                 <p class="gallery-paragraph">Art</p>
@@ -106,7 +114,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="gallery-block" style="background-image:url(&quot;assets/img/categories/theme-category-shop.jpg&quot;);">
                     <div class="gallery-block-hidden">
-                        <div class="middle-button"><a class="btn btn-primary" role="button" href="#" id="gallery-button-middle">View all templates</a></div>
+                        <div class="middle-button"><a class="btn btn-primary" role="button" href="templates/fashion.html" id="gallery-button-middle">View all templates</a></div>
                     </div>
                 </div>
                 <p class="gallery-paragraph">Fashion</p>
@@ -114,7 +122,7 @@
             <div class="col-sm-6 col-md-6 col-lg-4">
                 <div class="gallery-block" style="background-image:url(&quot;assets/img/categories/theme-category-health.jpg&quot;);">
                     <div class="gallery-block-hidden">
-                        <div class="middle-button"><a class="btn btn-primary" role="button" href="#" id="gallery-button-middle">View all templates</a></div>
+                        <div class="middle-button"><a class="btn btn-primary" role="button" href="templates/sport.html" id="gallery-button-middle">View all templates</a></div>
                     </div>
                 </div>
                 <p class="gallery-paragraph">Sport</p>
