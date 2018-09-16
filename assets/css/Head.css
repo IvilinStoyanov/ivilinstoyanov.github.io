@@ -1,7 +1,7 @@
 #head {
   width:100%;
   background-color:#e8f0f4;
-  color:#ffffff;
+  color:#f5f5f5;
   background-image:url("../../assets/img/img-background.png");
   background-position:center;
   background-size:cover;
@@ -36,6 +36,11 @@
   margin-top:-40px;
 }
 
+.title {
+  font-weight:100;
+  font-size:46px;
+}
+
 #head-content {
   height:735px;
   margin-right:0px;
@@ -46,18 +51,24 @@
 }
 
 #button-head {
+}
+
+#button-head {
   width:100px;
   font-size:22px;
   text-shadow:.5px .5px rgba(0,0,0,0.45);
   background-color:rgba(50,40,40,0.34);
+  color:rgb(245,192,6);
+  border-color:#f5c006;
+}
+
+#button-head:hover {
+  background-color:rgba(50,40,40,0.4);
 }
 
 #subtitle {
   text-shadow:.5px .5px rgba(0,0,0,0.45);
-  color:rgb(241,209,41);
-}
-
-#button-head:hover {
-  color:white;
+  color:#f5c006;
+  font-weight:400;
 }
 
