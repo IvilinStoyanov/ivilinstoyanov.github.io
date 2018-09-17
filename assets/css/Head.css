@@ -58,8 +58,8 @@
   font-size:22px;
   text-shadow:.5px .5px rgba(0,0,0,0.45);
   background-color:rgba(50,40,40,0.34);
-  color:rgb(245,192,6);
-  border-color:#f5c006;
+  color:#f2a035;
+  border-color:#f2a035;
 }
 
 #button-head:hover {
@@ -68,7 +68,7 @@
 
 #subtitle {
   text-shadow:.5px .5px rgba(0,0,0,0.45);
-  color:#f5c006;
+  color:#f2a035;
   font-weight:400;
 }
 

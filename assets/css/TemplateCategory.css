@@ -186,6 +186,9 @@
   width:150px;
 }
 
+.dropdown-toggle.nav-link.dropdown-toggle {
+}
+
 p {
   color:rgba(0,0,0,0.7);
 }

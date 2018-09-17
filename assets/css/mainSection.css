@@ -1,0 +1,140 @@
+.row {
+  display:-ms-flexbox;
+  display:flex;
+  -ms-flex-wrap:wrap;
+  flex-wrap:wrap;
+  margin-right:0;
+  margin-left:0;
+}
+
+.gallery-block {
+  height:250px;
+  background-image:url("../../assets/img/categories/theme-category-restorants.jpg");
+  background-position:center;
+  background-size:cover;
+  background-repeat:no-repeat;
+  border-radius:8px;
+  position:relative;
+  transition:.5s ease;
+}
+
+#gallery .row {
+  max-width:1200px;
+  margin:auto;
+}
+
+#gallery {
+  text-align:center;
+  background-color:rgba(247,247,247,0.32);
+}
+
+.gallery-paragraph {
+  font-size:18px;
+  padding-top:5px;
+  font-weight:400;
+  margin-bottom:8px;
+  color:rgba(69,68,68,0.78);
+}
+
+#offer-heading {
+  font-size:24px;
+  text-align:left;
+  font-weight:500;
+  max-width:450px;
+  color:rgba(0,0,0,0.71);
+}
+
+.gallery-block:hover {
+  opacity:0.6;
+}
+
+.gallery-block-hidden {
+  height:250px;
+  opacity:0;
+  position:relative;
+  border-radius:8px;
+  transition:.5s ease;
+}
+
+#gallery .gallery-block-hidden:hover {
+  background-color:rgba(7,7,7,0.3);
+  height:250px;
+  opacity:1;
+}
+
+#gallery-button-middle {
+  background-color:rgb(255,255,255);
+  color:rgba(0,0,0,0.9);
+  font-size:18px;
+  font-weight:400;
+}
+
+#gallery .middle-button {
+  position:absolute;
+  top:50%;
+  left:50%;
+  transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+}
+
+#content-paragraph {
+  font-size:18px;
+  text-align:left;
+  font-weight:300;
+  max-width:600px;
+  color:rgba(0,0,0,0.71);
+  padding-top:10px;
+}
+
+#content-items {
+  font-size:16px;
+  text-align:left;
+  font-weight:100;
+  text-transform:uppercase;
+  color:rgba(0,0,0,0.71);
+}
+
+#content-icon {
+  padding:12px;
+  border:1px solid rgba(20,42,238,0.5);
+  border-radius:50%;
+  color:#878ec8;
+  font-size:28px;
+  margin-right:10px;
+}
+
+#vertical-line {
+  width:1px;
+  height:200px;
+  background-color:rgba(10,16,132,0.31);
+  margin-left:28px;
+}
+
+#content-img {
+  background-image:url("../../assets/img/website-templates.png");
+  background-size:cover;
+  background-repeat:no-repeat;
+  height:1300px;
+  width:120%;
+  background-position:center;
+  position:absolute;
+  z-index:1;
+  left:20%;
+  top:-30%;
+  transform:scale(0.9) rotateX(52deg) rotateY(0) rotateZ(315deg);
+  box-shadow:-1px 1px 0 0 rgba(154,184,210,0.76), -2px 2px 0 0 rgba(154,184,210,0.76), -3px 3px 0 0 rgba(154,184,210,0.76), -4px 4px 0 0 rgba(154,184,210,0.76), -7vw 10vw 80vw 0 rgba(154,184,210,0.76);
+}
+
+@media (max-width: 770px) {
+  #content-img {
+    background-image:none;
+    height:0;
+    width:0;
+    position:absolute;
+  }
+}
+
+p {
+  color:rgba(0,0,0,0.7);
+}
+
