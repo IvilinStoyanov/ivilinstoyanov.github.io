@@ -1,8 +1,8 @@
 #head {
   width:100%;
   background-color:#e8f0f4;
-  color:#f5f5f5;
-  background-image:url("../../assets/img/img-background.png");
+  color:#cccaca;
+  background-image:url("../../assets/img/background.jpg");
   background-position:center;
   background-size:cover;
   background-repeat:no-repeat;
@@ -34,11 +34,9 @@
 
 #title-head {
   margin-top:-40px;
-}
-
-.title {
-  font-weight:100;
-  font-size:46px;
+  font-size:80px;
+  font-family:Arvo, serif;
+  font-style:normal;
 }
 
 #head-content {
@@ -51,13 +49,12 @@
 }
 
 #button-head {
-}
-
-#button-head {
-  width:100px;
+  width:140px;
   font-size:22px;
+  margin-top:10px;
   text-shadow:.5px .5px rgba(0,0,0,0.45);
   background-color:rgba(50,40,40,0.34);
+  border-radius:20px;
   color:#f2a035;
   border-color:#f2a035;
 }
@@ -67,8 +64,7 @@
 }
 
 #subtitle {
-  text-shadow:.5px .5px rgba(0,0,0,0.45);
-  color:#f2a035;
-  font-weight:400;
+  font-weight:100;
+  font-size:20px;
 }
 
