@@ -19,6 +19,7 @@
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
     <link rel="stylesheet" href="assets/css/mainSection.css">
     <link rel="stylesheet" href="assets/css/navbarClean.css">
+    <link rel="stylesheet" href="assets/css/Scroll-to-top.css">
     <link rel="stylesheet" href="assets/css/styles.css">
     <link rel="stylesheet" href="assets/css/templateSection.css">
 </head>
@@ -26,14 +27,14 @@
 <body>
     <section class="d-flex flex-column justify-content-between" id="head">
         <nav class="navbar navbar-light navbar-expand-lg navigation-clean-button">
-            <div class="container-fluid"><a class="navbar-brand" href="../index.html"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="container-fluid"><a class="navbar-brand" href="index.html"></a><button class="navbar-toggler" data-toggle="collapse" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
                 <div class="collapse navbar-collapse"
                     id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="../index.html" id="nav-active"><i class="fa fa-home"></i>&nbsp;Home</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html" id="nav-active"><i class="fa fa-home"></i>&nbsp;Home</a></li>
                         <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fa fa-wpexplorer"></i>&nbsp;Portfolio</a>
                             <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="projects/templates.html">Web Templates</a>
-                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation">JS Browser Game</a></div>
+                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="projects/js-pig-game/index.html" target="_blank">JavaScript Application</a></div>
                         </li>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html"><i class="icon ion-ios-contact-outline"></i>&nbsp;Contact&nbsp;</a></li>
                     </ul>
@@ -47,8 +48,8 @@
         </nav>
         <header class="d-flex flex-column justify-content-center" id="head-content">
             <h1 class="text-center title" data-aos="fade" data-aos-duration="400" data-aos-delay="400" id="title-head">Ivilin Stoyanov</h1>
-            <h1 class="text-center" data-aos="fade" data-aos-duration="400" data-aos-delay="600" id="subtitle">Web Developer &lt;&gt; Web Designer</h1><a class="btn btn-outline-primary justify-content-center align-self-center" role="button" href="#gallery" data-bs-hover-animate="swing" id="button-head">Explore</a></header>
-    </section>
+            <h1 class="text-center" data-aos="fade" data-aos-duration="400" data-aos-delay="600" id="subtitle">Web Developer &lt;&gt; Web Designer</h1><a class="btn btn-outline-primary justify-content-center align-self-center" role="button" href="#vertical-line" data-bs-hover-animate="swing" id="button-head">Explore</a></header>
+    </section><a href="#" class="cd-top"> </a>
     <section id="gallery" style="font-family:'Roboto Condensed', sans-serif;">
         <div class="row" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" data-aos-once="true">
             <div class="col-sm-8 col-md-7">
@@ -64,7 +65,7 @@
             </div>
         </div>
         <div class="row" id="choose">
-            <div class="col">
+            <div class="col" id="test">
                 <h1 id="offer-heading"><br>Choose your template and just download it for free.<br></h1>
                 <p id="content-paragraph">Unique style, fully-responsvie design and clean code to modify it in no time.<br></p>
             </div>
@@ -151,6 +152,8 @@
     <script src="assets/js/bs-animation.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.js"></script>
+    <script src="assets/js/Scroll-to-top.js"></script>
+    <script src="assets/js/smooth-scrolling.js"></script>
 </body>
 
 </html>
