@@ -33,7 +33,7 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         document.querySelector('.player-0-panel').classList.add('wrong');
         setTimeout(function() {
             document.querySelector('.player-0-panel').classList.remove('wrong');
-        } , 500)
+        } , 200)
         
         nextPlayer();
         
