@@ -30,11 +30,10 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         
     } else {
         // Next Player
-        document.querySelector('.player-0-panel').classList.add('wrong');
+        document.querySelector('.wrapper').classList.add('wrong');
         setTimeout(function() {
-            document.querySelector('.player-0-panel').classList.remove('wrong');
-        } , 200)
-        
+            document.querySelector('.wrapper').classList.remove('wrong');
+        } , 100)        
         nextPlayer();
         
         }

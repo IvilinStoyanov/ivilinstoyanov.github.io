@@ -37,6 +37,10 @@ body {
     overflow: hidden; 
 }
 
+.wrong {
+    background-color: :red;
+}
+
 .player-0-panel,
 .player-1-panel {
     width: 50%;
