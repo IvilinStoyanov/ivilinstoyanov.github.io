@@ -9,7 +9,7 @@ GAME RULES:
 
 */
 
-var scores, roundScore, activePlayer, gamePlaying;
+var scores, roundScore, activePlayer, gamePlaying, scoreToWin;
 
 init();
 
@@ -27,11 +27,27 @@ document.querySelector('.btn-roll').addEventListener('click', function() {
         // Add score 
         roundScore += dice;
         document.querySelector('#current-' + activePlayer).textContent = roundScore;
+        
     } else {
         // Next Player
+        document.querySelector('.player-0-panel').classList.add('wrong');
+        setTimeout(function() {
+            document.querySelector('.player-0-panel').classList.remove('wrong');
+        } , 500)
+        
         nextPlayer();
+        
         }
     }
+});
+
+document.querySelector('.btn-score').addEventListener('click', function() {
+    // Get global score
+    scoreToWin = document.querySelector('.final-score').value;
+        // Set global score to scoreToWin variable
+    document.getElementById("global-score").textContent = 'GLOBAL SCORE: ' + scoreToWin;
+        //Enter global score to win
+    document.querySelector('.final-score').disabled = true;
 });
 
 document.querySelector('.btn-hold').addEventListener('click', function() {
@@ -41,8 +57,12 @@ document.querySelector('.btn-hold').addEventListener('click', function() {
     scores[activePlayer] += roundScore;
     // Update the UI
     document.querySelector('#score-' + activePlayer).textContent = scores[activePlayer];
+
+        if(scoreToWin) {
+           scoreToWin = scoreToWin; 
+        }
     // Check if player won the game
-    if(scores[activePlayer] >= 100) {
+    if(scores[activePlayer] >= scoreToWin) {
         document.querySelector('#name-' + activePlayer).textContent = 'Winner!';
         document.querySelector('.dice').style.display = 'none';
         document.querySelector('.player-' + activePlayer + '-panel').classList.add('winner');
@@ -79,10 +99,15 @@ function init() {
 scores = [0, 0];
 roundScore = 0;
 activePlayer = 0;
+scoreToWin = 100;
     
 gamePlaying = true;
     
 document.querySelector('.dice').style.display = 'none';
+    
+document.querySelector('.final-score').disabled = false;
+document.querySelector('.final-score').value = '';
+document.getElementById("global-score").textContent = 'GLOBAL SCORE: 100';
 
 // Seting values to zero
 document.getElementById('score-0').textContent = '0';

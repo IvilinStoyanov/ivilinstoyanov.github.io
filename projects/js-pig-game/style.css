@@ -71,6 +71,7 @@ body {
 }
 
 .active { background-color: #eafaea; }
+.wrong { background-color:  red;}
 .active .player-name { font-weight: 300; }
 
 .active .player-name::after {
@@ -112,7 +113,7 @@ button {
     background: none;
     border: none;
     font-family: Lato;
-    font-size: 20px;
+    font-size: 18px;
     text-transform: uppercase;
     cursor: pointer;
     font-weight: 300;
@@ -130,7 +131,7 @@ i {
     color: #EB4D4D;
     display: inline-block;
     margin-right: 15px;
-    font-size: 32px;
+    font-size: 28px;
     line-height: 1;
     vertical-align: text-top;
     margin-top: -4px;
@@ -140,6 +141,7 @@ i {
 .btn-new { top: 45px;}
 .btn-roll { top: 403px;}
 .btn-hold { top: 467px;}
+.btn-score {top: 526px; left: 630px}
 
 .dice {
     position: absolute;
@@ -148,6 +150,34 @@ i {
     transform: translateX(-50%);
     height: 100px;
     box-shadow: 0px 10px 60px rgba(0, 0, 0, 0.10);
+}
+
+.final-score {
+    position:  absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 520px;
+    text-transform: uppercase;
+    color: #555;
+    font-size: 11px;
+    font-family: 'Lato';
+    padding: 10px;
+    text-align: center;
+    width: 150px;
+}
+
+.final-score:focus {outline: none;}
+
+#global-score {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 15px;
+    top: 90px;
+    color: #555;
+    font-family: 'Lato';
+    padding: 5px;
+    border-bottom: 1px solid rgb(203, 203, 179, 0.4);
 }
 
 .winner { background-color: #f7f7f7; }
