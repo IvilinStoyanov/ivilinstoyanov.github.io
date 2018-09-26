@@ -32,10 +32,25 @@
                     id="navcol-1">
                     <ul class="nav navbar-nav ml-auto">
                         <li class="nav-item" role="presentation"><a class="nav-link active" href="index.html" id="nav-active"><i class="fa fa-home"></i>&nbsp;Home</a></li>
-                        <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fa fa-wpexplorer"></i>&nbsp;Portfolio</a>
-                            <div class="dropdown-menu" role="menu"><a class="dropdown-item" role="presentation" href="projects/templates.html">Web Templates</a>
-                                <div class="dropdown-divider" role="presentation"></div><a class="dropdown-item" role="presentation" href="projects/js-pig-game/index.html" target="_blank">JavaScript Application</a></div>
-                        </li>
+                        <div class="dropdown">
+                            <li class="dropdown"><a class="dropdown-toggle nav-link dropdown-toggle" data-toggle="dropdown" aria-expanded="false" href="#"><i class="fa fa-wpexplorer"></i>&nbsp;Portfolio</a>
+                            </a>
+                            <ul class="dropdown-menu multi-level" role="menu" aria-labelledby="dropdownMenu">
+                              <li><a class="dropdown-item" role="presentation" href="#">Web Templates</a></li>
+                              <li class="divider"></li>
+                              <li class="dropdown-submenu">
+                                    <div class="dropdown-divider" role="presentation"></div>
+                                <a class="dropdown-item" role="presentation" tabindex="-1" href="#">JavaScript Applications</a>
+                                <ul class="dropdown-menu">
+                                  <li><a class="dropdown-item" role="presentation" tabindex="-1" href="projects/js-pig-game/index.html" target="_blank">Pig Game</a></li>
+                                  <div class="dropdown-divider" role="presentation"></div>
+                                  <li><a class="dropdown-item" role="presentation" href="#">Budget App</a></li>
+                                  <div class="dropdown-divider" role="presentation"></div>
+                                  <li><a class="dropdown-item" role="presentation" href="#">Other</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                        </div>
                         <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html"><i class="icon ion-ios-contact-outline"></i>&nbsp;Contact&nbsp;</a></li>
                     </ul>
                     <ul class="nav navbar-nav ml-auto"></ul>
