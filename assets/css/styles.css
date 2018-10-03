@@ -10,10 +10,6 @@ html {
   position: relative;
 }
 
-.dropdown li {
-
-}
-
 .dropdown a {
   color:#333;
   text-decoration: none;
@@ -61,5 +57,14 @@ html {
   -webkit-border-radius: 6px 0 6px 6px;
   -moz-border-radius: 6px 0 6px 6px;
   border-radius: 6px 0 6px 6px;
+}
+
+#particles-js{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
 }
 

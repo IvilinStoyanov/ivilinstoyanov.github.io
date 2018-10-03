@@ -1,6 +1,5 @@
 #head {
   width:100%;
-  background-color:#edeeee;
   color:#cccaca;
   background-image:url("../../assets/img/background.jpg");
   background-position:center;
@@ -32,6 +31,7 @@
 }
 
 #button-head {
+  z-index: 1;
   width:140px;
   font-size:22px;
   margin-top:15px;
