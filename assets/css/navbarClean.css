@@ -29,10 +29,11 @@
 
 .navigation-clean-button .navbar-toggler {
   border-color:#ddd;
+  background-color: #cccaca;
 }
 
-.navigation-clean-button .navbar-toggler:hover, .navigation-clean-button .navbar-toggler:focus {
-  background:none;
+.navigation-clean-button .navbar-toggler:hover {
+  background-color: #858c92
 }
 
 .navigation-clean-button .navbar-toggler {
