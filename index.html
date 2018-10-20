@@ -20,7 +20,6 @@
     <link rel="stylesheet" href="assets/fonts/material-icons.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Arvo:400,700">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700">
-    <link rel="stylesheet" href="assets/css/contactForm.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="https://unpkg.com/@bootstrapstudio/bootstrap-better-nav/dist/bootstrap-better-nav.min.css">
@@ -56,7 +55,7 @@
                               </li>
                             </ul>
                         </div>
-                        <li class="nav-item" role="presentation"><a class="nav-link" href="contact.html"><i class="icon ion-ios-contact-outline"></i>&nbsp;Contact&nbsp;</a></li>
+                        <li class="nav-item" role="presentation"><a class="nav-link" href="#contact"><i class="icon ion-ios-contact-outline"></i>&nbsp;Contact&nbsp;</a></li>
                     </ul>
                     <ul class="nav navbar-nav ml-auto"></ul>
                     <ul class="nav navbar-nav">
@@ -73,7 +72,9 @@
             <a class="btn btn-outline-primary justify-content-center align-self-center" role="button" href="#vertical-line" data-bs-hover-animate="swing" id="button-head">Explore</a>
             <div id="particles-js"></div>          
         </header>
-    </section><a href="#" class="cd-top"> </a>
+    </section>
+    <!-- Back to top arrow -->
+    <a href="#" class="cd-top"> </a>
     <section id="gallery" style="font-family:'Roboto Condensed', sans-serif;">
         <div class="row" data-aos="fade-right" data-aos-duration="700" data-aos-delay="300" data-aos-once="true">
             <div class="col-sm-8 col-md-7">
@@ -88,6 +89,7 @@
                 <div id="content-top-row"><img id="content-img"></div>
             </div>
         </div>
+        <!-- Recent Work Section -->
         <div class="row" id="choose">
             <div class="col" id="test">
                 <h1 id="offer-heading"><br>Recent Work<br></h1>
@@ -145,6 +147,40 @@
             </div>
         </div>
     </section>
+    <!-- Contact Form -->
+    <section class="td-form" id="contact">
+            <div class="row td-form-wrapper">
+                <div class="col td-glass">
+                    <form class="td-form-wrapper">
+                        <h1 class="text-center">Contact</h1>
+                        <div class="form-group">
+                            <div class="col-md-12"><label for="name">Your Name *</label>
+                                <div class="d-flex"><i class="icon ion-person align-self-center"></i><input class="form-control d-flex" type="text" name="name" required="" minlength="4" autocomplete="off" placeholder=""></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><label for="email">Email Address *</label>
+                                <div class="d-flex"><i class="icon ion-ios-email align-self-center"></i><input class="form-control" type="text" name="phone" required="" pattern="(?:[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+(?:\.[a-z0-9!#$%&amp;'*+/=?^_`{|}~-]+)*|&quot;(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21\x23-\x5b\x5d-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])*&quot;)@(?:(?:[a-z0-9](?:[a-z0-9-]*[a-z0-9])?\.)+[a-z0-9](?:[a-z0-9-]*[a-z0-9])?|\[(?:(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?)\.){3}(?:25[0-5]|2[0-4][0-9]|[01]?[0-9][0-9]?|[a-z0-9-]*[a-z0-9]:(?:[\x01-\x08\x0b\x0c\x0e-\x1f\x21-\x5a\x53-\x7f]|\\[\x01-\x09\x0b\x0c\x0e-\x7f])+)\])"
+                                        autocomplete="off" inputmode="email" placeholder=""></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><label for="subject">Subject: * </label>
+                                <div class="d-flex td-input-container"><i class="icon ion-ios-information align-self-center"></i><input class="form-control" type="text" name="subject" required="" minlength="4" autocomplete="off" placeholder=""></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><label for="message">Message Details *</label>
+                                <div class="d-flex td-input-container"><i class="icon ion-paper-airplane align-self-center"></i><textarea class="form-control" rows="6" cols="50" name="message" required="" minlength="10" placeholder=""></textarea></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-md-12"><button class="btn btn-primary float-right" type="submit" id="btn-contact">Send message</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
     <!-- Footer -->
     <div class="footer-clean">
         <footer data-aos="flip-up" data-aos-duration="700" data-aos-delay="200" data-aos-once="true">
