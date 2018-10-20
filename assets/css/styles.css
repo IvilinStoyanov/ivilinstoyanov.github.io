@@ -1,6 +1,11 @@
 /* Main */
 html {
   overflow-x:hidden;
+  margin: 0;
+}
+
+body {
+  margin: 0;
 }
 
 * {
@@ -581,15 +586,18 @@ p {
 
 .td-form .row {
  margin: 0 auto;
- height: 100vh;
 }
 
 .td-form-wrapper {
   margin:1em 0 1em;
   max-width:500px;
-  height: 100vh;
   margin:0 auto;
   padding-top:40px;
+}
+@media (max-width: 768px) {
+.td-form-wrapper {
+  padding-top: 5px;
+  }
 }
 
 .td-form .form-control:focus {
@@ -598,10 +606,6 @@ p {
 
 .td-form .btn:not(:disabled):not(.disabled) {
   margin:1.8em 0 .8em;
-}
-
-.td-glass {
-  height: 100vh;
 }
 
 .td-form .form-control {
