@@ -584,6 +584,12 @@ p {
   background-repeat:no-repeat;
 }
 
+@media (max-width: 500px) {
+  .td-form {
+    height: 700px;
+  }
+}
+
 .td-form .row {
  margin: 0 auto;
 }
@@ -594,11 +600,12 @@ p {
   margin:0 auto;
   padding-top:30px;
 }
-@media (max-width: 768px) {
+
+/* @media (max-width: 768px) {
 .td-form-wrapper {
-  padding-top: 5px;
+  padding-top: 20px;
   }
-}
+} */
 
 .td-form .form-control:focus {
   box-shadow:inset 0 1px 1px rgba(255,255,255,0.69),0 0 10px rgba(206,222,209,0.69);
