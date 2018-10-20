@@ -68,3 +68,14 @@ html {
   background-repeat: no-repeat;
 }
 
+/* Slide Menu */
+div#side-menu {
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#side-menu {
+  background-color: #9a9a9a;
+}
+
