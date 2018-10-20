@@ -616,6 +616,7 @@ p {
 
 .td-form .icon.align-self-center {
   left:1.5em;
+  font-size: 17px;
   position:relative;
   color:rgb(255,255,255);
 }
