@@ -201,8 +201,6 @@ div#side-menu {
   color: #f8f8f8;
 }
 
-/* Footer */
-
 /* Head Section */
 #head {
   width:100%;
@@ -583,12 +581,13 @@ p {
 
 .td-form .row {
  margin: 0 auto;
+ height: 100vh;
 }
 
 .td-form-wrapper {
-  border-radius:10px;
   margin:1em 0 1em;
   max-width:500px;
+  height: 100vh;
   margin:0 auto;
   padding-top:40px;
 }
@@ -599,6 +598,10 @@ p {
 
 .td-form .btn:not(:disabled):not(.disabled) {
   margin:1.8em 0 .8em;
+}
+
+.td-glass {
+  height: 100vh;
 }
 
 .td-form .form-control {
@@ -642,8 +645,6 @@ p {
 .td-form .text-center {
   padding-bottom:20px;
 }
-
-
 
 /* Footer */
 .footer-clean {
