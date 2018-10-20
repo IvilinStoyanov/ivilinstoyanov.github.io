@@ -584,11 +584,11 @@ p {
   background-repeat:no-repeat;
 }
 
-/* @media (max-width: 500px) {
+@media (max-width: 500px) {
   .td-form {
     min-height: 700px;
   }
-} */
+}
 
 .td-form .row {
  margin: 0 auto;
