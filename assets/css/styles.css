@@ -266,6 +266,11 @@ div#side-menu {
   margin: 0 auto;
 }
 
+/* Testing */
+#gallery .row {
+  max-width:1130px;
+  margin:auto;
+}
 
 #content-paragraph {
   font-size:18px;
@@ -276,6 +281,25 @@ div#side-menu {
   padding-top:10px;
   padding-bottom: 50px;
   margin: 0 auto;
+}
+
+#offer-heading-1 {
+  font-size:24px;
+  text-align:left;
+  font-weight:500;
+  max-width:450px;
+  color:#f05f40;
+}
+
+
+#content-paragraph-1 {
+  font-size:18px;
+  text-align:left;
+  font-weight:300;
+  max-width:600px;
+  color:rgba(0,0,0,0.71);
+  padding-top:10px;
+  padding-bottom: 50px;
 }
 
 #content-items {
@@ -517,7 +541,8 @@ p {
 /* Find Me */
 
 #services {
-  padding-top: 140px;
+  padding-top: 100px;
+  padding-bottom: 150px;
   min-height: 700px;
 }
 
