@@ -255,84 +255,27 @@ div#side-menu {
   background-color:rgba(204,202,202,0.3);
 }
 
-/* Main Section */
-.gallery-block {
-  height:260px;
-  background-position:center;
-  background-size:cover;
-  background-repeat:no-repeat;
-  border-radius:8px;
-  position:relative;
-  transition:.5s ease;
-}
-
-#gallery .row {
-  max-width:1200px;
-  margin:auto;
-}
-
-#gallery {
-  text-align:center;
-  background-color:rgba(247,247,247,0.32);
-}
-
-.gallery-paragraph {
-  font-size:18px;
-  padding-top:5px;
-  font-weight:400;
-  margin-bottom:8px;
-  color:rgba(69,68,68,0.78);
-}
+/* Recent Work Section */
 
 #offer-heading {
   font-size:24px;
-  text-align:left;
+  text-align:center;
   font-weight:500;
   max-width:450px;
-  color:rgba(0,0,0,0.71);
+  color:#f05f40;
+  margin: 0 auto;
 }
 
-.gallery-block:hover {
-  opacity:0.6;
-}
-
-.gallery-block-hidden {
-  height:250px;
-  opacity:0;
-  position:relative;
-  border-radius:8px;
-  transition:.5s ease;
-}
-
-#gallery .gallery-block-hidden:hover {
-  background-color:rgba(7,7,7,0.3);
-  height:250px;
-  opacity:1;
-}
-
-#gallery-button-middle {
-  background-color:rgb(255,255,255);
-  color:rgba(0,0,0,0.9);
-  font-size:18px;
-  font-weight:400;
-}
-
-#gallery .middle-button {
-  position:absolute;
-  top:50%;
-  left:50%;
-  transform:translate(-50%, -50%);
-  -ms-transform:translate(-50%, -50%);
-}
 
 #content-paragraph {
   font-size:18px;
-  text-align:left;
+  text-align:center;
   font-weight:300;
   max-width:600px;
   color:rgba(0,0,0,0.71);
   padding-top:10px;
-  padding-bottom:15px;
+  padding-bottom: 50px;
+  margin: 0 auto;
 }
 
 #content-items {
@@ -569,6 +512,57 @@ p {
 
 #template_category {
   background-color:rgba(251,251,251,0.63);
+}
+
+/* Find Me */
+
+#services {
+  padding-top: 140px;
+  min-height: 700px;
+}
+
+.text-primary {
+  color:#f05f40!important;
+}
+
+#services h3 {
+  font-family:inherit;
+  font-weight:500;
+  line-height:1.2;
+  color:rgb(48,45,45);
+}
+
+#services p {
+  margin-top:0;
+  margin-bottom:1rem;
+}
+
+.text-muted {
+  color:#868e96!important;
+}
+
+#services hr {
+  max-width:50px;
+  border-width:3px;
+  border-color:#f05f40;
+}
+
+.section-heading .h2, h2 {
+  padding-top:40px;
+  text-transform:uppercase;
+}
+
+.link-find {
+  font-family:inherit;
+  font-weight:500;
+  line-height:1.2;
+  color:rgb(48,45,45);
+}
+
+.link-find:hover {
+  line-height:1.2;
+  color:#f05f40;
+  text-decoration:none;
 }
 
 /* Full Page Gallery */
