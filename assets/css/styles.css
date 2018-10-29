@@ -488,7 +488,8 @@ p {
 .skill {
   padding-top:80px;
   padding-bottom:50px;
-  background:rgb(242, 242, 242, 0.2);  
+  background:rgb(242, 242, 242, 0.2);
+  background:linear-gradient(to top right, #f6f6f7, #fefefe);
 }
 
 hr {
