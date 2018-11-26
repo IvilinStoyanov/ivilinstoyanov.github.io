@@ -622,7 +622,7 @@ hr {
 .no-gutters {
   margin-right:0;
   margin-left:0;
-  border-bottom: 9px solid #e6e5e1;
+ /* border-bottom: 9px solid #e6e5e1; */
 }
 
 .portfolio-box:focus {
