@@ -3,7 +3,7 @@
 ```
 Projects
 ```
-> [cook4you](https://cook4you.netlify.com/) :link:
+> [cook4you](https://cook4you.netlify.com/)
 
 > [budgety](https://ivilinstoyanov.github.io/budgety/)
 
