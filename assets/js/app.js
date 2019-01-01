@@ -124,3 +124,7 @@ particlesJS('particles-js',
   "retina_detect": true
 }
 );
+
+$( ".arrow-icon" ).click(function() {
+  $(this).toggleClass("open");
+});
