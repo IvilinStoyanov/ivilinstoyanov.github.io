@@ -40,7 +40,7 @@ class StickyNavigation {
     }
     
     checkTabContainerPosition() {
-        let offset = $('.hero-tabs').offset().top + $('.hero-tabs').height() - this.tabContainerHeight;
+        let offset = $('.hero').offset().top + $('.hero').height() - this.tabContainerHeight;
         if($(window).scrollTop() > offset) {
             $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
         } 
