@@ -1,85 +1,79 @@
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
+$(document).ready(function(){
 
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-            behavior: 'smooth'
-        });
-    });
-});
-
-class StickyNavigation {
+    /**
+     * This object controls the nav bar. Implement the add and remove
+     * action over the elements of the nav bar that we want to change.
+     *
+     * @type {{flagAdd: boolean, elements: string[], add: Function, remove: Function}}
+     */
+    var myNavBar = {
     
-    constructor() {
-        this.currentId = null;
-        this.currentTab = null;
-        this.tabContainerHeight = 70;
-        let self = this;
-        $('.et-hero-tab').click(function() { 
-            self.onTabClick(event, $(this)); 
-        });
-        $(window).scroll(() => { this.onScroll(); });
-        $(window).resize(() => { this.onResize(); });
-    }
+        flagAdd: true,
     
-    onTabClick(event, element) {
-        event.preventDefault();
-        let scrollTop = $(element.attr('href')).offset().top - this.tabContainerHeight + 1;
-        $('html, body').animate({ scrollTop: scrollTop }, 600);
-    }
+        elements: [],
     
-    onScroll() {
-        this.checkTabContainerPosition();
-    this.findCurrentTabSelector();
-    }
+        init: function (elements) {
+            this.elements = elements;
+        },
     
-    onResize() {
-        if(this.currentId) {
-            this.setSliderCss();
-        }
-    }
-    
-    checkTabContainerPosition() {
-        let offset = $('.hero').offset().top + $('.hero').height() - this.tabContainerHeight;
-        if($(window).scrollTop() > offset) {
-            $('.et-hero-tabs-container').addClass('et-hero-tabs-container--top');
-        } 
-        else {
-            $('.et-hero-tabs-container').removeClass('et-hero-tabs-container--top');
-        }
-    }
-    
-    findCurrentTabSelector(element) {
-        let newCurrentId;
-        let newCurrentTab;
-        let self = this;
-        $('.et-hero-tab').each(function() {
-            let id = $(this).attr('href');
-            let offsetTop = $(id).offset().top - self.tabContainerHeight;
-            let offsetBottom = $(id).offset().top + $(id).height() - self.tabContainerHeight;
-            if($(window).scrollTop() > offsetTop && $(window).scrollTop() < offsetBottom) {
-                newCurrentId = id;
-                newCurrentTab = $(this);
+        add : function() {
+            if(this.flagAdd) {
+                for(var i=0; i < this.elements.length; i++) {
+                    document.getElementById(this.elements[i]).className += " fixed-theme";
+                }
+                this.flagAdd = false;
             }
-        });
-        if(this.currentId != newCurrentId || this.currentId === null) {
-            this.currentId = newCurrentId;
-            this.currentTab = newCurrentTab;
-            this.setSliderCss();
+        },
+    
+        remove: function() {
+            for(var i=0; i < this.elements.length; i++) {
+                document.getElementById(this.elements[i]).className =
+                        document.getElementById(this.elements[i]).className.replace( /(?:^|\s)fixed-theme(?!\S)/g , '' );
+            }
+            this.flagAdd = true;
         }
+    
+    };
+    
+    /**
+     * Init the object. Pass the object the array of elements
+     * that we want to change when the scroll goes down
+     */
+    myNavBar.init(  [
+        "header",
+        "header-container",
+        "brand",
+        "header-items-container"
+    ]);
+    
+    /**
+     * Function that manage the direction
+     * of the scroll
+     */
+    function offSetManager(){
+    
+        var yOffset = 0;
+        var currYOffSet = window.pageYOffset;
+    
+        if(yOffset < currYOffSet) {
+            myNavBar.add();
+        }
+        else if(currYOffSet == yOffset){
+            myNavBar.remove();
+        }
+    
     }
     
-    setSliderCss() {
-        let width = 0;
-        let left = 0;
-        if(this.currentTab) {
-            width = this.currentTab.css('width');
-            left = this.currentTab.offset().left;
-        }
-        $('.et-hero-tab-slider').css('width', width);
-        $('.et-hero-tab-slider').css('left', left);
+    /**
+     * bind to the document scroll detection
+     */
+    window.onscroll = function(e) {
+        offSetManager();
     }
     
-}
-
-new StickyNavigation();
+    /**
+     * We have to do a first detectation of offset because the page
+     * could be load with scroll down set.
+     */
+    offSetManager();
+    });
