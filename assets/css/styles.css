@@ -38,14 +38,18 @@ body {
   display: flex;
   -ms-flex-direction: row;
   flex-direction: row;
-  padding-left: 0;
   margin-bottom: 0;
+  padding-left: 0 !important;
   list-style: none;
 }
 
-.navbar-header {
-  position: absolute !important;
-  left: 0 !important;
+@media (max-width: 768px) {
+  #header-items-container > .header-item > a {
+    font-size:15px !important;
+  }
+  .navbar-brand {
+    font-size: 20px;
+  }
 }
 
 .navbar>.container, .navbar>.container-fluid {
@@ -106,7 +110,7 @@ body {
   background-size:cover;
   background-repeat:no-repeat;
   font-family:'Roboto Condensed', sans-serif;
-  height: 90vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
