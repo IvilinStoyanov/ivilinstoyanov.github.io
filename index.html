@@ -387,20 +387,39 @@
                 <h1 id="offer-heading"><br>Subscribe<br></h1>
                 <form
                     action="https://api.elasticemail.com/contact/add?version=2"
-                    data-id="uBsdqGEIna" method="post"
-                    id="ewf_subscriptionForm_uBsdqGEIna" class="Inline Minimal
-                    MinimalOrange Labels">
+                    data-id="iRLcTNUqPE" method="post"
+                    id="ewf_subscriptionForm_iRLcTNUqPE" class="Inline Minimal
+                    MinimalOrange Placeholders">
+                    <div class="headers" style="display: none;">
+                        <h4 id="ewf_formheader">
+                        </h4>
+                        <p id="ewf_formdesc">
+                        </p>
+                    </div>
                     <fieldset style="border:none;" class="webform-custominputs">
                         <div class="inputs">
                             <div>
-                                <input maxlength="60" class="form-control"
-                                    name="email" size="20" type="email"
-                                    required="" placeholder="Email">
+                                <label for="email">Email
+                                </label>
+                                <input maxlength="40" class="form-control"
+                                    name="email" size="20" required=""
+                                    placeholder="Email" type="email">
                             </div>
                         </div>
                         <div class="checkboxes">
                         </div>
                         <div class="webform-lists" style="display: none;">
+                            <div style="display:block;">
+                                <label class="container-box">
+                                    <input type="checkbox" name="publiclistid"
+                                        id="KAhzuqXT"
+                                        value="0d1201e8-2a02-4171-abc7-abd5c45e8a09"
+                                        checked="checked">
+                                </label>
+                                <label class="publiclistlabel" for="KAhzuqXT">new
+                                    subscriber
+                                </label>
+                            </div>
                         </div>
                         <p id="ewf_datadisclaimer">We use Elastic Email as our
                             marketing automation service. By submitting this
@@ -413,25 +432,37 @@
                     <fieldset class="webform-options" style="border:none;">
                         <div id="trackconsentscript">
                         </div>
+                        <div id="captcha" style="text-align:center">
+                            <div class="text-center"
+                                style="padding-top:10px;padding-bottom:10px;">
+                                <div id="webformcaptcha">
+                                </div>
+                            </div>
+                            <script type="text/javascript">var grecaptchaready = function () { var eewebformsubmit = document.getElementById("eesubmit"); grecaptcha.render('webformcaptcha', { 'sitekey': '6Lca-iUUAAAAAAQ6T6vYEAp3YybZWpeKUXRJ5E8S', 'callback': function (response) { eewebformsubmit.disabled = false; } }); }</script>
+                        </div>
+                        <script id="recaptchaScript"
+                            src="https://www.google.com/recaptcha/api.js?onload=grecaptchaready&amp;render=explicit"
+                            async="" defer="">
+                      </script>
                         <input type="submit" name="submit" value="Subscribe"
-                            id="eesubmit">
+                            id="eesubmit" disabled="">
                         <input type="hidden" name="publicaccountid"
                             value="d0b02713-cdc7-4825-ac94-5ef71d0d545b">
-                        <input type="hidden" name="publicformid"
-                            value="69531305-c447-421a-92b1-82bd27f18b4b">
+                        <input type="hidden" name="publicformid" value="">
                         <input type="hidden" name="returnUrl"
                             value="https://ivilinstoyanov.github.io/">
                         <input type="hidden" name="activationReturnUrl"
-                            value="">
-                        <input type="hidden" name="alreadyactiveurl" value="">
+                            value="https://ivilinstoyanov.github.io/">
+                        <input type="hidden" name="alreadyactiveurl"
+                            value="https://ivilinstoyanov.github.io/">
                         <input type="hidden" name="activationTemplate" value="">
                         <input type="hidden" name="source" value="WebForm">
                         <input type="hidden" id="ewf_captcha" name="captcha"
-                            value="false">
-                        <input type="hidden" name="notifyEmail" value="">
-                        <button type="button" name="dismissForm"
-                            id="ewf_dismissForm" style="display:none; position:
-                            absolute; top: 0; right: 0; float: right">X
+                            value="true">
+                        <input type="hidden" name="notifyEmail"
+                            value="ivilin.stoyanov9@gmail.com">
+                        <button id="ewf_dismissForm" style="display:none;
+                            position: absolute; top: 0; right: 0; float: right">X
                         </button>
                     </fieldset>
                 </form>
