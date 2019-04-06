@@ -557,10 +557,10 @@ img {
 /* Contact Form */
 .td-form {
   color:#ffffff;  
-  height:100vh;  
+  min-height:100vh;  
   margin:1em auto 1em;
   margin:0;
-  background-image:url("../../assets/img/contact-bg.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../../assets/img/contact-bg.jpg");
   font-family:Quicksand;
   background-position:center;
   background-size:cover;
