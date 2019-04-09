@@ -98,21 +98,16 @@ hr {
   text-align: center;
   padding: 0px 15px;
 }
-#navbar #header-items-container .header-item a {
-  color: #cccaca;
-  font-size: 22px;
-}
+#navbar #header-items-container .header-item a,
 #navbar #header-items-container .header-item i {
   color: #cccaca;
+  font-size: 19px;
 }
-#navbar #header-items-container.fixed-theme .header-item a {
+#navbar #header-items-container.fixed-theme .header-item a,
+#navbar #header-items-container.fixed-theme .header-item i {
   color: #f05f40;
-  font-size: 21px;
+  font-size: 18px;
 }
 #navbar #header-items-container.fixed-theme .header-item a:hover {
   color: #cccaca !important;
-}
-#navbar #header-items-container.fixed-theme .header-item i {
-  color: #f05f40;
-  font-size: 21px;
 }
