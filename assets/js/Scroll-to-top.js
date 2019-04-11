@@ -26,3 +26,8 @@ jQuery(document).ready(function($){
 	});
 
 });
+
+$(document).ready(function(){
+    $('.loader-wrapper').fadeOut();
+});
+

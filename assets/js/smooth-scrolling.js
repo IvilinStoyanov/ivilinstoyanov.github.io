@@ -42,7 +42,7 @@ $(document).ready(function(){
     myNavBar.init(  [
         "header",
         "header-container",
-        // "brand",
+        "github-container",
         "header-items-container"
     ]);
     
