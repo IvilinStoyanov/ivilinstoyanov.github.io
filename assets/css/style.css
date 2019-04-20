@@ -160,7 +160,7 @@ hr {
   text-align: center;
   z-index: 1040 !important;
   background: #f3f1f152 52;
-  transition: 0.5s ease-in;
+  transition: 0.2s ease-in;
 }
 #github-container a:hover {
   color: #f05f40 !important;
@@ -190,21 +190,24 @@ hr {
   text-align: center;
   font-family: Arvo, serif;
 }
-#head h1 {
+#head .hero-heading {
+  padding: 0px 20px;
+  z-index: 100;
+}
+#head .hero-heading h1 {
   margin: 0;
   letter-spacing: 0.2rem;
 }
-#head .title-head {
+#head .hero-heading .title-head {
   margin-top: -80px;
   font-size: 4.5rem;
 }
-#head .subtitle {
+#head .hero-heading .subtitle {
   font-size: 1.2rem;
 }
-#head .btn-head {
-  z-index: 100;
+#head .hero-heading .btn-head {
   width: 140px;
-  font-size: 2.2rem;
+  font-size: 1.8rem;
   margin-top: 15px;
   text-shadow: 0.5px 0.5px rgba(0, 0, 0, 0.45);
   background-color: rgba(50, 40, 40, 0.34);
@@ -212,21 +215,25 @@ hr {
   letter-spacing: 0.2rem;
   border-color: #f05f40;
 }
-#head .btn-head:hover {
+#head .hero-heading .btn-head:hover {
   background-color: rgba(204, 202, 202, 0.3);
 }
 @media (min-width: 768px) {
-  #head .title-head {
+  #head .hero-heading .title-head {
     font-size: 7rem;
   }
-  #head .subtitle {
+  #head .hero-heading .subtitle {
     font-size: 1.4rem;
     font-weight: 100;
+  }
+  #head .hero-heading .btn-head {
+    font-size: 2.2rem;
   }
 }
 /* software skill section */
 .skill {
   background: #f3f1f152;
+  border-bottom: 1px solid #cccaca;
 }
 .skill .block {
   transition: all 200ms ease;

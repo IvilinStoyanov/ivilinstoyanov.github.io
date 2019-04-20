@@ -1,6 +1,11 @@
 
 /* Contact Form */
 
+#contact {
+  border-bottom: 1px solid #cccaca;
+  padding-bottom: 60px;
+}
+
 .form-control {
   background-color: #fff;
   border: none;
