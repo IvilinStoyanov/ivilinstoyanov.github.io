@@ -1,4 +1,5 @@
-  
+ @import '../../../assets/style/colors.scss'; 
+
 .background-image {
     width: 100%;
     height: 100vh;
@@ -19,4 +20,21 @@
     transform: translate(-50%, -50%);
     top: 50%;
     left: 20px;
+    display: flex;
+    flex-direction: column;
+
+    i {
+        padding: 30px 5px 30px 25px;
+        font-size: 18px;
+    }
+
+    i:hover {
+        color: $primary;
+    }
+
+    .vl {
+        border-left: 1px solid grey;
+        height: 86px;
+        margin-left: 33px;
+      }
 }
