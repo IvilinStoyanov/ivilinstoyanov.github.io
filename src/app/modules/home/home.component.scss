@@ -23,8 +23,14 @@
     display: flex;
     flex-direction: column;
 
+    a {
+        all: unset;
+        text-decoration: none;
+        padding: 20px 5px 30px 25px;
+        cursor: pointer;
+    }
+
     i {
-        padding: 30px 5px 30px 25px;
         font-size: 18px;
     }
 
