@@ -1,4 +1,4 @@
-@import '../../../../../assets/style/colors.scss';
+@import '../../../../assets/style/colors.scss';
 
 /* navbar */
 .navbar>.container,
@@ -6,6 +6,17 @@
     justify-content: center !important;
     flex-wrap: nowrap !important;
     padding-top: 10px;
+}
+
+.navbar-logo {
+    position: absolute;
+    top: 15px;
+    left: 30px;
+    
+    img {
+        width: 70px;
+        height: auto;
+    }
 }
 
 .nav-link {
