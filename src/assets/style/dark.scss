@@ -1,0 +1,35 @@
+$primary: red !important;
+$secondary: rgba(0, 0, 0, 0.8);
+
+
+body {
+    background: rgb(38,38,38);
+    background: linear-gradient(90deg, #464545 0%, #292e3b 50%);
+}
+
+.background-image {
+    width: 100% !important;
+    height: 100vh !important;
+    position: fixed !important;
+    top: 0 !important;
+    left: 0 !important;
+    background: url("../home_dark_bg.png") no-repeat right bottom fixed !important; 
+    -webkit-background-size: contain !important;
+    -moz-background-size: contain !important;
+    -o-background-size: contain !important;
+    background-size: contain !important;
+    overflow-x: hidden !important;
+    z-index: -1 !important;
+}
+
+a {
+    color: white !important;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 6px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+    background: $secondary;
+} 
+
+ 

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, RouterEvent, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
+import { isNullOrUndefined } from 'util';
 
 @Component({
   selector: 'app-root',
