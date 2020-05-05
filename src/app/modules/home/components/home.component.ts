@@ -14,7 +14,8 @@ export class HomeComponent implements OnInit {
     window.onload = () =>
       p.init({
         selector: '.background',
-        color: ['#d09c91', '#8e8e8e']
+        color: ['#d09c91', '#8e8e8e'],
+        maxParticles: 200
       });
     }
   }
