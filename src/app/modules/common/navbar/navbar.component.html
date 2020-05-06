@@ -6,17 +6,8 @@
     </div>
     <div id="navbar">
       <ul id="header-items-container">
-        <li class="header-item">
-          <a class="nav-link" [routerLink]="['']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Home</a>
-        </li>
-        <li class="header-item">
-          <a class="nav-link" [routerLink]="['/projects']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Projects</a>
-        </li>
-        <li class="header-item">
-          <a class="nav-link" [routerLink]="['/skills']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Skills</a>
-        </li>
-        <li class="header-item">
-          <a class="nav-link" [routerLink]="['/contacts']" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">Contact</a>
+        <li class="header-item" *ngFor="let m of menu">
+          <a class="nav-link" [routerLink]="[m.link]" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">{{m.name}}</a>
         </li>
       </ul>
     </div>

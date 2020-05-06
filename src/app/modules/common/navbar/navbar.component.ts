@@ -10,6 +10,12 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
 })
 export class NavbarComponent implements OnInit {
     theme: any = {type: 'light', checkbox: 'false'};
+    menu: any = [
+        {name: 'Home', link: ''},
+        {name: 'Projects', link: '/projects'},
+        {name: 'Skills', link: '/skills'},
+        {name: 'Contacts', link: '/contacts'}
+    ];
 
     constructor(@Inject(DOCUMENT) private document: Document) { }
 
