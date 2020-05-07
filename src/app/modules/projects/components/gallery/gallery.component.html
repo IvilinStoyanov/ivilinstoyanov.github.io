@@ -1,6 +1,7 @@
 <section class="masonry">
   <figure *ngFor="let project of projects" class="cell cell--{{project.id}} animated fadeInUp delay-1s">
     <div class="text-centre project-heading">
+      <p class="text-muted">{{project.subtext}}</p>
       <h4>{{project.name}}</h4>
     </div>
     <img
