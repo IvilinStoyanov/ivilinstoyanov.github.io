@@ -1,70 +1,10 @@
 <section class="masonry">
-    <figure class="cell cell--1 animated fadeInUp delay-1s">
-      <img
-        src="https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80"
-        alt="Food picture 1">
-    </figure>
-    <figure class="cell cell--2 animated fadeInUp delay-1s">
-      <img
-        src="https://images.unsplash.com/photo-1495147466023-ac5c588e2e94?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-        alt="Food picture 1">
-    </figure>
-    <!-- <figure class="cell cell--3">
-      <img
-        src="https://images.unsplash.com/photo-1485963631004-f2f00b1d6606?ixlib=rb-1.2.1&auto=format&fit=crop&w=968&q=80"
-        alt="Food picture 1">
-    </figure> -->
-    <figure class="cell cell--3 animated fadeInUp delay-1s">
-      <img
-        src="https://images.unsplash.com/photo-1514852451047-f8e1d1cd9b64?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1112&q=80"
-        alt="Food picture 1">
-    </figure>
-
-    <figure class="cell cell--4 animated fadeInUp delay-1s">
-      <img
-        src="https://images.unsplash.com/photo-1514997618358-2c490d913b78?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-        alt="Food picture 1">
-    </figure>
-    <figure class="cell cell--8 animated fadeInUp delay-1s">
-      <img
-        src="../../../../../assets/thumbs/857204-min.jpg"
-        alt="Food picture 1">
-    </figure>
-
- <figure class="cell cell--9 animated fadeInUp delay-1s">
-      <img
-        src="https://images.unsplash.com/photo-1483918793747-5adbf82956c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-        alt="Food picture 1">
-    </figure>
-    <!--
-    <figure class="cell cell--10">
-      <img
-        src="https://images.unsplash.com/photo-1483918793747-5adbf82956c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-        alt="Food picture 1">
-    </figure>
-
-    <figure class="cell cell--11">
-      <img
-        src="https://images.unsplash.com/photo-1485962398705-ef6a13c41e8f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-        alt="Food picture 1">
-    </figure>
-
-    <figure class="cell cell--12">
-      <img
-        src="https://images.unsplash.com/photo-1504123311630-7a21d62be4a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-        alt="Food picture 1">
-    </figure>
-
-    <figure class="cell cell--13">
-      <img
-        src="https://images.unsplash.com/photo-1504123311630-7a21d62be4a2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80"
-        alt="Food picture 1">
-    </figure>
-
-    <figure class="cell cell--14">
-      <img
-        src="https://images.unsplash.com/photo-1559912553-fc5637d88768?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=735&q=80"
-        alt="Food picture 1">
-    </figure> -->
-
-  </section>
+  <figure *ngFor="let project of projects" class="cell cell--{{project.id}} animated fadeInUp delay-1s">
+    <div class="text-centre project-heading">
+      <h4>{{project.name}}</h4>
+    </div>
+    <img
+      src="{{project.img}}"
+      alt="{{project.alt}}">
+  </figure>
+</section>

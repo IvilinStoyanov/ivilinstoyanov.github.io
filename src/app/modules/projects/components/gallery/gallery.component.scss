@@ -11,15 +11,27 @@
   overflow: hidden;
 }
 
+.project-heading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+figure:hover .project-heading {
+  opacity: 1;
+}
+
+
 img {
   display: block;
   width: 100%;
   height: 100%;
   object-fit: cover;
   border-radius: 5px;
-
-
 }
+
 img:hover {
   cursor: url(../../../../../assets/cross.cur), auto;
   opacity: 0.2;
@@ -45,47 +57,12 @@ img:hover {
   grid-row: 6 / 11;
 }
 
-.cell--6 {
-  grid-column: 4 / 6;
-  grid-row: 6 / 7;
-}
-
-.cell--7 {
-  grid-column: 4 / 6;
-  grid-row: 7 / 11;
-}
-
-.cell--8 {
+.cell--5 {
   grid-column: 1/11;
   grid-row: 11/-1;
 }
 
-.cell--9 {
+.cell--6 {
   grid-column: 11/-1;
   grid-row: 8/-1;
-}
-
-.cell--10 {
-  grid-column: 9 / 12;
-  grid-row: 4 / 11;
-}
-
-.cell--11 {
-  grid-column: 12 / 13;
-  grid-row: 4 / 6;
-}
-
-.cell--12 {
-  grid-column: 13 / -1;
-  grid-row: 4 / 6;
-}
-
-.cell--13 {
-  grid-column: 12 / -1;
-  grid-row: 6 / 13;
-}
-
-.cell--14 {
-  grid-column: 12 / -1;
-  grid-row: 13 / -1;
 }
