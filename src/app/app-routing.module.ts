@@ -10,6 +10,10 @@ const routes: Routes = [
     path: 'projects',
     loadChildren: () => import('./modules/projects/projects.module').then(p => p.ProjectsModule)
   },
+  {
+    path: 'projects/details/:id',
+    loadChildren: () => import('./modules/project-details/project-details.module').then(pd => pd.ProjectDetailsModule)
+  },
   { path: '**', redirectTo: '', pathMatch: 'full'}
 ];
 

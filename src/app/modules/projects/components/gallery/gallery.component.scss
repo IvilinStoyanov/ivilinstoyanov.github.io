@@ -1,3 +1,5 @@
+@import '../.././../../../assets/style/colors.scss';
+
 .masonry {
   width: 90vw;
   height: 90vh;
@@ -23,6 +25,15 @@ figure:hover .project-heading {
   opacity: 1;
 }
 
+figure:hover img {
+  opacity: 0.1;
+}
+
+.btn-primary {
+  border-color: $primary;
+  background-color: transparent; 
+  color: $primary;
+}
 
 img {
   display: block;
