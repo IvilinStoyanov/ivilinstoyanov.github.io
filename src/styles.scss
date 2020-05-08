@@ -28,6 +28,10 @@ body {
 
 .btn-outline-info {
     color: #17a2b8 !important;
+
+    &:hover {
+        color: white !important;
+    }
 }
 
 /* scrollbar on chrome */
