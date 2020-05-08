@@ -4,7 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { NgxUiLoaderModule, NgxUiLoaderConfig } from 'ngx-ui-loader';
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './modules/common/navbar/navbar.component';
+import { NavbarComponent } from './modules/common/components/navbar/navbar.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   bgsColor: '#d09c91',
