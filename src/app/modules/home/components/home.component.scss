@@ -51,6 +51,23 @@
         height: 86px;
         margin-left: 33px;
       }
+
+      @media only screen and (max-width: 600px) {
+        i {
+            font-size: 14px;
+        }
+
+        a {
+            padding: 15px 10px 15px 5px;
+
+        }
+       
+        .vl {
+            border-left: 1px solid grey;
+            height: 66px;
+            margin-left: 12px;
+          }
+      }
 }
 
 .banner-text {
@@ -70,4 +87,14 @@
     h5 {
         font-size: 20px;
     }
+
+    @media only screen and (max-width: 600px) {
+        h1 {
+            font-size: 36px;
+        }
+    
+        h5 {
+            font-size: 12px;
+        }
+      }
 }
