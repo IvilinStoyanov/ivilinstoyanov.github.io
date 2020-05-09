@@ -1,0 +1,18 @@
+@import '../../../../assets/style/colors.scss';
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .panel {
+    background: $primary;
+  }
