@@ -1,18 +1,23 @@
 @import '../../../../assets/style/colors.scss';
 
-.centered {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
+.card {
+  flex-direction: row;
+}
+
+.col-md-6, .col-sm-6 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.btn-block+.btn-block {
+  margin-top: 0;
+}
   
   img {
     height: 100%;
     width: 100%;
   }
 
-  .panel {
-    background: $primary;
+  .panel-heading {
+    color: $primary;
   }
