@@ -1,4 +1,4 @@
-$secondary: rgba(0, 0, 0, 0.8);
+@import '../../assets/style/colors.scss';
 
 body {
     background: rgb(38,38,38);
@@ -55,6 +55,10 @@ a, h5, h4, h3, h2, h1, p, span {
 
 .card {
     box-shadow: 0 14px 28px rgba(255, 255, 255, 0.15), 0 10px 10px rgba(255, 255, 255, 0.12);
+  }
+
+.language-tag {
+    background: $tag-dark;
   }
   
 
