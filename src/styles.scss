@@ -18,11 +18,11 @@ body {
 .btn-primary-outline {
     border-color: $primary;
     background-color: transparent;
-    color: $primary;
+    color: $primary !important;
 
     &:hover {
         background-color: $primary;
-        color: white;
+        color: white !important;
     }
 }
 

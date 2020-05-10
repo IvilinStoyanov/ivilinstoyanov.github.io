@@ -20,4 +20,9 @@
 
   .panel-heading {
     color: $primary;
+    font-size: 22px;
+  }
+
+  .lead > strong {
+    font-size: 16px;
   }
