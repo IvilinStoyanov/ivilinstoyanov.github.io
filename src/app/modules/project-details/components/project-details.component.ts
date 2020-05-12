@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-project-details',
@@ -15,7 +15,7 @@ export class ProjectDetailsComponent implements OnInit {
       name: 'Cook4You',
       subtext: 'javascript application',
       img: 'https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-      detailsLink: '/projects/details/1',
+      detailsLink: '/projects/details/',
       projectLink: 'https://cook4you.netlify.com',
       alt: 'photo',
       dateCreated: new Date('2018-11-2'),
@@ -28,7 +28,7 @@ export class ProjectDetailsComponent implements OnInit {
       name: 'DateMe',
       subtext: 'ASP.NET Core + angular 8 application',
       img: 'https://images.unsplash.com/photo-1518104593124-ac2e82a5eb9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-      detailsLink: '/projects/details/2',
+      detailsLink: '/projects/details/',
       projectLink: '',
       alt: 'photo',
       dateCreated: new Date('2019-01-20'),
@@ -46,7 +46,7 @@ export class ProjectDetailsComponent implements OnInit {
       name: 'Weatherspot',
       subtext: 'javascript application',
       img: 'https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-      detailsLink: '/projects/details/3',
+      detailsLink: '/projects/details/',
       projectLink: 'https://weatherspot.netlify.com',
       alt: 'photo',
       dateCreated: new Date('2019-02-09'),
@@ -61,7 +61,7 @@ export class ProjectDetailsComponent implements OnInit {
       name: 'Shopanoid',
       subtext: 'wordpress application',
       img: 'https://images.unsplash.com/photo-1526745925052-dd824d27b9ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-      detailsLink: '/projects/details/4',
+      detailsLink: '/projects/details/',
       projectLink: '',
       alt: 'photo',
       dateCreated: new Date('2019-04-07'),
@@ -74,7 +74,7 @@ export class ProjectDetailsComponent implements OnInit {
       name: 'Budgety',
       subtext: 'javascript application',
       img: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-      detailsLink: '/projects/details/5',
+      detailsLink: '/projects/details/',
       projectLink: 'https://ivilinstoyanov.github.io/budgety',
       alt: 'photo',
       dateCreated: new Date('2018-10-24'),
@@ -89,7 +89,7 @@ export class ProjectDetailsComponent implements OnInit {
       name: 'Pig Game',
       subtext: 'javascript application',
       img: 'https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-      detailsLink: '/projects/details/6',
+      detailsLink: '/projects/details/',
       projectLink: 'https://ivilinstoyanov.github.io/pig-game',
       alt: 'photo',
       dateCreated: new Date('2018-10-25'),
@@ -101,7 +101,7 @@ export class ProjectDetailsComponent implements OnInit {
     },
   ];
 
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute, private router: Router) { }
 
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');
@@ -116,4 +116,14 @@ export class ProjectDetailsComponent implements OnInit {
     });
   }
 
+  navigateBack(id: number) {
+    this.getDetailsForProject(id - 1);
+    this.router.navigate(['projects/details/', id - 1]);
+
+  }
+
+  navigateNext(id: number) {
+    this.getDetailsForProject(id + 1);
+    this.router.navigate(['projects/details/', id + 1]);
+  }
 }

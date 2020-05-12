@@ -1,4 +1,26 @@
 <div class="container centered">
+  <!-- arrow-left -->
+  <a class='animated-arrow arrow-left' *ngIf="projectDetails.id !== 1" (click)="navigateBack(projectDetails.id)">
+    <span class='main'>
+         <span class='the-arrow -right mr-3' style="transform: rotate(180deg);">
+        <span class='shaft'></span>
+      </span>
+      <span class='text'>
+        previous project
+      </span>
+    </span>
+  </a>
+  <!-- arrow-right -->
+  <a class='animated-arrow arrow-right' *ngIf="projectDetails.id !== projects.length" (click)="navigateNext(projectDetails.id)">
+    <span class='main'>
+      <span class='text'>
+        next project
+      </span>
+      <span class='the-arrow -right'>
+        <span class='shaft'></span>
+      </span>
+    </span>
+  </a>
   <div class="row card">
     <div class="col-md-6 col-sm-6">
       <img src="{{projectDetails.img}}" alt="Avatar woman">

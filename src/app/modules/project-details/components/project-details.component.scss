@@ -1,4 +1,5 @@
 @import '../../../../assets/style/colors.scss';
+@import '../../../../assets/style/arrow.scss';
 
 .card {
   flex-direction: row;
@@ -8,6 +9,19 @@
     padding: .75rem 0.90rem;
     background-color: transparent;
   } 
+
+ 
+}
+.arrow-right {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+.arrow-left {
+  position: absolute;
+  top: -30px;
+  left: 0;
 }
 
 .col-md-6, .col-sm-6 {
