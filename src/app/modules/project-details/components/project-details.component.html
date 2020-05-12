@@ -17,8 +17,9 @@
             <div class="d-flex"><span>date created:</span><span>{{projectDetails.dateCreated| date}}</span></div>
           </li>
           <li class="list-group-item">
-            <div class="d-flex"><span>languages used:</span>
-              <div><span class="language-tag ml-1" *ngFor="let language of projectDetails.languages;">{{language.name}}</span></div>
+            <div class="d-flex"><span>frameworks/languages:</span>
+              <div><span class="language-tag ml-1" *ngFor="let technology  of projectDetails.technologies ;"><a
+                    href="{{technology.link}}" target="_blank">{{technology .name}}</a></span></div>
             </div>
           </li>
           <li class="list-group-item">

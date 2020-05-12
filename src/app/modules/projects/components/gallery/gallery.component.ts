@@ -29,7 +29,7 @@ export class GalleryComponent implements OnInit {
       id: 3,
       name: 'Weatherspot',
       subtext: 'javascript application',
-      img: '../../../../../assets/projects/weatherspot-min.jpg',
+      img: 'https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
       detailsLink: '/projects/details/3',
       projectLink: 'https://weatherspot.netlify.com',
       alt: 'photo'

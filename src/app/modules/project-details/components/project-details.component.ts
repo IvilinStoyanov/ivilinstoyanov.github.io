@@ -19,7 +19,7 @@ export class ProjectDetailsComponent implements OnInit {
       projectLink: 'https://cook4you.netlify.com',
       alt: 'photo',
       dateCreated: new Date('2018-11-2'),
-      languages: [
+      technologies: [
         { name: 'javascript', link: 'https://www.javascript.com' }
       ]
     },
@@ -32,24 +32,29 @@ export class ProjectDetailsComponent implements OnInit {
       projectLink: '',
       alt: 'photo',
       dateCreated: new Date('2019-01-20'),
-      languages: [
-        { name: 'c#', link: '' },
-        { name: 'typescript', link: '' },
-        { name: 'html', link: '' },
-        { name: 'css', link: '' },
-
+      technologies: [
+        { name: 'asp.net', link: 'https://docs.microsoft.com/en-us/dotnet' },
+        { name: 'angular 8', link: 'https://angular.io' },
+        { name: 'html', link: 'https://www.w3schools.com/html' },
+        { name: 'css', link: 'https://www.w3schools.com/css' }
       ],
+      // tslint:disable-next-line: quotemark
       description: "DateMe is a platform for meeting people and finding true love. People can create and edit their profile, interact with eachother via chat. Users are able to uplaod pictures and create, like and comment on posts. Users also can like eachother's profiles and see who liked theirs."
     },
     {
       id: 3,
       name: 'Weatherspot',
       subtext: 'javascript application',
-      img: '../../../../../assets/projects/weatherspot-min.jpg',
+      img: 'https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
       detailsLink: '/projects/details/3',
       projectLink: 'https://weatherspot.netlify.com',
       alt: 'photo',
-      dateCreated: new Date('2019-02-09')
+      dateCreated: new Date('2019-02-09'),
+      technologies: [
+        { name: 'javascript', link: 'https://www.javascript.com' },
+        { name: 'html', link: 'https://www.w3schools.com/html' },
+        { name: 'css', link: 'https://www.w3schools.com/css' }
+      ]
     },
     {
       id: 4,
@@ -59,7 +64,10 @@ export class ProjectDetailsComponent implements OnInit {
       detailsLink: '/projects/details/4',
       projectLink: '',
       alt: 'photo',
-      dateCreated: new Date('2019-04-07')
+      dateCreated: new Date('2019-04-07'),
+      technologies: [
+        { name: 'wordpress', link: 'https://wordpress.com' }
+      ]
     },
     {
       id: 5,
@@ -69,7 +77,12 @@ export class ProjectDetailsComponent implements OnInit {
       detailsLink: '/projects/details/5',
       projectLink: 'https://ivilinstoyanov.github.io/budgety',
       alt: 'photo',
-      dateCreated: new Date('2018-10-24')
+      dateCreated: new Date('2018-10-24'),
+      technologies: [
+        { name: 'javascript', link: 'https://www.javascript.com' },
+        { name: 'html', link: 'https://www.w3schools.com/html/' },
+        { name: 'css', link: 'https://www.w3schools.com/css' }
+      ]
     },
     {
       id: 6,
@@ -79,7 +92,12 @@ export class ProjectDetailsComponent implements OnInit {
       detailsLink: '/projects/details/6',
       projectLink: 'https://ivilinstoyanov.github.io/pig-game',
       alt: 'photo',
-      dateCreated: new Date('2018-10-25')
+      dateCreated: new Date('2018-10-25'),
+      technologies: [
+        { name: 'javascript', link: 'https://www.javascript.com' },
+        { name: 'html', link: 'https://www.w3schools.com/html/' },
+        { name: 'css', link: 'https://www.w3schools.com/css' }
+      ]
     },
   ];
 
