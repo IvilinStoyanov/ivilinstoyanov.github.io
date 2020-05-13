@@ -1,9 +1,8 @@
 @import "../../../../assets/style/colors.scss";
 
-
-  .modal-dialog {
-    max-width: 750px !important;
-  }
+.modal-dialog {
+  max-width: 750px !important;
+}
 
 a:focus {
   outline: none !important;
@@ -56,49 +55,32 @@ textarea:focus:-ms-input-placeholder {
 }
 
 input::-webkit-input-placeholder {
-  font-family: Poppins-Medium;
   color: #555555;
 }
 input:-moz-placeholder {
-  font-family: Poppins-Medium;
   color: #555555;
 }
 input::-moz-placeholder {
-  font-family: Poppins-Medium;
   color: #555555;
 }
 input:-ms-input-placeholder {
-  font-family: Poppins-Medium;
   color: #555555;
 }
 
 textarea::-webkit-input-placeholder {
-  font-family: Poppins-Medium;
   color: #555555;
 }
 textarea:-moz-placeholder {
-  font-family: Poppins-Medium;
   color: #555555;
 }
 textarea::-moz-placeholder {
-  font-family: Poppins-Medium;
   color: #555555;
 }
 textarea:-ms-input-placeholder {
-  font-family: Poppins-Medium;
   color: #555555;
 }
 
 /*---------------------------------------------*/
-button {
-  outline: none !important;
-  border: none;
-  background: transparent;
-}
-
-button:hover {
-  cursor: pointer;
-}
 
 iframe {
   border: none !important;
@@ -165,9 +147,8 @@ iframe {
 .contact100-form-title {
   display: block;
   width: 100%;
-  font-family: Poppins-Bold;
-  font-size: 39px;
-  color: #333333;
+  font-size: 32px;
+  color: $secondary !important;
   line-height: 1.2;
   text-align: left;
   padding-bottom: 44px;
@@ -189,8 +170,8 @@ iframe {
 }
 
 .label-input100 {
-  font-size: 15px;
-  color: #999999;
+  font-size: 14px;
+  color: #999999 !important;
   line-height: 1.5;
   padding-left: 5px;
 }
@@ -199,7 +180,7 @@ iframe {
   display: block;
   width: 100%;
   background: transparent;
-  font-size: 18px;
+  font-size: 16px;
   color: #555555;
   line-height: 1.2;
   padding: 0 5px;
@@ -264,61 +245,6 @@ textarea.input100 {
   margin-top: -25px;
 }
 
-.contact100-form-btn {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 20px;
-  min-width: 160px;
-  height: 50px;
-  background-color: $primary;
-  border-radius: 25px;
-
-  font-family: Poppins-Medium;
-  font-size: 16px;
-  color: #fff;
-  line-height: 1.2;
-
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-
-  box-shadow: 0 10px 30px 0px $primary;
-  -moz-box-shadow: 0 10px 30px 0px $primary;
-  -webkit-box-shadow: 0 10px 30px 0px $primary;
-  -o-box-shadow: 0 10px 30px 0px $primary;
-  -ms-box-shadow: 0 10px 30px 0px $primary;
-}
-
-.contact100-form-btn i {
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
-.contact100-form-btn:hover {
-  background-color: #333333;
-  box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-  -moz-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-  -webkit-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-  -o-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-  -ms-box-shadow: 0 10px 30px 0px rgba(51, 51, 51, 0.5);
-}
-
-.contact100-form-btn:hover i {
-  -webkit-transform: translateX(10px);
-  -moz-transform: translateX(10px);
-  -ms-transform: translateX(10px);
-  -o-transform: translateX(10px);
-  transform: translateX(10px);
-}
-
 /*------------------------------------------------------------------
   [ Responsive ]*/
 
@@ -364,7 +290,7 @@ textarea.input100 {
   right: 2px;
   pointer-events: none;
   color: #c80000;
-  font-size: 13px;
+  font-size: 10px;
   line-height: 1.4;
   text-align: left;
 
@@ -383,7 +309,7 @@ textarea.input100 {
   display: block;
   position: absolute;
   color: #c80000;
-  font-size: 16px;
+  font-size: 10px;
   top: 58%;
   -webkit-transform: translateY(-50%);
   -moz-transform: translateY(-50%);
@@ -409,14 +335,13 @@ textarea.input100 {
   [ Contact more ]*/
 
 .contact100-more {
-  font-family: Poppins-Regular;
-  font-size: 14px;
-  color: #999999;
+  font-size: 12px;
+  color: #999999 !important;
   line-height: 1.5;
 }
 
 .contact100-more-highlight {
-  color: $primary;
+  color: $primary !important;
 }
 
 /*==================================================================
