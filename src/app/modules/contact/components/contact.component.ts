@@ -18,4 +18,8 @@ export class ContactComponent implements OnInit {
     this.modalRef = this.modalService.show(template);
   }
 
+  closeModal() {
+    this.modalRef.hide();
+  }
+
 }

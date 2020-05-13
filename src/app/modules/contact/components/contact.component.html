@@ -5,11 +5,12 @@
     <i class="icofont-email"></i>
   </button>
 
-  <ng-template class="wrap-contact100" #template>
-    <button class="contact100-btn-hide">
-      <i class="icofont-close-line-circled"></i>
+  <ng-template #template>
+    <div class="wrap-contact100">
+    <button class="contact100-btn-hide" (click)="closeModal()">
+      <i class="icofont-close-line"></i>
     </button>
-
+    
     <form class="contact100-form validate-form">
       <span class="contact100-form-title">
         Contact Us
@@ -42,9 +43,10 @@
         </button>
       </div>
     </form>
-
+  
     <span class="contact100-more">
       For any question contact our 24/7 call center: <span class="contact100-more-highlight">+001 345 6889</span>
     </span>
+  </div>
   </ng-template>
 </div>
