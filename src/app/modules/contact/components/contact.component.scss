@@ -1,5 +1,21 @@
 @import "../../../../assets/style/colors.scss";
 
+.contact-image {
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../../../../assets/projects/map-min.jpg") no-repeat right bottom fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  overflow-x: hidden;
+  z-index: -1;
+}
+
+
 .modal-dialog {
   max-width: 750px !important;
 }
@@ -87,14 +103,14 @@ iframe {
 }
 
 /*---------------------------------------------*/
-.container {
+.coverer {
   max-width: 1200px;
 }
 
 /*//////////////////////////////////////////////////////////////////
   [ Contact ]*/
 
-.container-contact100 {
+.coverer-contact100 {
   width: 100%;
   min-height: 100vh;
   display: -webkit-box;
@@ -234,7 +250,7 @@ textarea.input100 {
 
 /*------------------------------------------------------------------
   [ Button ]*/
-.container-contact100-form-btn {
+.coverer-contact100-form-btn {
   width: 100%;
   display: -webkit-box;
   display: -webkit-flex;
