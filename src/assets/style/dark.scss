@@ -49,6 +49,11 @@ a, h5, h4, h3, h2, h1, p, span {
     background-repeat: no-repeat;
 }
 
+.contact-image {
+background-image: linear-gradient(rgba(119, 99, 79, 0.22), rgba(0, 0, 0, 0.25)), url(../../assets/projects/map-min.jpg);
+}
+
+
 .theme-btn {
     color: white;
 }

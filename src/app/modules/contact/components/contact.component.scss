@@ -6,7 +6,6 @@
   position: fixed;
   top: 0;
   left: 0;
-  background: url("../../../../assets/projects/map-min.jpg") no-repeat right bottom fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -14,7 +13,6 @@
   overflow-x: hidden;
   z-index: -1;
 }
-
 
 .modal-dialog {
   max-width: 750px !important;

@@ -23,6 +23,11 @@ body {
     background-repeat: no-repeat;
 }
 
+.contact-image {
+    // background: url("../../assets/projects/map-light-min.jpg") no-repeat right bottom fixed; 
+    background-image: linear-gradient(rgba(255, 255, 255, 0.75), rgba(0, 0, 0, 0.25)), url(../../assets/projects/map-min.jpg);
+}
+
 .theme-btn {
     color: $secondary;
 }
