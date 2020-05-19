@@ -14,14 +14,14 @@
     left: 30px;
 
     img {
-        width: 70px;
+        width: 50px;
         height: auto;
+        transform: rotate(15deg)
     }
 }
 
 .nav-link {
     padding-top: 0 !important;
-    // font-family: 'Arvo', 'Ubunto', serif !important;
 }
 
 .nav-link:hover {
