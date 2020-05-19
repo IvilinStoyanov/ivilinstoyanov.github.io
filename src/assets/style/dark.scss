@@ -1,8 +1,17 @@
 @import '../../assets/style/colors.scss';
 
+.theme {
+    color: white !important;
+}
+
 body {
     background: rgb(38,38,38);
     background: linear-gradient(90deg, #464545 0%, #292e3b 50%);
+}
+
+.navbar {
+    background: #292e3b !important;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2) !important;
 }
 
 .background-image {
@@ -18,10 +27,6 @@ body {
     background-size: contain !important;
     overflow-x: hidden !important;
     z-index: -1 !important;
-}
-
-.theme {
-    color: white !important;
 }
 
 .text-muted {
@@ -48,11 +53,6 @@ body {
     background-size: contain;
     background-repeat: no-repeat;
 }
-
-.contact-image {
-background-image: linear-gradient(rgba(119, 99, 79, 0.22), rgba(0, 0, 0, 0.25)), url(../../assets/projects/map-min.jpg);
-}
-
 
 .theme-btn {
     color: white;

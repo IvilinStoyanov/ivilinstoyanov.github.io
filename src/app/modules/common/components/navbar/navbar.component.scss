@@ -10,11 +10,11 @@
 
 .navbar-logo {
     position: absolute;
-    top: 15px;
+    top: 5px;
     left: 30px;
 
     img {
-        width: 50px;
+        width: 45px;
         height: auto;
         transform: rotate(15deg)
     }
@@ -64,8 +64,7 @@
 
             a,
             i {
-                color: $secondary;
-                font-size: 16px;
+                font-size: 16px;                
             }
         }
     }
