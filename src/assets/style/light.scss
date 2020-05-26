@@ -4,6 +4,10 @@
     color: $secondary !important;
 }
 
+.theme-bg {
+    background: white !important
+}
+
 body {
     background: white;
 }
@@ -26,10 +30,6 @@ body {
     -o-background-size: contain;
     background-size: contain;
     background-repeat: no-repeat;
-}
-
-.theme-btn {
-    color: $secondary;
 }
 
 .card {

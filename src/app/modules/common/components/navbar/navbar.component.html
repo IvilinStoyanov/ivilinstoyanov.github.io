@@ -1,6 +1,6 @@
 <!-- Fixed navbar -->
 <nav id="header" class="navbar fixed-top">
-  <div id="header-container" class="container navbar-container">
+  <div id="header-container" class="container navbar-container" [hidden]="!isSidebarOpen">
     <div class="navbar-logo">
       <img src="../../.././../../assets/logo_v2.png">
     </div>
@@ -11,6 +11,24 @@
         </li>
       </ul>
     </div>
-    <i class="icofont-ui-theme theme-btn" (click)="loadTheme()"></i>
+    <i class="icofont-ui-theme theme-btn theme" (click)="loadTheme()"></i>
+  </div>
+  <div class="sidebar-icon-container">
+    <i class="icofont-navigation-menu theme" (click)="toggleSidebar()"></i>
   </div>
 </nav>
+<!-- sidebar -->
+<div class="sidebar theme-bg" [hidden]="isSidebarOpen">
+  <div class="sidebar-logo">
+    <img src="../../.././../../assets/logo_v2.png">
+  </div>
+  <div class="sidebar-container">
+    <ul id="sidebar-items">
+      <li class="sidebar-item" *ngFor="let m of menu">
+        <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">{{m.name}}</a>
+      </li>
+    </ul>
+  </div>
+  <i class="icofont-ui-theme sidebar-theme-btn theme" (click)="loadTheme()"></i>
+</div>
+<!-- sidebar -->
