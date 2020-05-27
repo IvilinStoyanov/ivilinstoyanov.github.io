@@ -12,10 +12,17 @@ export class NavbarComponent implements OnInit {
     isSidebarOpen = true;
     theme: any = {type: 'light', checkbox: 'false'};
     menu: any = [
-        {name: 'Home', link: ''},
-        {name: 'Projects', link: '/projects'},
-        {name: 'Skills', link: '/skills'},
-        {name: 'Contacts', link: '/contacts'}
+        { name: 'Home', link: '' },
+        { name: 'Projects', link: '/projects' },
+        { name: 'Skills', link: '/skills' },
+        { name: 'Contacts', link: '/contacts' }
+    ];
+
+    sidebar: any = [
+        { name: 'Home', link: '', icon: 'icofont-ui-home' },
+        { name: 'Projects', link: '/projects', icon: 'icofont-code-alt' },
+        { name: 'Skills', link: '/skills', icon: 'icofont-tools-alt-2' },
+        { name: 'Contacts', link: '/contacts', icon: 'icofont-mail' }
     ];
 
     constructor(@Inject(DOCUMENT) private document: Document) { }

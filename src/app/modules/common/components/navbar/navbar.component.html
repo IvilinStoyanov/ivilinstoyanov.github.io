@@ -24,7 +24,8 @@
   </div>
   <div class="sidebar-container">
     <ul id="sidebar-items">
-      <li class="sidebar-item" *ngFor="let m of menu">
+      <li class="sidebar-item d-flex" *ngFor="let m of sidebar">
+        <i class="{{m.icon}}"></i>
         <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">{{m.name}}</a>
       </li>
     </ul>
