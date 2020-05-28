@@ -20,6 +20,15 @@ body {
 }
 
 /* buttons */
+.btn-primary {
+    background: $primary !important;
+    border-color: $primary !important;
+    font-size: 15px !important;
+    * {
+        color: white !important;  
+    }
+}
+
 .btn-primary-outline {
     border-color: $primary !important;
     background-color: transparent !important;

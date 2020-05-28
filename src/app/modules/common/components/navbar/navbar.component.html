@@ -7,7 +7,8 @@
     <div id="navbar">
       <ul id="header-items-container">
         <li class="header-item" *ngFor="let m of menu">
-          <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">{{m.name}}</a>
+          <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link"
+            [routerLinkActiveOptions]="{exact: true}">{{m.name}}</a>
         </li>
       </ul>
     </div>
@@ -25,12 +26,21 @@
   <div class="sidebar-container">
     <ul id="sidebar-items">
       <li class="sidebar-item d-flex" *ngFor="let m of sidebar">
-        <i class="{{m.icon}} theme"></i>
-        <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}">{{m.name}}</a>
+
+        <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link"
+          [routerLinkActiveOptions]="{exact: true}">
+          <i class="{{m.icon}} theme mr-2"></i>
+          {{m.name}}</a>
 
       </li>
     </ul>
   </div>
-  <i class="icofont-ui-theme sidebar-theme-btn theme" (click)="loadTheme()"></i>
+  <span class="text-muted ml-3">Action</span>
+  <div class="text-center">
+  <button class="btn btn-primary mt-2 p-1" (click)="loadTheme()">
+    Change theme
+  <i class="icofont-ui-theme sidebar-theme-btn"></i>
+</button>
+</div>
 </div>
 <!-- sidebar -->
