@@ -67,6 +67,15 @@ a:hover {
     -ms-transition: all 0.4s ease;
     -o-transition: all 0.4s ease;
 }
+
+.background-image {
+    transition: all 0.8s ease !important;
+    -webkit-transition: all 0.8s ease !important;
+    -moz-transition: all 0.8s ease !important;
+    -ms-transition: all 0.8s ease !important;
+    -o-transition: all 0.8s ease !important;
+}
+
 /* utilities */
 
 /* scrollbar on chrome */
