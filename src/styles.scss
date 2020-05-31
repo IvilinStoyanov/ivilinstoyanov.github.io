@@ -20,12 +20,20 @@ body {
 }
 
 /* buttons */
+button:focus {
+    outline: 0 !important;
+    box-shadow: none !important;
+}
+
 .btn-primary {
     background: $primary !important;
     border-color: $primary !important;
     font-size: 15px !important;
     * {
-        color: white !important;  
+        color: white !important;
+    }
+    i {
+        font-size: 18px !important;
     }
 }
 
@@ -55,6 +63,10 @@ body {
         max-width: 1000px !important;
         margin: 1.75rem auto;
     }
+}
+
+.hover {
+    cursor: pointer;
 }
 
 .centered {
@@ -102,7 +114,6 @@ a:hover {
     -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
     background: $primary;
 }
-
 
 /* sidebar */
 .sidebar {

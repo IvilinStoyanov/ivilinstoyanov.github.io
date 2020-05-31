@@ -9,7 +9,7 @@ import { NgxUiLoaderService } from 'ngx-ui-loader';
     styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-    isSidebarOpen = false;
+    isSidebarOpen = true;
     theme: any = {type: 'light', checkbox: 'false'};
     menu: any = [
         { name: 'Home', link: '' },
@@ -128,4 +128,8 @@ export class NavbarComponent implements OnInit {
     toggleSidebar() {
         this.isSidebarOpen = !this.isSidebarOpen;
       }
+
+    closeSidebar() {
+        this.isSidebarOpen = false;
+    }
 }

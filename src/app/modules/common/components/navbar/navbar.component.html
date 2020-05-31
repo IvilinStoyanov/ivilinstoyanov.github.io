@@ -20,6 +20,9 @@
 </nav>
 <!-- sidebar -->
 <div class="sidebar theme-bg" [class.active]="isSidebarOpen">
+  <!-- close button -->
+  <i class="icofont-close-line close-btn theme hover" (click)="closeSidebar()"></i>
+  <!-- logo -->
   <div class="sidebar-logo">
     <img src="../../.././../../assets/logo_v2.png">
   </div>
@@ -28,7 +31,7 @@
       <li class="sidebar-item d-flex" *ngFor="let m of sidebar">
 
         <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link"
-          [routerLinkActiveOptions]="{exact: true}">
+          [routerLinkActiveOptions]="{exact: true}" (click)="closeSidebar()">
           <i class="{{m.icon}} theme mr-2"></i>
           {{m.name}}</a>
 
@@ -37,7 +40,7 @@
   </div>
   <span class="text-muted ml-3">Action</span>
   <div class="text-center">
-  <button class="btn btn-primary mt-2 p-1" (click)="loadTheme()">
+  <button class="btn btn-primary mt-2 p-2" (click)="loadTheme()">
     Change theme
   <i class="icofont-ui-theme sidebar-theme-btn"></i>
 </button>
