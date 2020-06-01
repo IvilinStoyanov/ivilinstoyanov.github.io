@@ -71,6 +71,7 @@
             a,
             i {
                 font-size: 16px;
+                font-weight: 500;
             }
         }
     }
@@ -124,11 +125,14 @@
     }
 
     .sidebar-logo {
-        padding: 20px 0px 10px 30px;
+        // text-align: center;
+        // padding-top: 60px;
+
         img {
-            width: 80px;
+            width: 140px;
             height: auto;
-            transform: rotate(15deg);
+            border-radius: 50%;
+            border: 5px solid $primary;
         }
     }
 
@@ -157,6 +161,7 @@
 
             a {
                 font-size: 14px;
+                font-weight: 500;
             }
             i {
                 font-size: 18px;
