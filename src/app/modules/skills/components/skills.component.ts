@@ -9,7 +9,7 @@ export class SkillsComponent implements OnInit {
   skills: any = [
     { name: 'html', value: 100 },
     { name: 'css', value: 100 },
-    { name: 'less/scss', value: 100 },
+    { name: 'less/sass', value: 100 },
     { name: 'boostrap', value: 100 },
     { name: 'javascript', value: 100 },
     { name: 'jQuery', value: 100 },
