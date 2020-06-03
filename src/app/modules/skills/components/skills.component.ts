@@ -22,11 +22,11 @@ export class SkillsComponent implements OnInit {
     { name: 'photoshop', value: 90 }
   ];
 
-  toLearnSkills: any = [
+ /* toLearnSkills: any = [
     { name: 'reactjs', value: 0 },
     { name: 'react native', value: 0 },
     { name: 'node.js', value: 0 },
-  ];
+  ]; */
 
   constructor() { }
 
