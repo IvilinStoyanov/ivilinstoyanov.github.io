@@ -20,6 +20,7 @@ export class NavbarComponent implements OnInit {
         { name: 'Home', link: '' },
         { name: 'Projects', link: '/projects' },
         { name: 'Skills', link: '/skills' },
+        { name: 'Resume', link: '/resume'},
         { name: 'Contacts', link: '/contacts' }
     ];
 
@@ -27,6 +28,7 @@ export class NavbarComponent implements OnInit {
         { name: 'Home', link: '', icon: 'icofont-ui-home' },
         { name: 'Projects', link: '/projects', icon: 'icofont-code-alt' },
         { name: 'Skills', link: '/skills', icon: 'icofont-tools-alt-2' },
+        { name: 'Resume', link: '/resume', icon: 'icofont-attachment' },
         { name: 'Contacts', link: '/contacts', icon: 'icofont-mail' }
     ];
 
