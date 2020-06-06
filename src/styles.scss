@@ -73,6 +73,10 @@ button:focus {
     cursor: pointer;
 }
 
+.text-wrap {
+    overflow-wrap: break-word;
+}
+
 .centered {
     position: absolute;
     top: 50%;
