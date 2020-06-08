@@ -26,7 +26,7 @@ const routes: Routes = [
     path: 'contacts',
     loadChildren: () => import('./modules/contact/contact.module').then(c => c.ContactModule)
   },
-  { path: '**', redirectTo: '', pathMatch: 'full' }
+  { path: '**', redirectTo: '/home', pathMatch: 'full' }
 ];
 
 @NgModule({
