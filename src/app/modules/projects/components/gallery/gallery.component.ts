@@ -29,7 +29,7 @@ export class GalleryComponent implements OnInit {
       id: 3,
       name: 'Weatherspot',
       subtext: 'javascript application',
-      img: 'https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      img: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
       detailsLink: '/projects/details/3',
       projectLink: 'https://weatherspot.netlify.com',
       alt: 'photo'
@@ -38,7 +38,7 @@ export class GalleryComponent implements OnInit {
       id: 4,
       name: 'Shopanoid',
       subtext: 'wordpress application',
-      img: 'https://images.unsplash.com/photo-1526745925052-dd824d27b9ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      img: 'https://images.unsplash.com/photo-1546213290-e1b492ab3eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80',
       detailsLink: '/projects/details/4',
       projectLink: '',
       alt: 'photo'
@@ -56,7 +56,7 @@ export class GalleryComponent implements OnInit {
       id: 6,
       name: 'Pig Game',
       subtext: 'javascript application',
-      img: 'https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      img: 'https://images.unsplash.com/photo-1570303363992-7f95ee20ebdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
       detailsLink: '/projects/details/6',
       projectLink: 'https://ivilinstoyanov.github.io/pig-game',
       alt: 'photo'

@@ -20,8 +20,11 @@ export class ProjectDetailsComponent implements OnInit {
       alt: 'photo',
       dateCreated: new Date('2018-11-2'),
       technologies: [
+        { name: 'html', link: 'https://www.w3schools.com/html' },
+        { name: 'css', link: 'https://www.w3schools.com/css' },
         { name: 'javascript', link: 'https://www.javascript.com' }
-      ]
+      ],
+      description: 'Cook4You is javascript web application working with RESTful API to provide you unique recipes.'
     },
     {
       id: 2,
@@ -39,13 +42,13 @@ export class ProjectDetailsComponent implements OnInit {
         { name: 'css', link: 'https://www.w3schools.com/css' }
       ],
       // tslint:disable-next-line: quotemark
-      description: "DateMe is a platform for meeting people and finding true love. People can create and edit their profile, interact with eachother via chat. Users are able to uplaod pictures and create, like and comment on posts. Users also can like eachother's profiles and see who liked theirs."
+      description: "DateMe is a platform for meeting people and finding true love. People can create and edit their profile, interact with eachother via chat. Users are able to uplaod pictures and create, like and comment on posts. Users also can like eachother's profiles and see who liked theirs and much more."
     },
     {
       id: 3,
       name: 'Weatherspot',
       subtext: 'javascript application',
-      img: 'https://images.unsplash.com/photo-1584267385494-9fdd9a71ad75?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      img: 'https://images.unsplash.com/photo-1489515217757-5fd1be406fef?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
       detailsLink: '/projects/details/',
       projectLink: 'https://weatherspot.netlify.com',
       alt: 'photo',
@@ -54,20 +57,22 @@ export class ProjectDetailsComponent implements OnInit {
         { name: 'javascript', link: 'https://www.javascript.com' },
         { name: 'html', link: 'https://www.w3schools.com/html' },
         { name: 'css', link: 'https://www.w3schools.com/css' }
-      ]
+      ],
+      description: 'Weatherspot is javascript web application working with RESTful API so you can be up to date with the weather around.'
     },
     {
       id: 4,
       name: 'Shopanoid',
       subtext: 'wordpress application',
-      img: 'https://images.unsplash.com/photo-1526745925052-dd824d27b9ab?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      img: 'https://images.unsplash.com/photo-1546213290-e1b492ab3eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80',
       detailsLink: '/projects/details/',
       projectLink: '',
       alt: 'photo',
       dateCreated: new Date('2019-04-07'),
       technologies: [
         { name: 'wordpress', link: 'https://wordpress.com' }
-      ]
+      ],
+      description: 'Shopanoid is a online magazine where you can buy clothes, track your order, create your own profile, add to wishlist, read blog posts and much more.'
     },
     {
       id: 5,
@@ -79,25 +84,27 @@ export class ProjectDetailsComponent implements OnInit {
       alt: 'photo',
       dateCreated: new Date('2018-10-24'),
       technologies: [
-        { name: 'javascript', link: 'https://www.javascript.com' },
         { name: 'html', link: 'https://www.w3schools.com/html/' },
-        { name: 'css', link: 'https://www.w3schools.com/css' }
-      ]
+        { name: 'css', link: 'https://www.w3schools.com/css' },
+        { name: 'javascript', link: 'https://www.javascript.com' }
+      ],
+      description: 'Budgety is simple javascript web application to calculate your monthly budget.'
     },
     {
       id: 6,
       name: 'Pig Game',
       subtext: 'javascript application',
-      img: 'https://images.unsplash.com/photo-1553481187-be93c21490a9?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      img: 'https://images.unsplash.com/photo-1570303363992-7f95ee20ebdb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
       detailsLink: '/projects/details/',
       projectLink: 'https://ivilinstoyanov.github.io/pig-game',
       alt: 'photo',
       dateCreated: new Date('2018-10-25'),
       technologies: [
-        { name: 'javascript', link: 'https://www.javascript.com' },
         { name: 'html', link: 'https://www.w3schools.com/html/' },
-        { name: 'css', link: 'https://www.w3schools.com/css' }
-      ]
+        { name: 'css', link: 'https://www.w3schools.com/css' },
+        { name: 'javascript', link: 'https://www.javascript.com' }
+      ],
+      description: 'Pig Game is javascript web application based on the dice game.'
     },
   ];
 
