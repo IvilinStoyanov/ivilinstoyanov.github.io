@@ -5,7 +5,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { NgxUiLoaderModule, NgxUiLoaderConfig } from 'ngx-ui-loader';
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './modules/common/components/navbar/navbar.component';
-import { HomeModule } from './modules/home/home.module';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   bgsColor: '#d09c91',
@@ -43,8 +42,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
-    HomeModule
+    NgxUiLoaderModule.forRoot(ngxUiLoaderConfig)
   ],
   providers: [],
   bootstrap: [AppComponent]
