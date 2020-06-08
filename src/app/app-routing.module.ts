@@ -27,7 +27,7 @@ const routes: Routes = [
     path: 'contacts',
     loadChildren: () => import('./modules/contact/contact.module').then(c => c.ContactModule)
   },
-  { path: '**', redirectTo: '/not-found' }
+  { path: '**', component: HomeComponent }
 ];
 
 @NgModule({
