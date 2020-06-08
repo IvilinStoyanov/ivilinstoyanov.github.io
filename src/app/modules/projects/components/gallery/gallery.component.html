@@ -1,0 +1,16 @@
+<section class="masonry">
+  <figure *ngFor="let project of projects" class="cell cell--{{project.id}} animated fadeInUp delay-1s">
+  
+    <img
+      src="{{project.img}}"
+      alt="{{project.alt}}">
+      <div class="text-centre project-heading">
+        <p class="text-muted mb-0">{{project.subtext}}</p>
+        <h4 class="theme">{{project.name}}</h4>
+        <div>
+        <button class="btn btn-primary-outline mr-2" [routerLink]="[project.detailsLink]">Details</button>
+        <a class="btn btn-outline-info" href="{{project.projectLink}}" target="_blank">View Project</a>
+      </div>
+      </div>
+  </figure>
+</section>

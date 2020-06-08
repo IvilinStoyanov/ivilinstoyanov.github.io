@@ -1,0 +1,64 @@
+@import '../../../../assets/style/colors.scss';
+@import '../../../../assets/style/arrow.scss';
+
+.card {
+  flex-direction: row;
+  background-color: transparent;
+
+  .list-group-item {
+    padding: .75rem 0.90rem;
+    background-color: transparent;
+  } 
+
+ 
+}
+.arrow-right {
+  position: absolute;
+  top: -30px;
+  right: 0;
+}
+
+.arrow-left {
+  position: absolute;
+  top: -30px;
+  left: 0;
+}
+
+.col-md-6, .col-sm-6 {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.btn-block+.btn-block {
+  margin-top: 0;
+}
+  
+  img {
+    height: 100%;
+    width: 100%;
+  }
+
+  .panel-heading {
+    color: $primary;
+    font-size: 22px;
+  }
+
+  .lead > strong {
+    font-size: 16px;
+  }
+
+  .list-group-item > div {
+    justify-content: space-between;
+  }
+
+  .language-tag {
+    padding: 5px 10px 5px 10px;
+    border-radius: 4px;
+    color: $secondary !important;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  
