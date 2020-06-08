@@ -9,7 +9,9 @@ import { GlobalService } from '../../common/services/global.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private globalService: GlobalService) { }
+  constructor(private globalService: GlobalService) { 
+    document.body.style.overflow = 'hidden';
+  }
 
   ngOnInit(): void {
     if (this.globalService.isParticleInvoked === true) {

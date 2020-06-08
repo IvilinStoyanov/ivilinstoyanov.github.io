@@ -108,7 +108,9 @@ export class ProjectDetailsComponent implements OnInit {
     },
   ];
 
-  constructor(private route: ActivatedRoute, private router: Router) { }
+  constructor(private route: ActivatedRoute, private router: Router) {
+    document.body.style.overflow = 'auto';
+   }
 
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');

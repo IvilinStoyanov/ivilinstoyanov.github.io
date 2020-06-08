@@ -28,7 +28,9 @@ export class SkillsComponent implements OnInit {
     { name: 'node.js', value: 0 },
   ]; */
 
-  constructor() { }
+  constructor() {
+    document.body.style.overflow = 'auto';
+   }
 
   ngOnInit() {
   }
