@@ -7,7 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ResumeComponent implements OnInit {
 
-  constructor() { }
+  constructor() {
+    document.body.style.overflow = 'auto';
+   }
 
   ngOnInit() {
   }

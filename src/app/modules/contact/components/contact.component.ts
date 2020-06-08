@@ -9,7 +9,10 @@ import { BsModalService, BsModalRef } from 'ngx-bootstrap/modal';
 })
 export class ContactComponent implements OnInit {
   modalRef: BsModalRef;
-  constructor(private modalService: BsModalService) { }
+
+  constructor(private modalService: BsModalService) {
+    document.body.style.overflow = 'auto';
+   }
 
   ngOnInit() {
   }

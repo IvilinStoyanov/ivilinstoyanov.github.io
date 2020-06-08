@@ -63,7 +63,9 @@ export class GalleryComponent implements OnInit {
     },
   ];
 
-  constructor() { }
+  constructor() {
+    document.body.style.overflow = 'auto';
+   }
 
   ngOnInit(): void {
   }
