@@ -37,6 +37,14 @@
     text-align: right;
     min-width: 100px;
   }
+
+  @media only screen and (max-width: 700px) {
+    .resume .resume-item h5 {
+      position: relative;
+      left: 0px;
+      text-align: left;
+    }
+  }
   
   .resume .resume-item ul {
     padding-left: 20px;

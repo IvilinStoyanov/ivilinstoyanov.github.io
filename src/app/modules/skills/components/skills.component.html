@@ -2,36 +2,35 @@
   <div class="container">
     <div class="section-title">
       <h2 class="theme">PROGRAMMING LANGUAGES & TOOLS</h2>
-      <p class="theme">Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint
-        consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in
-        iste officiis commodi quidem hic quas.</p>
+      <p class="theme">Below you can see the different programming languages and tools
+        that I learned over the years in both professional and free time.</p>
     </div>
     <div class="row skills-content mb-4">
       <div class="col-lg-6" *ngFor="let skill of skills">
         <div class="progress">
           <span class="skill theme">{{skill.name}} <i class="val theme">{{skill.value}}%</i></span>
           <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" [style.max-width.%]="skill.value" aria-valuenow="skill.value" aria-valuemin="0"
-              aria-valuemax="100">
+            <div class="progress-bar" role="progressbar" [style.max-width.%]="skill.value" aria-valuenow="skill.value"
+              aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
         </div>
       </div>
     </div>
-    <!-- <div class="container p-0 text-muted">
-      <h6>To learn</h6>
+    <div class="container p-0 text-muted">
+      <h6>Queued</h6>
     </div>
-    <div class="row skills-content mb-5"> -->
-      <!-- <div class="col-lg-6" *ngFor="let skill of toLearnSkills">
+    <div class="row skills-content mb-5">
+      <div class="col-lg-6" *ngFor="let skill of queuedSkills">
         <div class="progress">
           <span class="skill theme">{{skill.name}} <i class="val theme">{{skill.value}}%</i></span>
           <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" [style.max-width.%]="skill.value" aria-valuenow="skill.value" aria-valuemin="0"
-              aria-valuemax="100">
+            <div class="progress-bar" role="progressbar" [style.max-width.%]="skill.value" aria-valuenow="skill.value"
+              aria-valuemin="0" aria-valuemax="100">
             </div>
           </div>
         </div>
-      </div> -->
-    <!-- </div> -->
+      </div>
+    </div>
   </div>
 </section>

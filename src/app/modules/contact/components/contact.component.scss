@@ -7,10 +7,10 @@
   position: fixed;
   top: 0;
   left: 0;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
   overflow-x: hidden;
   z-index: -1;
 }
@@ -408,8 +408,8 @@ textarea.input100 {
 
 .contact100-btn-show {
   color: #fff;
+  border-color: $primary;
   font-size: 39px;
-
   position: fixed;
   z-index: -1;
   display: -webkit-box;
