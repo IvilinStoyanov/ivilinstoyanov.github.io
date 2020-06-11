@@ -1,7 +1,8 @@
 import { Component, OnInit } from '@angular/core';
-import { Router, RouterEvent, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
+import { GlobalService } from './modules/common/services/global.service';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
-import { isNullOrUndefined } from 'util';
+import { HttpClient } from '@angular/common/http';
+import { Router, RouterEvent, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';
 
 @Component({
   selector: 'app-root',
@@ -9,14 +10,32 @@ import { isNullOrUndefined } from 'util';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  title = 'site';
+  api = 'https://api.github.com/users/';
+  title = 'Ivilin Stoyanov';
 
-  constructor(private router: Router, private ngxService: NgxUiLoaderService) { }
+  // tslint:disable-next-line: max-line-length
+  constructor(private router: Router, private ngxService: NgxUiLoaderService, private globalService: GlobalService, private http: HttpClient) { }
 
   ngOnInit() {
     this.router.events.subscribe((event: RouterEvent) => {
       this.navigationInterceptor(event);
     });
+
+    // this.getAllStarredRepos();
+  }
+
+  getAllStarredRepos() {
+    this.http.get(this.api + 'ivilinstoyanov/starred').subscribe(data => this.filterOwnedRepos(data));
+  }
+
+  filterOwnedRepos(data: any) {
+    const projects: any = [];
+    data.forEach(element => {
+      if (element.owner.login === 'IvilinStoyanov') {
+        projects.push(element);
+      }
+    });
+    this.globalService.projects = projects;
   }
 
   // Shows and hides the loading spinner during RouterEvent changes
