@@ -1,13 +1,13 @@
-@import '../../../../assets/style/colors.scss'; 
+@import "../../../../assets/style/colors.scss";
 
- .background {
+.background {
     position: absolute;
     display: block;
     top: 0;
     left: 0;
     z-index: -1;
     min-height: 100vh;
-  }
+}
 
 .background-image {
     width: 100%;
@@ -15,7 +15,7 @@
     position: fixed;
     top: 0;
     left: 0;
-    background: url("../../../../assets/home-bg-min.png") no-repeat right bottom fixed; 
+    background: url("../../../../assets/home-bg-min.png") no-repeat right bottom fixed;
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -51,29 +51,28 @@
         border-left: 1px solid grey;
         height: 86px;
         margin-left: 33px;
-      }
+    }
 
-      @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 600px) {
         i {
             font-size: 14px;
         }
 
         a {
             padding: 15px 10px 15px 5px;
-
         }
-       
+
         .vl {
             border-left: 1px solid grey;
             height: 66px;
             margin-left: 12px;
-          }
-      }
+        }
+    }
 }
 
 .banner-text {
     color: $secondary;
-    font-family: 'Arvo', 'Ubunto', serif;
+    font-family: "Arvo", "Ubunto", serif;
     position: absolute;
     display: block;
     top: 50%;
@@ -89,13 +88,31 @@
         font-size: 20px;
     }
 
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 720px) {
+        h1 {
+            font-size: 42px;
+        }
+
+        h5 {
+            font-size: 16px;
+            background: #ffffffbf;
+            border-radius: 10px;
+        }
+    }
+
+    @media only screen and (max-width: 535px) {
+        & {
+            width: 70%;
+        }
+
         h1 {
             font-size: 36px;
         }
-    
+
         h5 {
-            font-size: 12px;
+            font-size: 13px;
+            background: #ffffffbf;
+            border-radius: 10px;
         }
-      }
+    }
 }
