@@ -61,6 +61,13 @@ button:focus {
 }
 /* buttons */
 
+/* badges */
+.badge-primary {
+    background-color: $primary;
+    margin-left: 3px;
+}
+/* badges */
+
 /* utilities */
 @media (min-width: 576px) {
     .modal-dialog {

@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class GlobalService {
  isParticleInvoked = false;
+ projects: any;
 
 constructor() { }
 

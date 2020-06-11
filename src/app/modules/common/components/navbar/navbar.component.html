@@ -8,7 +8,7 @@
       <ul id="header-items-container">
         <li class="header-item" *ngFor="let m of menu">
           <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link"
-            [routerLinkActiveOptions]="{exact: true}">{{m.name}}</a>
+            [routerLinkActiveOptions]="{exact: true}">{{m.name}}<span class="badge badge-primary">{{m.count}}</span></a>
         </li>
       </ul>
     </div>
@@ -34,7 +34,7 @@
         <a class="nav-link theme" [routerLink]="[m.link]" routerLinkActive="active-link"
           [routerLinkActiveOptions]="{exact: true}" (click)="closeSidebar()">
           <i class="{{m.icon}} theme mr-2"></i>
-          {{m.name}}</a>
+          {{m.name}}<span class="badge badge-primary">{{m.count}}</span></a>
 
       </li>
     </ul>
