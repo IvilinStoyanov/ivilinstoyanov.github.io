@@ -69,6 +69,49 @@ body {
 .language-tag {
     background: $tag-dark;
   }
+
+  .banner-text {
+    color: $secondary;
+    font-family: "Arvo", "Ubunto", serif;
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+
+    h1 {
+        font-size: 58px;
+    }
+
+    h5 {
+        font-size: 20px;
+    }
+
+    @media only screen and (max-width: 720px) {
+        h1 {
+            font-size: 42px;
+        }
+
+        h5 {
+            font-size: 16px;
+        }
+    }
+
+    @media only screen and (max-width: 535px) {
+        & {
+            width: 70%;
+        }
+
+        h1 {
+            font-size: 36px;
+        }
+
+        h5 {
+            font-size: 13px;
+        }
+    }
+}
   
 
 
