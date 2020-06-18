@@ -1,6 +1,18 @@
 @import '../../../../assets/style/colors.scss';
 @import '../../../../assets/style/arrow.scss';
 
+.project-card-wrapper {
+  @media only screen and (max-width: 575px) {
+    & {
+      margin-top: 110px;
+      position: relative !important;
+      transform: none !important;
+      left: 0;
+      top: 0;
+    }
+  }
+}
+
 .card {
   flex-direction: row;
   background-color: transparent;
@@ -8,9 +20,7 @@
   .list-group-item {
     padding: .75rem 0.90rem;
     background-color: transparent;
-  } 
-
- 
+  }  
 }
 .arrow-right {
   position: absolute;
@@ -36,6 +46,7 @@
   img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
   }
 
   .panel-heading {
@@ -49,6 +60,13 @@
 
   .list-group-item > div {
     justify-content: space-between;
+
+    @media only screen and (max-width: 992px) {
+      & {
+        text-align: left;
+        flex-direction: column;
+      }
+    }
   }
 
   .language-tag {

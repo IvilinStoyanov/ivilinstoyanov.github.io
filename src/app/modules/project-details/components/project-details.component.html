@@ -1,6 +1,6 @@
-<div class="container centered">
+<div class="container centered project-card-wrapper">
   <!-- arrow-left -->
-  <a class='animated-arrow arrow-left' *ngIf="projectDetails.id !== 1" (click)="navigateBack(projectDetails.id)">
+  <a class='animated-arrow arrow-left ml-3' *ngIf="projectDetails.id !== 1" (click)="navigateBack(projectDetails.id)">
     <span class='main'>
       <span class='the-arrow -right mr-3' style="transform: rotate(180deg);">
         <span class='shaft'></span>
@@ -11,7 +11,7 @@
     </span>
   </a>
   <!-- arrow-right -->
-  <a class='animated-arrow arrow-right' *ngIf="projectDetails.id !== projects.length"
+  <a class='animated-arrow arrow-right mr-3' *ngIf="projectDetails.id !== projects.length"
     (click)="navigateNext(projectDetails.id)">
     <span class='main'>
       <span class="theme text">
@@ -37,11 +37,11 @@
         </div>
         <ul class="list-group list-group-flush text-center">
           <li class="list-group-item">
-            <div class="d-flex"><span class="theme">date created:</span><span class="theme">{{projectDetails.dateCreated| date}}</span></div>
+            <div class="d-flex"><span class="theme pb-2">date created:</span><span class="theme">{{projectDetails.dateCreated| date}}</span></div>
           </li>
           <li class="list-group-item">
-            <div class="d-flex"><span class="theme">frameworks/languages:</span>
-              <div><span class="language-tag ml-1 theme" *ngFor="let technology  of projectDetails.technologies ;"><a
+            <div class="d-flex"><span class="theme pb-2">frameworks/languages:</span>
+              <div><span class="language-tag mr-1 theme" *ngFor="let technology  of projectDetails.technologies ;"><a
                     href="{{technology.link}}" target="_blank" class="theme">{{technology .name}}</a></span></div>
             </div>
           </li>
