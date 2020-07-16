@@ -4,8 +4,15 @@
 
 /* theme imports */
 @import 'assets/style/theme/section.scss';
-
 @import "assets/style/colors.scss";
+
+* {
+    transition: all 0.4 ease;
+    -webkit-transition: all 0.4s ease;
+    -moz-transition: all 0.4s ease;
+    -ms-transition: all 0.4s ease;
+    -o-transition: all 0.4s ease;
+}
 
 html {
     height: 100%;
@@ -16,6 +23,7 @@ body {
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
 }
+
 /*** GLOBALS ***/
 .flyout {
     z-index: 1040 !important;
@@ -59,14 +67,12 @@ button:focus {
         color: white !important;
     }
 }
-/* buttons */
 
 /* badges */
 .badge-primary {
     background-color: $primary;
     margin-left: 3px;
 }
-/* badges */
 
 /* utilities */
 @media (min-width: 576px) {
@@ -97,14 +103,6 @@ a:hover {
     text-decoration: none;
 }
 
-* {
-    transition: all 0.4 ease;
-    -webkit-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    -ms-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-}
-
 .background-image {
     transition: all 0.8s ease !important;
     -webkit-transition: all 0.8s ease !important;
@@ -112,8 +110,6 @@ a:hover {
     -ms-transition: all 0.8s ease !important;
     -o-transition: all 0.8s ease !important;
 }
-
-/* utilities */
 
 /* scrollbar on chrome */
 ::-webkit-scrollbar {
