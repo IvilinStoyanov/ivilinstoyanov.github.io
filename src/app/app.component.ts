@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { GlobalService } from './modules/common/services/global.service';
+import { GlobalService } from './components/common/services/global.service';
 import { NgxUiLoaderService } from 'ngx-ui-loader';
 import { HttpClient } from '@angular/common/http';
 import { Router, RouterEvent, NavigationStart, NavigationEnd, NavigationCancel, NavigationError } from '@angular/router';

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as p from 'particlesjs';
-import { GlobalService } from '../../common/services/global.service';
+import { GlobalService } from '../common/services/global.service';
 
 @Component({
   selector: 'app-home',
@@ -9,7 +9,7 @@ import { GlobalService } from '../../common/services/global.service';
 })
 export class HomeComponent implements OnInit {
 
-  constructor(private globalService: GlobalService) { 
+  constructor(private globalService: GlobalService) {
     document.body.style.overflow = 'hidden';
   }
 
