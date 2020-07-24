@@ -2,9 +2,17 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
+import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxUiLoaderModule, NgxUiLoaderConfig } from 'ngx-ui-loader';
+
 import { AppComponent } from './app.component';
-import { NavbarComponent } from './modules/common/components/navbar/navbar.component';
+import { NavbarComponent } from './components/common/components/navbar/navbar.component';
+import { HomeComponent } from './components/home/home.component';
+import { GalleryComponent } from './components/projects/gallery.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   bgsColor: '#d09c91',
@@ -37,13 +45,20 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent
+    NavbarComponent,
+    HomeComponent,
+    GalleryComponent,
+    ProjectDetailsComponent,
+    SkillsComponent,
+    ResumeComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    ModalModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

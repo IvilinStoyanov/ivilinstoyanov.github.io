@@ -31,12 +31,12 @@
             "styles": [
               "src/styles.scss",
               {
-                "input": "src/assets/style/light.scss",
+                "input": "src/style/light.scss",
                 "bundleName": "light",
                 "inject": false
               },
               {
-                "input": "src/assets/style/dark.scss",
+                "input": "src/style/dark.scss",
                 "bundleName": "dark",
                 "inject": false
               }

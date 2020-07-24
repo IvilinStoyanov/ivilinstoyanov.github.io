@@ -1,11 +1,11 @@
-@import "../style/colors.scss";
+@import "colors.scss";
 
 .theme {
     color: $secondary !important;
 }
 
 .theme-bg {
-    background: white !important
+    background: white !important;
 }
 
 body {
@@ -14,11 +14,11 @@ body {
 
 .navbar {
     background: #ffffff !important;
-    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.2) !important;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.2) !important;
 }
 
 .sidebar-menu-icon {
-    background: url('../custom_icons/dots-menu-black.png');
+    background: url("../assets/custom_icons/dots-menu-black.png");
 }
 
 .expand-more {
@@ -28,7 +28,7 @@ body {
     transform: translate(-50%, -50%);
     width: 35px;
     height: 35px;
-    background: url("../custom_icons/arrow-down-black.png");
+    background: url("../assets/custom_icons/arrow-down-black.png");
     -webkit-background-size: contain;
     -moz-background-size: contain;
     -o-background-size: contain;
@@ -37,8 +37,8 @@ body {
 }
 
 .contact-image {
-    background-image: url('../projects/map-light-min.jpg');
-    }
+    background-image: url("../assets/projects/map-light-min.jpg");
+}
 
 .card {
     box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
@@ -79,7 +79,7 @@ body {
     }
 
     @media only screen and (max-width: 535px) {
-        & {    
+        & {
             width: 70%;
         }
 
@@ -89,7 +89,7 @@ body {
 
         h5 {
             font-size: 13px;
-            background: #ffffffc9;;
+            background: #ffffffc9;
             border-radius: 10px;
         }
     }

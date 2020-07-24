@@ -1,31 +1,37 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { HomeComponent } from './modules/home/components/home.component';
+
+import { HomeComponent } from './components/home/home.component';
+import { GalleryComponent } from './components/projects/gallery.component';
+import { ProjectDetailsComponent } from './components/project-details/project-details.component';
+import { SkillsComponent } from './components/skills/skills.component';
+import { ResumeComponent } from './components/resume/resume.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 const routes: Routes = [
   {
     path: '',
-    loadChildren: () => import('./modules/home/home.module').then(h => h.HomeModule)
+    component: HomeComponent
   },
   {
     path: 'projects',
-    loadChildren: () => import('./modules/projects/projects.module').then(p => p.ProjectsModule)
+    component: GalleryComponent
   },
   {
     path: 'projects/details/:id',
-    loadChildren: () => import('./modules/project-details/project-details.module').then(pd => pd.ProjectDetailsModule)
+    component: ProjectDetailsComponent
   },
   {
     path: 'skills',
-    loadChildren: () => import('./modules/skills/skills.module').then(s => s.SkillsModule)
+    component: SkillsComponent
   },
   {
     path: 'resume',
-    loadChildren: () => import('./modules/resume/resume.module').then(r => r.ResumeModule)
+    component: ResumeComponent
   },
   {
     path: 'contacts',
-    loadChildren: () => import('./modules/contact/contact.module').then(c => c.ContactModule)
+    component: ContactComponent
   },
   { path: '**', redirectTo: '' }
 ];

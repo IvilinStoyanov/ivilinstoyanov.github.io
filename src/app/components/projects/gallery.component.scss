@@ -1,4 +1,4 @@
-@import '../.././../../../assets/style/colors.scss';
+@import './../../../style/colors.scss';
 
 .masonry {
   width: 97vw;
@@ -39,7 +39,7 @@ img {
 }
 
 img:hover {
-  cursor: url(../../../../../assets/cross.cur), auto;
+  cursor: url(../../../assets/cross.cur), auto;
   opacity: 0.2;
 }
 
