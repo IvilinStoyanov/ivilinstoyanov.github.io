@@ -22,6 +22,10 @@
   opacity: 0;
 }
 
+figure {
+  position: relative;
+}
+
 figure:hover .project-heading {
   opacity: 1;
 }
