@@ -7,6 +7,7 @@ import { ProjectDetailsComponent } from './components/project-details/project-de
 import { SkillsComponent } from './components/skills/skills.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { PhotoshopComponent } from './components/photoshop/photoshop.component';
 
 const routes: Routes = [
   {
@@ -28,6 +29,10 @@ const routes: Routes = [
   {
     path: 'resume',
     component: ResumeComponent
+  },
+  {
+    path: 'hobby',
+    component: PhotoshopComponent
   },
   {
     path: 'contacts',

@@ -81,6 +81,7 @@ export class NavbarComponent implements OnInit {
         { name: 'Projects', link: '/projects', count: 6 },
         { name: 'Skills', link: '/skills' },
         { name: 'Resume', link: '/resume' },
+        { name: 'Hobby', link: '/hobby' },
         { name: 'Contacts', link: '/contacts' }
     ];
 
@@ -89,6 +90,7 @@ export class NavbarComponent implements OnInit {
         { name: 'Projects', link: '/projects', icon: 'icofont-code-alt', count: 6 },
         { name: 'Skills', link: '/skills', icon: 'icofont-tools-alt-2' },
         { name: 'Resume', link: '/resume', icon: 'icofont-attachment' },
+        { name: 'Hobby', link: '/hobby', icon: 'icofont-brand-adobe' },
         { name: 'Contacts', link: '/contacts', icon: 'icofont-mail' }
     ];
     }

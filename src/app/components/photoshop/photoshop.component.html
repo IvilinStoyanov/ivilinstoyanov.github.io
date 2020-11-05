@@ -1,3 +1,8 @@
-<p>
-  photoshop works!
-</p>
+<div class="wrapper">
+    <div class="gallery" id="gallery">
+        <div *ngFor="let image of Images" class="mb-3 pics animation img-wrapper">
+            <img class="img-fluid" src="{{image.src}}"
+                alt="wallpaper image">
+        </div>
+    </div>
+</div>
