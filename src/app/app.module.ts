@@ -13,6 +13,7 @@ import { ProjectDetailsComponent } from './components/project-details/project-de
 import { SkillsComponent } from './components/skills/skills.component';
 import { ResumeComponent } from './components/resume/resume.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { PhotoshopComponent } from './components/photoshop/photoshop.component';
 
 const ngxUiLoaderConfig: NgxUiLoaderConfig = {
   bgsColor: '#d09c91',
@@ -51,7 +52,8 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     ProjectDetailsComponent,
     SkillsComponent,
     ResumeComponent,
-    ContactComponent
+    ContactComponent,
+    PhotoshopComponent
   ],
   imports: [
     BrowserModule,
