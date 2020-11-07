@@ -4,6 +4,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
 import { ModalModule } from 'ngx-bootstrap/modal';
 import { NgxUiLoaderModule, NgxUiLoaderConfig } from 'ngx-ui-loader';
+import { LightboxModule } from 'ngx-lightbox';
 
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/common/components/navbar/navbar.component';
@@ -60,6 +61,7 @@ const ngxUiLoaderConfig: NgxUiLoaderConfig = {
     AppRoutingModule,
     HttpClientModule,
     NgxUiLoaderModule.forRoot(ngxUiLoaderConfig),
+    LightboxModule,
     ModalModule.forRoot()
   ],
   providers: [],

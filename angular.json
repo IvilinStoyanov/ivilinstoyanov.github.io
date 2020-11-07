@@ -35,6 +35,7 @@
             ],
             "styles": [
               "src/styles.scss",
+              "node_modules/ngx-lightbox/lightbox.css",
               {
                 "input": "src/style/light.scss",
                 "bundleName": "light",
