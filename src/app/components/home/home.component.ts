@@ -10,7 +10,7 @@ import { GlobalService } from '../common/services/global.service';
 export class HomeComponent implements OnInit {
 
   constructor(private globalService: GlobalService) {
-    document.body.style.overflow = 'hidden';
+    document.body.style.overflowX = 'hidden';
   }
 
   ngOnInit(): void {
