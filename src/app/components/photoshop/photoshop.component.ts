@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { Lightbox } from 'ngx-lightbox';
+import { Lightbox, LightboxConfig } from 'ngx-lightbox';
 
 @Component({
   selector: 'app-photoshop',
@@ -9,7 +9,10 @@ import { Lightbox } from 'ngx-lightbox';
 export class PhotoshopComponent implements OnInit {
   images: any[];
 
-  constructor(private lightbox: Lightbox) { }
+  constructor(private lightbox: Lightbox, private lightboxConfig: LightboxConfig) {
+    this.lightboxConfig.disableScrolling = true;
+    this.lightboxConfig.centerVertically = true;
+   }
 
   ngOnInit() {
     this.images = [
