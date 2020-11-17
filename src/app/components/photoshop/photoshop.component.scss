@@ -31,4 +31,12 @@
             -moz-column: 2;
         }
     }
+
+    @media (max-width: 500px) {
+        .gallery {
+            columns: 1 !important;
+            -webkit-columns: 1 !important;
+            -moz-column: 1 !important;
+        }
+    }
 }

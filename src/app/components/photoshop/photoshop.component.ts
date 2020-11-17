@@ -49,6 +49,10 @@ export class PhotoshopComponent implements OnInit {
         caption: 'glowing in the dark'
       },
       {
+        src: 'https://res.cloudinary.com/portfolio1118/image/upload/v1605649233/photoshop/125249637_2657054311177882_5897392827649184385_n.jpg_z5ycwj.jpg',
+        caption: 'escape house'
+      },
+      {
         src: 'https://res.cloudinary.com/portfolio1118/image/upload/v1604695532/photoshop/android-min_wucpcg.jpg',
         caption: 'android hologram'
       }
