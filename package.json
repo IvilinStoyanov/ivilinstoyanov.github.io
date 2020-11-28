@@ -21,7 +21,7 @@
     "@angular/router": "~11.0.2",
     "angular-particle": "^1.0.4",
     "animate.css": "^3.7.2",
-    "ngx-bootstrap": "^5.6.1",
+    "ngx-bootstrap": "^6.2.0",
     "ngx-lightbox": "^2.2.2",
     "ngx-ui-loader": "^10.0.0",
     "particlesjs": "^2.2.3",
