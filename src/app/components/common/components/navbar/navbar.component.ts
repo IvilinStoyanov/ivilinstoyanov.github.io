@@ -28,54 +28,6 @@ export class NavbarComponent implements OnInit {
         this.theme = JSON.parse(localStorage.getItem('theme'));
         this.loadStyle(this.theme.type + '.css');
 
-        const myNavBar = {
-            flagAdd: true,
-            elements: [],
-            init(elements) {
-                this.elements = elements;
-            },
-            add() {
-                if (this.flagAdd) {
-                    for (const e of this.elements) {
-                        document.getElementById(e).className += ' fixed-theme';
-                    }
-                    this.flagAdd = false;
-                }
-            },
-            remove() {
-                for (const e of this.elements) {
-                    document.getElementById(e).className =
-                        document.getElementById(e).className.replace(/(?:^|\s)fixed-theme(?!\S)/g, '');
-                }
-                this.flagAdd = true;
-            }
-        };
-        /**
-         * Init the object. Pass the object the array of elements
-         * that we want to change when the scroll goes down
-         */
-        myNavBar.init([
-            'header',
-            'header-container',
-            'header-items-container'
-        ]);
-        function offSetManager() {
-            const yOffset = 0;
-            const currYOffSet = window.pageYOffset;
-
-            if (yOffset < currYOffSet) {
-                myNavBar.add();
-            }
-            else if (currYOffSet == yOffset) {
-                myNavBar.remove();
-            }
-
-        }
-        window.onscroll = function (e) {
-            offSetManager();
-        };
-        offSetManager();
-
         this.menu = [
         { name: 'Home', link: '' },
         { name: 'Projects', link: '/projects', count: 6 },
@@ -96,7 +48,6 @@ export class NavbarComponent implements OnInit {
     }
 
     loadTheme() {
-        /* set/change theme */
         this.theme.checkbox = !this.theme.checkbox;
         if (!this.theme.checkbox) {
             this.theme.type = 'light';
