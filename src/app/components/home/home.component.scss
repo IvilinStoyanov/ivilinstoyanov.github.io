@@ -69,3 +69,11 @@
         }
     }
 }
+
+.app-version {
+    position: absolute;
+    left: 10px;
+    bottom: 10px;
+    font-size: 13px;
+    color: $primary;
+}
