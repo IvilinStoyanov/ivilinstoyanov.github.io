@@ -1,78 +1,72 @@
-@import '../../../style/colors.scss';
+@import "../../../style/colors.scss";
 
 .background {
-    position: absolute;
-    display: block;
-    top: 0;
-    left: 0;
-    z-index: -1;
-    min-height: 100vh;
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  min-height: 100vh;
 }
 
 .background-image {
-    width: 100%;
-    height: 100vh;
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: url("../../../assets/home-bg-min.png") no-repeat right bottom fixed;
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    -o-background-size: contain;
-    background-size: contain;
-    overflow-x: hidden;
-    z-index: -1;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: url("../../../assets/home-bg-min.png") no-repeat right bottom
+    fixed;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: contain;
+  overflow-x: hidden;
+  z-index: -1;
 }
 
 .left-side-menu {
-    position: absolute;
-    transform: translate(-50%, -50%);
-    top: 50%;
-    left: 20px;
-    display: flex;
-    flex-direction: column;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 20px;
+  display: flex;
+  flex-direction: column;
+
+  a {
+    all: unset;
+    text-decoration: none;
+    padding: 20px 5px 30px 25px;
+    cursor: pointer;
+  }
+
+  i {
+    font-size: 18px;
+  }
+
+  i:hover {
+    color: $primary;
+  }
+
+  .vl {
+    border-left: 1px solid grey;
+    height: 86px;
+    margin-left: 33px;
+  }
+
+  @media only screen and (max-width: 600px) {
+    i {
+      font-size: 14px;
+    }
 
     a {
-        all: unset;
-        text-decoration: none;
-        padding: 20px 5px 30px 25px;
-        cursor: pointer;
-    }
-
-    i {
-        font-size: 18px;
-    }
-
-    i:hover {
-        color: $primary;
+      padding: 15px 10px 15px 5px;
     }
 
     .vl {
-        border-left: 1px solid grey;
-        height: 86px;
-        margin-left: 33px;
+      border-left: 1px solid grey;
+      height: 66px;
+      margin-left: 12px;
     }
-
-    @media only screen and (max-width: 600px) {
-        i {
-            font-size: 14px;
-        }
-
-        a {
-            padding: 15px 10px 15px 5px;
-        }
-
-        .vl {
-            border-left: 1px solid grey;
-            height: 66px;
-            margin-left: 12px;
-        }
-    }
-}
-
-.app-version {
-    position: absolute;
-    left: 5px;
-    bottom: 5px;
-    font-size: 10px;
+  }
 }
