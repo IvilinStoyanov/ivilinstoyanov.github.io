@@ -2,63 +2,16 @@
 
 #skills {
   margin-top: 100px;
+
+  .skill-image {
+    height: 120px;
+    width: 105px;
+    -o-object-fit: contain;
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .gap {
+    padding: 5px 5px 0px 5px;
+  }
 }
-  .progress-bar {
-    width: 0;
-    animation: progress 2s ease-in-out forwards;
-
-    .title {
-      opacity: 0;
-      animation: show 0.5s forwards ease-in-out 0.5s;
-    }
-  }
-
-  @keyframes progress {
-    from {
-      width: 0;
-    }
-    to {
-      width: 100%;
-    }
-  }
-  @keyframes show {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-
-  .skills .progress {
-    height: 50px;
-    display: block;
-    background: none;
-  }
-
-  .skills .progress .skill {
-    padding: 10px 0;
-    margin: 0 0 6px 0;
-    text-transform: uppercase;
-    display: block;
-    font-weight: 600;
-    font-family: "Poppins", sans-serif;
-    color: #45505b;
-  }
-
-  .skills .progress .skill .val {
-    float: right;
-    font-style: normal;
-  }
-
-  .skills .progress-bar-wrap {
-    background: #f2f3f5;
-  }
-
-  .skills .progress-bar {
-    width: 1px;
-    height: 10px;
-    transition: 0.9s;
-    background-color: $primary;
-  }
-

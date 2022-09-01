@@ -6,14 +6,10 @@
         that I learned over the years in both professional and free time.</p>
     </div>
     <div class="row skills-content mb-4">
-      <div class="col-lg-6" *ngFor="let skill of skills">
-        <div class="progress">
-          <span class="skill theme">{{skill.name}} <i class="val theme">{{skill.value}}%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" [style.max-width.%]="skill.value" aria-valuenow="skill.value"
-              aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
+      <div class="gap col-lg-2 col-md-3" *ngFor="let skill of skills">
+        <div class="card">
+          <img class="skill-image mb-1" [src]="skill.img">
+          <span class="skill theme text-center text-muted">{{skill.name | uppercase}}</span>
         </div>
       </div>
     </div>
@@ -21,14 +17,10 @@
       <h6>Queued</h6>
     </div>
     <div class="row skills-content mb-5">
-      <div class="col-lg-6" *ngFor="let skill of queuedSkills">
-        <div class="progress">
-          <span class="skill theme">{{skill.name}} <i class="val theme">{{skill.value}}%</i></span>
-          <div class="progress-bar-wrap">
-            <div class="progress-bar" role="progressbar" [style.max-width.%]="skill.value" aria-valuenow="skill.value"
-              aria-valuemin="0" aria-valuemax="100">
-            </div>
-          </div>
+      <div class="gap col-lg-2 col-md-3 col-xs-6" *ngFor="let skill of queuedSkills">
+        <div class="card">
+          <img class="skill-image" [src]="skill.img">
+          <span class="skill theme text-center">{{skill.name | uppercase}}</span>
         </div>
       </div>
     </div>

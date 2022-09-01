@@ -7,25 +7,31 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   skills: any = [
-    { name: 'html', value: 100 },
-    { name: 'css', value: 100 },
-    { name: 'less/sass', value: 100 },
-    { name: 'boostrap', value: 100 },
-    { name: 'javascript', value: 100 },
-    { name: 'jQuery', value: 100 },
-    { name: 'Angular', value: 100 },
-    { name: 'c#', value: 100 },
-    { name: 'asp.net', value: 90 },
-    { name: 'git', value: 100 },
-    { name: 'sql', value: 90 },
-    { name: 'wordpress', value: 80 },
-    { name: 'photoshop', value: 90 }
+    { name: 'html', img: '../../../assets/skills/html1.png' },
+    { name: 'css', img: '../../../assets/skills/css1.png' },
+    { name: 'sass', img: '../../../assets/skills/sass.png' },
+    { name: 'less', img: '../../../assets/skills/less1.png' },
+    { name: 'bootstrap', img: '../../../assets/skills/bootstrap.png' },
+    { name: 'javascript', img: '../../../assets/skills/javascript.png'},
+    { name: 'typescript', img: '../../../assets/skills/typescript.png'},
+    { name: 'jQuery', img: '../../../assets/skills/jquery.png' },
+    { name: 'Angular', img: '../../../assets/skills/angular.png' },
+    { name: 'c#', img: '../../../assets/skills/csharp.png' },
+    { name: 'asp.net', img: '../../../assets/skills/asp.png' },
+    { name: 'git', img: '../../../assets/skills/git.png' },
+    { name: 'github', img: '../../../assets/skills/github.png' },
+    { name: 'gitlab', img: '../../../assets/skills/gitlab.png' },
+    { name: 'heroku', img: '../../../assets/skills/heroku.png' },
+    { name: 'sql', img: '../../../assets/skills/sql.png' },
+    { name: 'photoshop', img: '../../../assets/skills/photoshop.png' }
   ];
 
   queuedSkills: any = [
-    { name: 'reactjs', value: 0 },
-    { name: 'react native', value: 0 },
-    { name: 'node.js', value: 0 },
+    { name: 'reactjs', img: '../../../assets/skills/react.png'},
+    { name: 'redux', img: '../../../assets/skills/redux.png'},
+    // { name: 'react native', '../../../assets/skills/.png'  },
+    { name: 'node.js', img: '../../../assets/skills/nodejs.png' },
+    { name: 'mongoDB', img: '../../../assets/skills/mongoDB.png' }
   ];
 
   constructor() {

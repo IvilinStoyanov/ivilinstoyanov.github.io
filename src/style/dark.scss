@@ -22,21 +22,6 @@ body {
     background: url("../assets/custom_icons/dots-menu-white.png");
 }
 
-.background-image {
-    width: 100% !important;
-    height: 100vh !important;
-    position: fixed !important;
-    top: 0 !important;
-    left: 0 !important;
-    background: url("../assets/home-bg-baw-min.png") no-repeat right bottom fixed !important;
-    -webkit-background-size: contain !important;
-    -moz-background-size: contain !important;
-    -o-background-size: contain !important;
-    background-size: contain !important;
-    overflow-x: hidden !important;
-    z-index: -1 !important;
-}
-
 .text-muted {
     color: #cccccc !important;
 }
@@ -67,7 +52,8 @@ body {
 }
 
 .card {
-    box-shadow: 0 14px 28px rgba(255, 255, 255, 0.15), 0 10px 10px rgba(255, 255, 255, 0.12);
+   // box-shadow: 0 3px 8px rgba(255, 255, 255, 0.05), 0 3px 8px rgba(255, 255, 255, 0.05);
+    background: none;
 }
 
 .language-tag {
