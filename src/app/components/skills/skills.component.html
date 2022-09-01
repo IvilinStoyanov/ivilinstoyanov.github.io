@@ -1,4 +1,4 @@
-<section id="skills" class="skills section-bg">
+<section id="skills" class="skills section-bg zoom-large data-close controls-close set-speed view-3D">
   <div class="container">
     <div class="section-title">
       <h2 class="theme">PROGRAMMING LANGUAGES & TOOLS</h2>
@@ -6,10 +6,16 @@
         that I learned over the years in both professional and free time.</p>
     </div>
     <div class="row skills-content mb-4">
-      <div class="gap col-lg-2 col-md-3" *ngFor="let skill of skills">
-        <div class="card">
-          <img class="skill-image mb-1" [src]="skill.img">
+      <div class="gap col-lg-4 col-md-3" *ngFor="let skill of skills">
+        <div class="card justify-content-between" style="
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        line-height: 60px;
+    ">
+          <img class="skill-image ml-2 mb-1" [src]="skill.img">
           <span class="skill theme text-center text-muted">{{skill.name | uppercase}}</span>
+          <i class="icofont-check-alt theme mr-2" style="color:rgb(61, 158, 61) !important; font-size: 35px; line-height: 60px;"></i>
         </div>
       </div>
     </div>
@@ -17,10 +23,16 @@
       <h6>Queued</h6>
     </div>
     <div class="row skills-content mb-5">
-      <div class="gap col-lg-2 col-md-3 col-xs-6" *ngFor="let skill of queuedSkills">
-        <div class="card">
-          <img class="skill-image" [src]="skill.img">
+      <div class="gap col-lg-4 col-md-3" *ngFor="let skill of queuedSkills">
+        <div class="card justify-content-between" style="
+        display: flex;
+        flex-direction: row;
+        height: 60px;
+        line-height: 60px;"
+        >
+          <img class="skill-image ml-2 mb-1" [src]="skill.img">
           <span class="skill theme text-center">{{skill.name | uppercase}}</span>
+          <i class="icofont-check-alt theme mr-2" style="color:rgb(61, 158, 61) !important; font-size: 35px; line-height: 60px;"></i>
         </div>
       </div>
     </div>
