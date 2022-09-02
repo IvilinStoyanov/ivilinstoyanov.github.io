@@ -1,8 +1,23 @@
+@import 'colors.scss';
+
 .hover {
     cursor: pointer;
     outline: none;
 }
 
+.flex-direction-row {
+  display: flex;
+  flex-direction: row
+}
+
 .justify-content-between {
   justify-content: space-between;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.text-primary {
+ color: $primary !important;
 }

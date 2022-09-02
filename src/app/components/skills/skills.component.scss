@@ -1,13 +1,16 @@
-@import '../.././../style/colors.scss';
-
 #skills {
   margin-top: 100px;
 
-  .skill-image {
-    width: 105px;
-    -o-object-fit: contain;
-    object-fit: contain;
-    padding-right: 50px;
+  .card {
+    height: 60px;
+    padding: 6px;
+
+    .skill-image {
+      max-width: 105px;
+      height: 100%;
+      -o-object-fit: contain;
+      object-fit: contain;
+    }
   }
 
   .gap {

@@ -7,10 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SkillsComponent implements OnInit {
   skills: any = [
-    { name: 'html', img: '../../../assets/skills/html1.png' },
-    { name: 'css', img: '../../../assets/skills/css1.png' },
+    { name: 'html', img: '../../../assets/skills/html.png' },
+    { name: 'css', img: '../../../assets/skills/css.png' },
     { name: 'sass', img: '../../../assets/skills/sass.png' },
-    { name: 'less', img: '../../../assets/skills/less1.png' },
+    { name: 'less', img: '../../../assets/skills/less.png' },
     { name: 'bootstrap', img: '../../../assets/skills/bootstrap.png' },
     { name: 'javascript', img: '../../../assets/skills/javascript.png'},
     { name: 'typescript', img: '../../../assets/skills/typescript.png'},
@@ -29,7 +29,6 @@ export class SkillsComponent implements OnInit {
   queuedSkills: any = [
     { name: 'reactjs', img: '../../../assets/skills/react.png'},
     { name: 'redux', img: '../../../assets/skills/redux.png'},
-    // { name: 'react native', '../../../assets/skills/.png'  },
     { name: 'node.js', img: '../../../assets/skills/nodejs.png' },
     { name: 'mongoDB', img: '../../../assets/skills/mongoDB.png' }
   ];
