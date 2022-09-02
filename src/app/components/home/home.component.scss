@@ -9,22 +9,6 @@
   min-height: 100vh;
 }
 
-.background-image {
-  width: 100%;
-  height: 100vh;
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: url("../../../assets/home-bg-min.png") no-repeat right bottom
-    fixed;
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  -o-background-size: contain;
-  background-size: contain;
-  overflow-x: hidden;
-  z-index: -1;
-}
-
 .left-side-menu {
   position: absolute;
   transform: translate(-50%, -50%);

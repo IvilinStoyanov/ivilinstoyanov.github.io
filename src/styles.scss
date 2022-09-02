@@ -3,8 +3,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
 
 /* theme imports */
-@import 'style/theme/section.scss';
 @import 'style/colors.scss';
+@import 'style/theme/section.scss';
+@import 'style/utilities';
+@import 'style/theme/card.scss';
 
 * {
     transition: all 0.4 ease;
@@ -24,7 +26,6 @@ body {
     font-weight: 500;
 }
 
-/*** GLOBALS ***/
 .flyout {
     z-index: 1040 !important;
     padding: 10px !important;

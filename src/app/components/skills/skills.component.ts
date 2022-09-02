@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeStyles } from 'src/app/enums/theme-styles.enum';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-skills',
@@ -6,33 +8,54 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
+  imagePath: string = '../../../assets/skills/';
+
   skills: any = [
-    { name: 'html', value: 100 },
-    { name: 'css', value: 100 },
-    { name: 'less/sass', value: 100 },
-    { name: 'boostrap', value: 100 },
-    { name: 'javascript', value: 100 },
-    { name: 'jQuery', value: 100 },
-    { name: 'Angular', value: 100 },
-    { name: 'c#', value: 100 },
-    { name: 'asp.net', value: 90 },
-    { name: 'git', value: 100 },
-    { name: 'sql', value: 90 },
-    { name: 'wordpress', value: 80 },
-    { name: 'photoshop', value: 90 }
+    { name: 'html', img: 'html.png' },
+    { name: 'css', img: 'css.png' },
+    { name: 'sass', img: 'sass.png' },
+    { name: 'less', img: 'less.png' },
+    { name: 'bootstrap', img: 'bootstrap.png' },
+    { name: 'javascript', img: 'javascript.png' },
+    { name: 'typescript', img: 'typescript.png' },
+    { name: 'jQuery', img: 'jquery.png' },
+    { name: 'Angular', img: 'angular.png' },
+    { name: 'c#', img: 'csharp.png' },
+    { name: 'asp.net', img: 'asp.png', theme: true },
+    { name: 'git', img: 'git.png' },
+    { name: 'github', img: 'github.png', theme: true },
+    { name: 'gitlab', img: 'gitlab.png' },
+    { name: 'heroku', img: 'heroku.png' },
+    { name: 'sql', img: 'sql.png' },
+    { name: 'photoshop', img: 'photoshop.png' },
+    { name: 'reactjs', img: 'react.png', queued: true },
+    { name: 'redux', img: 'redux.png', queued: true },
+    { name: 'node.js', img: 'nodejs.png', theme: true, queued: true },
+    { name: 'mongoDB', img: 'mongodb.png', theme: true, queued: true }
   ];
 
-  queuedSkills: any = [
-    { name: 'reactjs', value: 0 },
-    { name: 'react native', value: 0 },
-    { name: 'node.js', value: 0 },
-  ];
-
-  constructor() {
+  constructor(private themeService: ThemeService) {
     document.body.style.overflow = 'auto';
   }
 
   ngOnInit() {
+    this.themeService.theme$.subscribe(theme => {
+      this.skills.forEach(skill => {
+        if (skill.theme)
+          skill.img = this.changeThemeImageName(skill.img, theme);
+      });
+    });
   }
 
+  changeThemeImageName(fileName: string, theme: string) {
+    const regex = /\.[0-9a-z]+$/i;
+    const extension = regex.exec(fileName).toString();
+
+    let name = fileName.replace(extension, '');
+
+    if (name.includes('-white'))
+      name = name.replace('-white', '');
+
+    return theme === ThemeStyles.Dark ? `${name}-white${extension}` : `${name}${extension}`;
+  }
 }

@@ -1,7 +1,7 @@
 import { Component, OnInit, Inject } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
-import { GlobalService } from '../../services/global.service';
-import { HttpClient } from '@angular/common/http';
+import { ThemeService } from 'src/app/services/theme.service';
+import { ThemeStyles } from 'src/app/enums/theme-styles.enum';
 
 @Component({
     selector: 'app-navbar',
@@ -10,23 +10,16 @@ import { HttpClient } from '@angular/common/http';
 })
 export class NavbarComponent implements OnInit {
     isSidebarOpen = false;
-
     theme: any = {
-        type: 'light',
-        checkbox: 'false'
+        type: 'light'
     };
-
     menu: any = [];
     sidebar: any = [];
 
-    constructor(@Inject(DOCUMENT) private document: Document) { }
+    constructor(@Inject(DOCUMENT) private document: Document, private themeService: ThemeService) { }
 
     ngOnInit() {
-        if (localStorage.getItem('theme') === null) {
-            localStorage.setItem('theme', JSON.stringify(this.theme));
-        }
-        this.theme = JSON.parse(localStorage.getItem('theme'));
-        this.loadStyle(this.theme.type + '.css');
+      this.loadTheme();
 
         this.menu = [
         { name: 'Home', link: '' },
@@ -48,25 +41,21 @@ export class NavbarComponent implements OnInit {
     }
 
     loadTheme() {
-        this.theme.checkbox = !this.theme.checkbox;
-        if (!this.theme.checkbox) {
-            this.theme.type = 'light';
-            this.theme.checkbox = false;
-            localStorage.setItem('theme', JSON.stringify(this.theme));
-        }
-        else {
-            this.theme.type = 'dark';
-            this.theme.checkbox = true;
-            localStorage.setItem('theme', JSON.stringify(this.theme));
+        if (localStorage.getItem('theme') == null) {
+          localStorage.setItem('theme', JSON.stringify(this.theme));
+      }
 
-        }
-        if (this.theme.type === 'light') {
-            this.loadStyle(this.theme.type + '.css');
+      this.theme = JSON.parse(localStorage.getItem('theme'));
+      this.loadStyle(this.theme.type + '.css');
+      this.themeService.changetheme(this.theme.type);
+    }
 
-        }
-        if (this.theme.type === 'dark') {
-            this.loadStyle(this.theme.type + '.css');
-        }
+    changeTheme() {
+      this.theme.type = this.theme.type == ThemeStyles.Light ? ThemeStyles.Dark : ThemeStyles.Light;
+
+      localStorage.setItem('theme', JSON.stringify(this.theme));
+      this.loadStyle(this.theme.type + '.css');
+      this.themeService.changetheme(this.theme.type);
     }
 
     loadStyle(styleName: string) {
