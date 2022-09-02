@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ThemeStyles } from 'src/app/enums/theme-styles.enum';
+import { ThemeService } from 'src/app/services/theme.service';
 
 @Component({
   selector: 'app-skills',
@@ -6,38 +8,54 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./skills.component.scss']
 })
 export class SkillsComponent implements OnInit {
+  imagePath: string = '../../../assets/skills/';
+
   skills: any = [
-    { name: 'html', img: '../../../assets/skills/html.png' },
-    { name: 'css', img: '../../../assets/skills/css.png' },
-    { name: 'sass', img: '../../../assets/skills/sass.png' },
-    { name: 'less', img: '../../../assets/skills/less.png' },
-    { name: 'bootstrap', img: '../../../assets/skills/bootstrap.png' },
-    { name: 'javascript', img: '../../../assets/skills/javascript.png'},
-    { name: 'typescript', img: '../../../assets/skills/typescript.png'},
-    { name: 'jQuery', img: '../../../assets/skills/jquery.png' },
-    { name: 'Angular', img: '../../../assets/skills/angular.png' },
-    { name: 'c#', img: '../../../assets/skills/csharp.png' },
-    { name: 'asp.net', img: '../../../assets/skills/asp.png' },
-    { name: 'git', img: '../../../assets/skills/git.png' },
-    { name: 'github', img: '../../../assets/skills/github.png' },
-    { name: 'gitlab', img: '../../../assets/skills/gitlab.png' },
-    { name: 'heroku', img: '../../../assets/skills/heroku.png' },
-    { name: 'sql', img: '../../../assets/skills/sql.png' },
-    { name: 'photoshop', img: '../../../assets/skills/photoshop.png' }
+    { name: 'html', img: 'html.png' },
+    { name: 'css', img: 'css.png' },
+    { name: 'sass', img: 'sass.png' },
+    { name: 'less', img: 'less.png' },
+    { name: 'bootstrap', img: 'bootstrap.png' },
+    { name: 'javascript', img: 'javascript.png' },
+    { name: 'typescript', img: 'typescript.png' },
+    { name: 'jQuery', img: 'jquery.png' },
+    { name: 'Angular', img: 'angular.png' },
+    { name: 'c#', img: 'csharp.png' },
+    { name: 'asp.net', img: 'asp.png', theme: true },
+    { name: 'git', img: 'git.png' },
+    { name: 'github', img: 'github.png', theme: true },
+    { name: 'gitlab', img: 'gitlab.png' },
+    { name: 'heroku', img: 'heroku.png' },
+    { name: 'sql', img: 'sql.png' },
+    { name: 'photoshop', img: 'photoshop.png' },
+    { name: 'reactjs', img: 'react.png', queued: true },
+    { name: 'redux', img: 'redux.png', queued: true },
+    { name: 'node.js', img: 'nodejs.png', theme: true, queued: true },
+    { name: 'mongoDB', img: 'mongodb.png', theme: true, queued: true }
   ];
 
-  queuedSkills: any = [
-    { name: 'reactjs', img: '../../../assets/skills/react.png'},
-    { name: 'redux', img: '../../../assets/skills/redux.png'},
-    { name: 'node.js', img: '../../../assets/skills/nodejs.png' },
-    { name: 'mongoDB', img: '../../../assets/skills/mongoDB.png' }
-  ];
-
-  constructor() {
+  constructor(private themeService: ThemeService) {
     document.body.style.overflow = 'auto';
   }
 
   ngOnInit() {
+    this.themeService.theme$.subscribe(theme => {
+      this.skills.forEach(skill => {
+        if (skill.theme)
+          skill.img = this.changeThemeImageName(skill.img, theme);
+      });
+    });
   }
 
+  changeThemeImageName(fileName: string, theme: string) {
+    const regex = /\.[0-9a-z]+$/i;
+    const extension = regex.exec(fileName).toString();
+
+    let name = fileName.replace(extension, '');
+
+    if (name.includes('-white'))
+      name = name.replace('-white', '');
+
+    return theme === ThemeStyles.Dark ? `${name}-white${extension}` : `${name}${extension}`;
+  }
 }
