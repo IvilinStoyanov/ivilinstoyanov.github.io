@@ -1,13 +1,17 @@
-@import 'colors.scss';
+@import "colors.scss";
 
 .hover {
-    cursor: pointer;
-    outline: none;
+  cursor: pointer;
+  outline: none;
+}
+
+.inline-block {
+  display: inline-block;
 }
 
 .flex-direction-row {
   display: flex;
-  flex-direction: row
+  flex-direction: row;
 }
 
 .justify-content-between {
@@ -19,5 +23,5 @@
 }
 
 .text-primary {
- color: $primary !important;
+  color: $primary !important;
 }

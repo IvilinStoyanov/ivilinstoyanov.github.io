@@ -26,6 +26,7 @@ export class SkillsComponent implements OnInit {
     { name: 'github', img: 'github.png', theme: true },
     { name: 'gitlab', img: 'gitlab.png' },
     { name: 'heroku', img: 'heroku.png' },
+    { name: 'netlify', img: 'netlify.png' },
     { name: 'sql', img: 'sql.png' },
     { name: 'photoshop', img: 'photoshop.png' },
     { name: 'reactjs', img: 'react.png', queued: true },

@@ -18,9 +18,9 @@ export class GalleryComponent implements OnInit {
     },
     {
       id: 2,
-      name: 'DateMe',
-      subtext: 'ASP.NET + Angular 9 application',
-      img: 'https://images.unsplash.com/photo-1518104593124-ac2e82a5eb9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
+      name: 'Twiply',
+      subtext: 'asp.net with angular 11 application',
+      img: 'https://images.unsplash.com/photo-1603145733146-ae562a55031e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
       detailsLink: '/projects/details/2',
       projectLink: '',
       alt: 'photo'
@@ -36,9 +36,9 @@ export class GalleryComponent implements OnInit {
     },
     {
       id: 4,
-      name: 'Shopanoid',
-      subtext: 'wordpress application',
-      img: 'https://images.unsplash.com/photo-1546213290-e1b492ab3eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80',
+      name: 'Zymio',
+      subtext: 'react application with nodejs and mongodb',
+      img: 'https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       detailsLink: '/projects/details/4',
       projectLink: '',
       alt: 'photo'
