@@ -1,5 +1,5 @@
-@import '../../../style/colors.scss';
-@import '../../../style/arrow.scss';
+@import "../../../style/colors.scss";
+@import "../../../style/arrow.scss";
 
 .project-card-wrapper {
   @media only screen and (max-width: 575px) {
@@ -18,9 +18,9 @@
   background-color: transparent;
 
   .list-group-item {
-    padding: .75rem 0.90rem;
+    padding: 0.75rem 0.9rem;
     background-color: transparent;
-  }  
+  }
 }
 .arrow-right {
   position: absolute;
@@ -34,49 +34,48 @@
   left: 0;
 }
 
-.col-md-6, .col-sm-6 {
+.col-md-6,
+.col-sm-6 {
   padding-left: 0 !important;
   padding-right: 0 !important;
 }
 
-.btn-block+.btn-block {
+.btn-block {
   margin-top: 0;
 }
-  
-  img {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-  }
 
-  .panel-heading {
-    color: $primary;
-    font-size: 22px;
-  }
+img {
+  height: 50vh;
+  width: 100%;
+  object-fit: cover;
+}
 
-  .lead > strong {
-    font-size: 16px;
-  }
+.panel-heading {
+  color: $primary;
+  font-size: 22px;
+}
 
-  .list-group-item > div {
-    justify-content: space-between;
+.lead > strong {
+  font-size: 16px;
+}
 
-    @media only screen and (max-width: 992px) {
-      & {
-        text-align: left;
-        flex-direction: column;
-      }
+.list-group-item > div {
+  justify-content: space-between;
+
+  @media only screen and (max-width: 992px) {
+    & {
+      text-align: left;
+      flex-direction: column;
     }
   }
+}
 
-  .language-tag {
-    padding: 5px 10px 5px 10px;
-    border-radius: 4px;
-    color: $secondary !important;
+.language-tag {
+  padding: 5px 10px 5px 10px;
+  border-radius: 4px;
+  color: $secondary !important;
 
-    &:hover {
-      cursor: pointer;
-    }
+  &:hover {
+    cursor: pointer;
   }
-
-  
+}

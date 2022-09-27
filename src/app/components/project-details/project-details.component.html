@@ -1,9 +1,9 @@
 <div class="container centered project-card-wrapper">
   <!-- arrow-left -->
-  <a class='animated-arrow arrow-left ml-3' *ngIf="projectDetails.id !== 1" (click)="navigateBack(projectDetails.id)">
-    <span class='main'>
-      <span class='the-arrow -right mr-3' style="transform: rotate(180deg);">
-        <span class='shaft'></span>
+  <a class="animated-arrow arrow-left ml-3" *ngIf="projectDetails.id !== 1" (click)="navigateBack(projectDetails.id)">
+    <span class="main">
+      <span class="the-arrow -right mr-3" style="transform: rotate(180deg);">
+        <span class="shaft"></span>
       </span>
       <span class="theme text">
         previous project
@@ -11,14 +11,13 @@
     </span>
   </a>
   <!-- arrow-right -->
-  <a class='animated-arrow arrow-right mr-3' *ngIf="projectDetails.id !== projects.length"
-    (click)="navigateNext(projectDetails.id)">
-    <span class='main'>
+  <a class="animated-arrow arrow-right mr-3" *ngIf="projectDetails.id !== projects.length" (click)="navigateNext(projectDetails.id)">
+    <span class="main">
       <span class="theme text">
         next project
       </span>
-      <span class='the-arrow -right'>
-        <span class='shaft'></span>
+      <span class="the-arrow -right">
+        <span class="shaft"></span>
       </span>
     </span>
   </a>

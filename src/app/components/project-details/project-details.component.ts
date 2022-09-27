@@ -28,21 +28,21 @@ export class ProjectDetailsComponent implements OnInit {
     },
     {
       id: 2,
-      name: 'DateMe',
-      subtext: 'ASP.NET Core + angular 8 application',
-      img: 'https://images.unsplash.com/photo-1518104593124-ac2e82a5eb9d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80',
-      repoLink: 'https://github.com/IvilinStoyanov/dateapp',
+      name: 'Twiply',
+      subtext: 'ASP.NET Core + angular 11 application',
+      img: 'https://images.unsplash.com/photo-1603145733146-ae562a55031e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
+      repoLink: 'https://github.com/IvilinStoyanov/Twiply',
       projectLink: '',
       alt: 'photo',
       dateCreated: new Date('2019-01-20'),
       technologies: [
         { name: 'asp.net', link: 'https://docs.microsoft.com/en-us/dotnet' },
-        { name: 'angular 8', link: 'https://angular.io' },
+        { name: 'angular 11', link: 'https://angular.io' },
         { name: 'html', link: 'https://www.w3schools.com/html' },
         { name: 'css', link: 'https://www.w3schools.com/css' }
       ],
       // tslint:disable-next-line: quotemark
-      description: "DateMe is a platform for meeting people and finding true love. People can create and edit their profile, interact with eachother via chat. Users are able to uplaod pictures and create, like and comment on posts. Users also can like eachother's profiles and see who liked theirs and much more."
+      description: "Twiply is a social platform. People can create and edit their profile, interact with eachother via chat. Users are able to uplaod pictures and create, like and comment on posts. Users also can like eachother's profiles and see who liked theirs and much more."
     },
     {
       id: 3,
@@ -62,17 +62,20 @@ export class ProjectDetailsComponent implements OnInit {
     },
     {
       id: 4,
-      name: 'Shopanoid',
-      subtext: 'wordpress application',
-      img: 'https://images.unsplash.com/photo-1546213290-e1b492ab3eee?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80',
-      repoLink: '/projects/details/',
-      projectLink: '',
+      name: 'Zymio',
+      subtext: 'react application with nodejs and mongodb',
+      img: 'https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      repoLink: 'https://github.com/IvilinStoyanov/Zymio',
+      projectLink: 'https://zymio-me.herokuapp.com',
       alt: 'photo',
-      dateCreated: new Date('2019-04-07'),
+      dateCreated: new Date('2022-09-08'),
       technologies: [
-        { name: 'wordpress', link: 'https://wordpress.com' }
+        { name: 'react', link: 'https://reactjs.org' },
+        { name: 'nodejs', link: 'https://nodejs.org/' },
+        { name: 'expressjs', link: 'https://expressjs.com/' },
+        { name: 'mongodb', link: 'https://www.mongodb.com/' }
       ],
-      description: 'Shopanoid is a online magazine where you can buy clothes, track your order, create your own profile, add to wishlist, read blog posts and much more.'
+      description: 'Zymio will help you to collect the feedback.'
     },
     {
       id: 5,
@@ -110,7 +113,7 @@ export class ProjectDetailsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private router: Router) {
     document.body.style.overflow = 'auto';
-   }
+  }
 
   ngOnInit() {
     this.id = +this.route.snapshot.paramMap.get('id');

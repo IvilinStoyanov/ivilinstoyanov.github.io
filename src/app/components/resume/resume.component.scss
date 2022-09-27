@@ -10,14 +10,14 @@
     margin-bottom: 20px;
     color: #45505b;
   }
-  
+
   .resume .resume-item {
     padding: 0 0 20px 20px;
     margin-top: -2px;
     border-left: 2px solid $primary;
     position: relative;
   }
-  
+
   .resume .resume-item h4 {
     line-height: 18px;
     font-size: 18px;
@@ -26,37 +26,37 @@
     color: $primary;
     margin-bottom: 10px;
   }
-  
+
   .resume .resume-item h5 {
     position: absolute;
-    top: 0px;
-    left: -115px;
+    top: -1px;
+    left: -165px;
     font-size: 14px;
     font-weight: 600;
     text-align: right;
-    min-width: 100px;
+    min-width: 150px;
   }
 
-  @media only screen and (max-width: 700px) {
+  @media only screen and (max-width: 950px) {
     .resume .resume-item h5 {
       position: relative;
       left: 0px;
       text-align: left;
     }
   }
-  
+
   .resume .resume-item ul {
     padding-left: 20px;
   }
-  
+
   .resume .resume-item ul li {
     padding-bottom: 10px;
   }
-  
+
   .resume .resume-item:last-child {
     padding-bottom: 0;
   }
-  
+
   .resume .resume-item::before {
     content: "";
     position: absolute;
