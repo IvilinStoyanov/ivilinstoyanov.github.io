@@ -12,19 +12,20 @@ export class ProjectDetailsComponent implements OnInit {
   projects: any = [
     {
       id: 1,
-      name: 'Cook4You',
-      subtext: 'javascript application',
-      img: 'https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
-      repoLink: 'https://github.com/IvilinStoyanov/cook4you',
-      projectLink: 'https://cook4you.netlify.com',
+      name: 'Zymio',
+      subtext: 'react application with nodejs and mongodb',
+      img: 'https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      repoLink: 'https://github.com/IvilinStoyanov/Zymio',
+      projectLink: 'https://zymio-me.herokuapp.com',
       alt: 'photo',
-      dateCreated: new Date('2018-11-2'),
+      dateCreated: new Date('2022-09-08'),
       technologies: [
-        { name: 'html', link: 'https://www.w3schools.com/html' },
-        { name: 'css', link: 'https://www.w3schools.com/css' },
-        { name: 'javascript', link: 'https://www.javascript.com' }
+        { name: 'react', link: 'https://reactjs.org' },
+        { name: 'nodejs', link: 'https://nodejs.org/' },
+        { name: 'expressjs', link: 'https://expressjs.com/' },
+        { name: 'mongodb', link: 'https://www.mongodb.com/' }
       ],
-      description: 'Cook4You is javascript web application working with RESTful API to provide you unique recipes.'
+      description: 'Zymio will help you to collect the feedback.'
     },
     {
       id: 2,
@@ -62,20 +63,19 @@ export class ProjectDetailsComponent implements OnInit {
     },
     {
       id: 4,
-      name: 'Zymio',
-      subtext: 'react application with nodejs and mongodb',
-      img: 'https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
-      repoLink: 'https://github.com/IvilinStoyanov/Zymio',
-      projectLink: 'https://zymio-me.herokuapp.com',
+      name: 'Cook4You',
+      subtext: 'javascript application',
+      img: 'https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      repoLink: 'https://github.com/IvilinStoyanov/cook4you',
+      projectLink: 'https://cook4you.netlify.com',
       alt: 'photo',
-      dateCreated: new Date('2022-09-08'),
+      dateCreated: new Date('2018-11-2'),
       technologies: [
-        { name: 'react', link: 'https://reactjs.org' },
-        { name: 'nodejs', link: 'https://nodejs.org/' },
-        { name: 'expressjs', link: 'https://expressjs.com/' },
-        { name: 'mongodb', link: 'https://www.mongodb.com/' }
+        { name: 'html', link: 'https://www.w3schools.com/html' },
+        { name: 'css', link: 'https://www.w3schools.com/css' },
+        { name: 'javascript', link: 'https://www.javascript.com' }
       ],
-      description: 'Zymio will help you to collect the feedback.'
+      description: 'Cook4You is javascript web application working with RESTful API to provide you unique recipes.'
     },
     {
       id: 5,
