@@ -9,11 +9,11 @@ export class GalleryComponent implements OnInit {
   projects: any = [
     {
       id: 1,
-      name: 'Cook4You',
-      subtext: 'javascript application',
-      img: 'https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
+      name: 'Zymio',
+      subtext: 'react application with nodejs and mongodb',
+      img: 'https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
       detailsLink: '/projects/details/1',
-      projectLink: 'https://cook4you.netlify.com',
+      projectLink: '',
       alt: 'photo'
     },
     {
@@ -36,11 +36,11 @@ export class GalleryComponent implements OnInit {
     },
     {
       id: 4,
-      name: 'Zymio',
-      subtext: 'react application with nodejs and mongodb',
-      img: 'https://images.unsplash.com/photo-1589187775328-882e91b3db4f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80',
+      name: 'Cook4You',
+      subtext: 'javascript application',
+      img: 'https://images.unsplash.com/photo-1493770348161-369560ae357d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80',
       detailsLink: '/projects/details/4',
-      projectLink: '',
+      projectLink: 'https://cook4you.netlify.com',
       alt: 'photo'
     },
     {
