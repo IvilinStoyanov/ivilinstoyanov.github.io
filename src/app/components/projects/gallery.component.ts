@@ -22,7 +22,7 @@ export class GalleryComponent implements OnInit {
       subtext: 'asp.net with angular 11 application',
       img: 'https://images.unsplash.com/photo-1603145733146-ae562a55031e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80',
       detailsLink: '/projects/details/2',
-      projectLink: '',
+      projectLink: 'https://github.com/IvilinStoyanov/Twiply',
       alt: 'photo'
     },
     {
