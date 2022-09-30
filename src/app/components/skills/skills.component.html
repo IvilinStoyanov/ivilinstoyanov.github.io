@@ -9,7 +9,7 @@
       <ng-container *ngFor="let skill of skills">
         <div *ngIf="!skill.queued" class="gap col-lg-4 col-md-6">
           <div class="card flex-direction-row justify-content-between align-items-center">
-            <img class="skill-image ml-2 mb-1" src="{{imagePath + skill.img}}">
+            <img class="skill-image ml-0 mb-1" src="{{imagePath + skill.img}}">
             <span class="skill theme text-center text-muted">{{skill.name | uppercase}}</span>
             <i class="icofont-check-alt text-primary mr-2" [style.font-size.px]="35"></i>
           </div>
@@ -23,7 +23,7 @@
       <ng-container class="gap col-lg-4 col-md-6" *ngFor="let skill of skills">
         <div *ngIf="skill.queued" class="gap col-lg-4 col-md-6">
           <div class="card flex-direction-row justify-content-between align-items-center">
-            <img class="skill-image ml-2 mb-1" src="{{imagePath + skill.img}}">
+            <img class="skill-image ml-0 mb-1" src="{{imagePath + skill.img}}">
             <span class="skill theme text-center">{{skill.name | uppercase}}</span>
             <i class="icofont-check-alt text-primary mr-2" [style.font-size.px]="35"></i>
           </div>
